@@ -1,0 +1,270 @@
+{
+	Tools = ordered() {
+		dy_Breakdown_Retimer = MacroOperator {
+			Inputs = ordered() {
+				MainInput1 = InstanceInput {
+					SourceOp = "ControlsTime",
+					Source = "Image1",
+				},
+				Input1 = InstanceInput {
+					SourceOp = "ControlsTime",
+					Source = "NumberIn1",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "ControlsTime",
+					Source = "NumberIn2",
+				},
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "SwitchFX",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 0, 0 } },
+			Tools = ordered() {
+				ControlsTime = Custom {
+					Inputs = {
+						NumberIn3 = Input { Value = 20, },
+						NumberIn6 = Input { Value = 1, },
+						LUTIn1 = Input {
+							SourceOp = "ControlsTimeLUTIn1",
+							Source = "Value",
+						},
+						LUTIn2 = Input {
+							SourceOp = "ControlsTimeLUTIn2",
+							Source = "Value",
+						},
+						LUTIn3 = Input {
+							SourceOp = "ControlsTimeLUTIn3",
+							Source = "Value",
+						},
+						LUTIn4 = Input {
+							SourceOp = "ControlsTimeLUTIn4",
+							Source = "Value",
+						},
+						AuxChannelNest = Input { Value = 1, },
+						NumberControls = Input { Value = 1, },
+						NameforNumber1 = Input { Value = "Freeze Frame", },
+						NameforNumber2 = Input { Value = "Freeze Lentgh", },
+						ShowNumber3 = Input { Value = 0, },
+						NameforNumber3 = Input { Value = "", },
+						ShowNumber4 = Input { Value = 0, },
+						NameforNumber4 = Input { Value = "", },
+						ShowNumber5 = Input { Value = 0, },
+						NameforNumber5 = Input { Value = "", },
+						ShowNumber6 = Input { Value = 0, },
+						NameforNumber6 = Input { Value = "", },
+						ShowNumber7 = Input { Value = 0, },
+						NameforNumber7 = Input { Value = "", },
+						ShowNumber8 = Input { Value = 0, },
+						NameforNumber8 = Input { Value = "", },
+						ShowPoint1 = Input { Value = 0, },
+						ShowPoint2 = Input { Value = 0, },
+						ShowPoint3 = Input { Value = 0, },
+						ShowPoint4 = Input { Value = 0, },
+						ShowLUT1 = Input { Value = 0, },
+						ShowLUT2 = Input { Value = 0, },
+						ShowLUT3 = Input { Value = 0, },
+						ShowLUT4 = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -1329.21, 45.8633 } },
+				},
+				ControlsTimeLUTIn1 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 0, Blue = 0 },
+				},
+				ControlsTimeLUTIn2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 204, Blue = 0 },
+				},
+				ControlsTimeLUTIn3 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 0, Blue = 204 },
+				},
+				ControlsTimeLUTIn4 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 204, Blue = 204 },
+				},
+				SwitchHold = Fuse.Switch {
+					Inputs = {
+						Which = Input {
+							Value = 1,
+							Expression = "iif (time < ControlsTime.NumberIn1, 1,2) ",
+						},
+						Input1 = Input {
+							SourceOp = "ControlsTime",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "TMHold",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -1105.74, 45.8633 } },
+					Version = 172
+				},
+				SwitchOut = Fuse.Switch {
+					Inputs = {
+						Which = Input {
+							Value = 1,
+							Expression = "iif (time < (ControlsTime.NumberIn1 + ControlsTime.NumberIn2), 1,2)",
+						},
+						Input1 = Input {
+							SourceOp = "SwitchHold",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "PipeRouter3",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -951.383, 45.8633 } },
+					Version = 172
+				},
+				TMHold = Fuse.TimeMachineImage {
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "ControlsTime",
+							Source = "Output",
+						},
+						Mode = Input { Value = FuID { "Hold" }, },
+						Skip = Input { Value = 1, },
+						Hold = Input {
+							Value = 20,
+							Expression = "ControlsTime.NumberIn1",
+						},
+						XFrameNumbers = Input { Disabled = true, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -1105.74, 105.86 } },
+					Version = 211
+				},
+				TMXpressions = Fuse.TimeMachineImage {
+					Inputs = {
+						Mode = Input { Value = FuID { "XSheet" }, },
+						TriggerMode = Input { Value = FuID { "Hold" }, },
+						SourceEndFrame = Input { Value = 150, },
+						Delta = Input { Value = 1.797, },
+						DeltaThreshold = Input { Value = 0.717, },
+						Skip = Input { Value = 10, },
+						Offset = Input { Value = 20, },
+						Hold = Input { Value = 50, },
+						XSheet = Input { Value = "0 to 30\n30 hold 60\n31 to 240\n", },
+						XFrameNumbers = Input {
+							Value = "0  --  0\n1  --  1\n2  --  2\n3  --  3\n4  --  4\n5  --  5\n6  --  6\n7  --  7\n8  --  8\n9  --  9\n10  --  10\n11  --  11\n12  --  12\n13  --  13\n14  --  14\n15  --  15\n16  --  16\n17  --  17\n18  --  18\n19  --  19\n20  --  20\n21  --  21\n22  --  22\n23  --  23\n24  --  24\n25  --  25\n26  --  26\n27  --  27\n28  --  28\n29  --  29\n30  --  30\n31  --  30\n32  --  30\n33  --  30\n34  --  30\n35  --  30\n36  --  30\n37  --  30\n38  --  30\n39  --  30\n40  --  30\n41  --  30\n42  --  30\n43  --  30\n44  --  30\n45  --  30\n46  --  30\n47  --  30\n48  --  30\n49  --  30\n50  --  30\n51  --  30\n52  --  30\n53  --  30\n54  --  30\n55  --  30\n56  --  30\n57  --  30\n58  --  30\n59  --  30\n60  --  30\n61  --  30\n62  --  30\n63  --  30\n64  --  30\n65  --  30\n66  --  30\n67  --  30\n68  --  30\n69  --  30\n70  --  30\n71  --  30\n72  --  30\n73  --  30\n74  --  30\n75  --  30\n76  --  30\n77  --  30\n78  --  30\n79  --  30\n80  --  30\n81  --  30\n82  --  30\n83  --  30\n84  --  30\n85  --  30\n86  --  30\n87  --  30\n88  --  30\n89  --  30\n90  --  30\n91  --  31\n92  --  32\n93  --  33\n94  --  34\n95  --  35\n96  --  36\n97  --  37\n98  --  38\n99  --  39\n100  --  40\n101  --  41\n102  --  42\n103  --  43\n104  --  44\n105  --  45\n106  --  46\n107  --  47\n108  --  48\n109  --  49\n110  --  50\n111  --  51\n112  --  52\n113  --  53\n114  --  54\n115  --  55\n116  --  56\n117  --  57\n118  --  58\n119  --  59\n120  --  60\n121  --  61\n122  --  62\n123  --  63\n124  --  64\n125  --  65\n126  --  66\n127  --  67\n128  --  68\n129  --  69\n130  --  70\n131  --  71\n132  --  72\n133  --  73\n134  --  74\n135  --  75\n136  --  76\n137  --  77\n138  --  78\n139  --  79\n140  --  80\n141  --  81\n142  --  82\n143  --  83\n144  --  84\n145  --  85\n146  --  86\n147  --  87\n148  --  88\n149  --  89\n150  --  90\n151  --  91\n152  --  92\n153  --  93\n154  --  94\n155  --  95\n156  --  96\n157  --  97\n158  --  98\n159  --  99\n160  --  100\n161  --  101\n162  --  102\n163  --  103\n164  --  104\n165  --  105\n166  --  106\n167  --  107\n168  --  108\n169  --  109\n170  --  110\n171  --  111\n172  --  112\n173  --  113\n174  --  114\n175  --  115\n176  --  116\n177  --  117\n178  --  118\n179  --  119\n180  --  120\n181  --  121\n182  --  122\n183  --  123\n184  --  124\n185  --  125\n186  --  126\n187  --  127\n188  --  128\n189  --  129\n190  --  130\n191  --  131\n192  --  132\n193  --  133\n194  --  134\n195  --  135\n196  --  136\n197  --  137\n198  --  138\n199  --  139\n200  --  140\n201  --  141\n202  --  142\n203  --  143\n204  --  144\n205  --  145\n206  --  146\n207  --  147\n208  --  148\n209  --  149\n210  --  150\n211  --  151\n212  --  152\n213  --  153\n214  --  154\n215  --  155\n216  --  156\n217  --  157\n218  --  158\n219  --  159\n220  --  160\n221  --  161\n222  --  162\n223  --  163\n224  --  164\n225  --  165\n226  --  166\n227  --  167\n228  --  168\n229  --  169\n230  --  170\n231  --  171\n232  --  172\n233  --  173\n234  --  174\n235  --  175\n236  --  176\n237  --  177\n238  --  178\n239  --  179\n240  --  180\n241  --  181\n242  --  182\n243  --  183\n244  --  184\n245  --  185\n246  --  186\n247  --  187\n248  --  188\n249  --  189\n250  --  190\n251  --  191\n252  --  192\n253  --  193\n254  --  194\n255  --  195\n256  --  196\n257  --  197\n258  --  198\n259  --  199\n260  --  200\n261  --  201\n262  --  202\n263  --  203\n264  --  204\n265  --  205\n266  --  206\n267  --  207\n268  --  208\n269  --  209\n270  --  210\n271  --  211\n272  --  212\n273  --  213\n274  --  214\n275  --  215\n276  --  216\n277  --  217\n278  --  218\n279  --  219\n280  --  220\n281  --  221\n282  --  222\n283  --  223\n284  --  224\n285  --  225\n286  --  226\n287  --  227\n288  --  228\n289  --  229\n290  --  230\n291  --  231\n292  --  232\n293  --  233\n294  --  234\n295  --  235\n296  --  236\n297  --  237\n298  --  238\n299  --  239\n300  --  240\n",
+							Disabled = true,
+						},
+						Trigger = Input { Value = 0.346, },
+						OnTriggerThreshold = Input { Value = 0.244, },
+						OffTriggerThreshold = Input { Value = 0.126, },
+						SwitchStartFrames = Input { Value = "10", },
+						Switch = Input { Value = 2, },
+						TargetEndFrame = Input { Value = 150, },
+						RoundOutputValues = Input { Value = FuID { "Up" }, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -951.157, -1.21368 } },
+					Version = 211
+				},
+				TMOut = Fuse.TimeMachineImage {
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "ControlsTime",
+							Source = "Output",
+						},
+						Mode = Input { Value = FuID { "Offset" }, },
+						Skip = Input { Value = 1, },
+						Offset = Input {
+							Value = 19,
+							Expression = "ControlsTime.NumberIn2 - 1",
+						},
+						XFrameNumbers = Input { Disabled = true, },
+						ForceTargetRange = Input { Value = 1, },
+						TargetStartFrame = Input {
+							Value = 19,
+							Expression = "ControlsTime.NumberIn2 - 1",
+						},
+						TargetEndFrame = Input {
+							Value = 300,
+							Expression = "comp.GlobalEnd",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -1105.38, 159.237 } },
+					Version = 211
+				},
+				SwitchFX = Fuse.Switch {
+					CtrlWZoom = false,
+					Inputs = {
+						Which = Input {
+							Value = 1,
+							Expression = "iif (ControlsTime.NumberIn1 == 0, 1,2) ",
+						},
+						Input1 = Input {
+							SourceOp = "PipeRouter4",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "SwitchOut",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -798.152, 45.8633 } },
+					Version = 172
+				},
+				PipeRouter3 = PipeRouter {
+					Inputs = {
+						Input = Input {
+							SourceOp = "TMOut",
+							Source = "Output",
+						},
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -951.383, 159.237 } },
+				},
+				PipeRouter4 = PipeRouter {
+					Inputs = {
+						Input = Input {
+							SourceOp = "PipeRouter5",
+							Source = "Output",
+						},
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -798.152, 218.561 } },
+				},
+				PipeRouter5 = PipeRouter {
+					Inputs = {
+						Input = Input {
+							SourceOp = "ControlsTime",
+							Source = "Output",
+						},
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -1140.71, 218.561 } },
+				},
+				Underlay1 = Underlay {
+					ViewInfo = UnderlayInfo {
+						Pos = { -1063.68, -1.21368 },
+						Size = { 703.062, 267.048 }
+					},
+				}
+			},
+		}
+	},
+	ActiveTool = "dy_Breakdown_Retimer"
+}

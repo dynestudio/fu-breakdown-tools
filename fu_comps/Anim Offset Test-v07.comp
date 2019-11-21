@@ -1,0 +1,2034 @@
+Composition {
+	CurrentTime = 30,
+	RenderRange = { 0, 300 },
+	GlobalRange = { 0, 300 },
+	CurrentID = 761,
+	HiQ = true,
+	PlaybackUpdateMode = 0,
+	Version = "Fusion Studio 16.1.1 build 5",
+	SavedOutputs = 2,
+	HeldTools = 0,
+	DisabledTools = 0,
+	LockedTools = 0,
+	AudioOffset = 0,
+	Resumable = true,
+	OutputClips = {
+	},
+	Tools = {
+		PipeRouter1 = PipeRouter {
+			Inputs = {
+				Input = Input {
+					SourceOp = "TMSpeed_and_Start",
+					Source = "Output",
+				},
+			},
+			ViewInfo = PipeRouterInfo { Pos = { 650.942, 683.539 } },
+		},
+		Merge4_1 = Merge {
+			Inputs = {
+				Blend = Input { Expression = "Controls.NumberIn5", },
+				Background = Input {
+					SourceOp = "PipeRouter1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Text1",
+					Source = "Output",
+				},
+				Operator = Input { Value = FuID { "XOr" }, },
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 913.778, 683.539 } },
+		},
+		Text1_1_1_1_1 = TextPlus {
+			Inputs = {
+				GlobalOut = Input { Value = 300, },
+				Width = Input { Value = 1920, },
+				Height = Input { Value = 1080, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				Center = Input { Value = { 0.5, 0.346325167037862 }, },
+				Green1 = Input { Value = 0, },
+				Blue1 = Input { Value = 0, },
+				StyledText = Input { Value = "Mask 04", },
+				Font = Input { Value = "Open Sans", },
+				Style = Input { Value = "Bold", },
+				Size = Input { Value = 0.1, },
+				VerticalJustificationNew = Input { Value = 3, },
+				HorizontalJustificationNew = Input { Value = 3, },
+				ManualFontKerningPlacement = Input {
+					Value = StyledText {
+						Array = {
+						},
+						Value = ""
+					},
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1177.37, 638.201 } },
+		},
+		Merge1_1_1_1 = Merge {
+			Inputs = {
+				Blend = Input { Expression = "Controls.NumberIn5", },
+				Background = Input {
+					SourceOp = "Merge4_1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Text1_1_1_1_1",
+					Source = "Output",
+				},
+				Operator = Input { Value = FuID { "XOr" }, },
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1177.37, 683.539 } },
+		},
+		TM02_1 = Fuse.TimeMachineImage {
+			Inputs = {
+				ImageInput = Input {
+					SourceOp = "Merge1_1_1_1",
+					Source = "Output",
+				},
+				Mode = Input { Value = FuID { "Offset" }, },
+				Skip = Input { Value = 1, },
+				Offset = Input {
+					Value = 60,
+					Expression = "Controls.NumberIn3 * 3 + Controls.NumberIn4 * 3",
+				},
+				XFrameNumbers = Input { Disabled = true, },
+				ForceTargetRange = Input { Value = 1, },
+				TargetStartFrame = Input {
+					Value = 60,
+					Expression = "Controls.NumberIn3 * 3 + Controls.NumberIn4 * 3",
+				},
+				TargetEndFrame = Input {
+					Value = 300,
+					Expression = "comp.GlobalEnd",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1515.16, 683.539 } },
+			Version = 211
+		},
+		Mask_Out03_1 = Custom {
+			Inputs = {
+				LUTIn1 = Input {
+					SourceOp = "Mask_Out03LUTIn1_1",
+					Source = "Value",
+				},
+				LUTIn2 = Input {
+					SourceOp = "Mask_Out03LUTIn2_1",
+					Source = "Value",
+				},
+				LUTIn3 = Input {
+					SourceOp = "Mask_Out03LUTIn3_1",
+					Source = "Value",
+				},
+				LUTIn4 = Input {
+					SourceOp = "Mask_Out03LUTIn4_1",
+					Source = "Value",
+				},
+				ShowNumber1 = Input { Value = 0, },
+				ShowNumber2 = Input { Value = 0, },
+				ShowNumber3 = Input { Value = 0, },
+				ShowNumber4 = Input { Value = 0, },
+				ShowNumber5 = Input { Value = 0, },
+				ShowNumber6 = Input { Value = 0, },
+				ShowNumber7 = Input { Value = 0, },
+				ShowNumber8 = Input { Value = 0, },
+				ShowPoint1 = Input { Value = 0, },
+				ShowPoint2 = Input { Value = 0, },
+				ShowPoint3 = Input { Value = 0, },
+				ShowPoint4 = Input { Value = 0, },
+				ShowLUT1 = Input { Value = 0, },
+				ShowLUT2 = Input { Value = 0, },
+				ShowLUT3 = Input { Value = 0, },
+				ShowLUT4 = Input { Value = 0, },
+				Image1 = Input {
+					SourceOp = "TM02_1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1732.11, 683.539 } },
+		},
+		Mask_Out03LUTIn1_1 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 204, Green = 0, Blue = 0 },
+		},
+		Mask_Out03LUTIn2_1 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 0, Green = 204, Blue = 0 },
+		},
+		Mask_Out03LUTIn3_1 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 0, Green = 0, Blue = 204 },
+		},
+		Mask_Out03LUTIn4_1 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 204, Green = 204, Blue = 204 },
+		},
+		PipeRouter6 = PipeRouter {
+			Inputs = {
+				Input = Input {
+					SourceOp = "TMSpeed_and_Start",
+					Source = "Output",
+				},
+			},
+			ViewInfo = PipeRouterInfo { Pos = { 645.369, 263.897 } },
+		},
+		Merge3 = Merge {
+			Inputs = {
+				Blend = Input { Expression = "Controls.NumberIn5", },
+				Background = Input {
+					SourceOp = "PipeRouter6",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Text1",
+					Source = "Output",
+				},
+				Operator = Input { Value = FuID { "XOr" }, },
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 913.778, 263.897 } },
+		},
+		Text1_1_1 = TextPlus {
+			Inputs = {
+				GlobalOut = Input { Value = 300, },
+				Width = Input { Value = 1920, },
+				Height = Input { Value = 1080, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				Center = Input { Value = { 0.5, 0.346325167037862 }, },
+				Green1 = Input { Value = 0, },
+				Blue1 = Input { Value = 0, },
+				StyledText = Input { Value = "Mask 02", },
+				Font = Input { Value = "Open Sans", },
+				Style = Input { Value = "Bold", },
+				Size = Input { Value = 0.1, },
+				VerticalJustificationNew = Input { Value = 3, },
+				HorizontalJustificationNew = Input { Value = 3, },
+				ManualFontKerningPlacement = Input {
+					Value = StyledText {
+						Array = {
+						},
+						Value = ""
+					},
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1179.59, 218.558 } },
+		},
+		Merge1_1 = Merge {
+			Inputs = {
+				Blend = Input { Expression = "Controls.NumberIn5", },
+				Background = Input {
+					SourceOp = "Merge3",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Text1_1_1",
+					Source = "Output",
+				},
+				Operator = Input { Value = FuID { "XOr" }, },
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1179.59, 263.897 } },
+		},
+		TM01 = Fuse.TimeMachineImage {
+			Inputs = {
+				ImageInput = Input {
+					SourceOp = "Merge1_1",
+					Source = "Output",
+				},
+				Mode = Input { Value = FuID { "Offset" }, },
+				Skip = Input { Value = 1, },
+				Offset = Input {
+					Value = 20,
+					Expression = "Controls.NumberIn3+Controls.NumberIn4",
+				},
+				XFrameNumbers = Input { Disabled = true, },
+				ForceTargetRange = Input { Value = 1, },
+				TargetStartFrame = Input {
+					Value = 20,
+					Expression = "Controls.NumberIn3+Controls.NumberIn4",
+				},
+				TargetEndFrame = Input {
+					Value = 300,
+					Expression = "comp.GlobalEnd",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1516.05, 263.897 } },
+			Version = 211
+		},
+		Mask_Out02 = Custom {
+			Inputs = {
+				LUTIn1 = Input {
+					SourceOp = "Mask_Out02LUTIn1",
+					Source = "Value",
+				},
+				LUTIn2 = Input {
+					SourceOp = "Mask_Out02LUTIn2",
+					Source = "Value",
+				},
+				LUTIn3 = Input {
+					SourceOp = "Mask_Out02LUTIn3",
+					Source = "Value",
+				},
+				LUTIn4 = Input {
+					SourceOp = "Mask_Out02LUTIn4",
+					Source = "Value",
+				},
+				ShowNumber1 = Input { Value = 0, },
+				ShowNumber2 = Input { Value = 0, },
+				ShowNumber3 = Input { Value = 0, },
+				ShowNumber4 = Input { Value = 0, },
+				ShowNumber5 = Input { Value = 0, },
+				ShowNumber6 = Input { Value = 0, },
+				ShowNumber7 = Input { Value = 0, },
+				ShowNumber8 = Input { Value = 0, },
+				ShowPoint1 = Input { Value = 0, },
+				ShowPoint2 = Input { Value = 0, },
+				ShowPoint3 = Input { Value = 0, },
+				ShowPoint4 = Input { Value = 0, },
+				ShowLUT1 = Input { Value = 0, },
+				ShowLUT2 = Input { Value = 0, },
+				ShowLUT3 = Input { Value = 0, },
+				ShowLUT4 = Input { Value = 0, },
+				Image1 = Input {
+					SourceOp = "TM01",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1733.96, 263.897 } },
+		},
+		Mask_Out02LUTIn1 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 204, Green = 0, Blue = 0 },
+			NameSet = true,
+		},
+		Mask_Out02LUTIn2 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 0, Green = 204, Blue = 0 },
+			NameSet = true,
+		},
+		Mask_Out02LUTIn3 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 0, Green = 0, Blue = 204 },
+			NameSet = true,
+		},
+		Mask_Out02LUTIn4 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 204, Green = 204, Blue = 204 },
+			NameSet = true,
+		},
+		dy_Breakdown_Retimer = MacroOperator {
+			Inputs = ordered() {
+				MainInput1 = InstanceInput {
+					SourceOp = "ControlsTime_1",
+					Source = "Image1",
+					Name = "Input",
+				},
+				Input1 = InstanceInput {
+					SourceOp = "ControlsTime_1",
+					Source = "NumberIn1",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "ControlsTime_1",
+					Source = "NumberIn2",
+				}
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "SwitchFX_1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { -1088.44, 307.748 } },
+			Tools = ordered() {
+				ControlsTime_1 = Custom {
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					Inputs = {
+						NumberIn3 = Input { Value = 20, },
+						NumberIn6 = Input { Value = 1, },
+						LUTIn1 = Input {
+							SourceOp = "ControlsTimeLUTIn1_1",
+							Source = "Value",
+						},
+						LUTIn2 = Input {
+							SourceOp = "ControlsTimeLUTIn2_1",
+							Source = "Value",
+						},
+						LUTIn3 = Input {
+							SourceOp = "ControlsTimeLUTIn3_1",
+							Source = "Value",
+						},
+						LUTIn4 = Input {
+							SourceOp = "ControlsTimeLUTIn4_1",
+							Source = "Value",
+						},
+						AuxChannelNest = Input { Value = 1, },
+						NumberControls = Input { Value = 1, },
+						NameforNumber1 = Input { Value = "Freeze Frame", },
+						NameforNumber2 = Input { Value = "Freeze Lentgh", },
+						ShowNumber3 = Input { Value = 0, },
+						NameforNumber3 = Input { Value = "", },
+						ShowNumber4 = Input { Value = 0, },
+						NameforNumber4 = Input { Value = "", },
+						ShowNumber5 = Input { Value = 0, },
+						NameforNumber5 = Input { Value = "", },
+						ShowNumber6 = Input { Value = 0, },
+						NameforNumber6 = Input { Value = "", },
+						ShowNumber7 = Input { Value = 0, },
+						NameforNumber7 = Input { Value = "", },
+						ShowNumber8 = Input { Value = 0, },
+						NameforNumber8 = Input { Value = "", },
+						ShowPoint1 = Input { Value = 0, },
+						ShowPoint2 = Input { Value = 0, },
+						ShowPoint3 = Input { Value = 0, },
+						ShowPoint4 = Input { Value = 0, },
+						ShowLUT1 = Input { Value = 0, },
+						ShowLUT2 = Input { Value = 0, },
+						ShowLUT3 = Input { Value = 0, },
+						ShowLUT4 = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -266.062, 54.9471 } },
+				},
+				ControlsTimeLUTIn1_1 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 0, Blue = 0 },
+					CtrlWShown = false,
+				},
+				ControlsTimeLUTIn2_1 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 204, Blue = 0 },
+					CtrlWShown = false,
+				},
+				ControlsTimeLUTIn3_1 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 0, Blue = 204 },
+					CtrlWShown = false,
+				},
+				ControlsTimeLUTIn4_1 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 204, Blue = 204 },
+					CtrlWShown = false,
+				},
+				SwitchHold_1 = Fuse.Switch {
+					CtrlWShown = false,
+					Inputs = {
+						Which = Input {
+							Value = 2,
+							Expression = "iif (time < ControlsTime_1.NumberIn1, 1,2) ",
+						},
+						Input1 = Input {
+							SourceOp = "ControlsTime_1",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "TMHold_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.5889, 54.9471 } },
+					Version = 172
+				},
+				TMHold_1 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "ControlsTime_1",
+							Source = "Output",
+						},
+						Mode = Input { Value = FuID { "Hold" }, },
+						Skip = Input { Value = 1, },
+						Hold = Input {
+							Value = 50,
+							Expression = "ControlsTime_1.NumberIn1",
+						},
+						XFrameNumbers = Input { Disabled = true, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.5889, 114.944 } },
+					Version = 211
+				},
+				TMXpressions_1 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					Inputs = {
+						Mode = Input { Value = FuID { "XSheet" }, },
+						TriggerMode = Input { Value = FuID { "Hold" }, },
+						SourceEndFrame = Input { Value = 150, },
+						Delta = Input { Value = 1.797, },
+						DeltaThreshold = Input { Value = 0.717, },
+						Skip = Input { Value = 10, },
+						Offset = Input { Value = 20, },
+						Hold = Input { Value = 50, },
+						XSheet = Input { Value = "0 to 30\n30 hold 60\n31 to 240\n", },
+						XFrameNumbers = Input {
+							Value = "0  --  0\n1  --  1\n2  --  2\n3  --  3\n4  --  4\n5  --  5\n6  --  6\n7  --  7\n8  --  8\n9  --  9\n10  --  10\n11  --  11\n12  --  12\n13  --  13\n14  --  14\n15  --  15\n16  --  16\n17  --  17\n18  --  18\n19  --  19\n20  --  20\n21  --  21\n22  --  22\n23  --  23\n24  --  24\n25  --  25\n26  --  26\n27  --  27\n28  --  28\n29  --  29\n30  --  30\n31  --  30\n32  --  30\n33  --  30\n34  --  30\n35  --  30\n36  --  30\n37  --  30\n38  --  30\n39  --  30\n40  --  30\n41  --  30\n42  --  30\n43  --  30\n44  --  30\n45  --  30\n46  --  30\n47  --  30\n48  --  30\n49  --  30\n50  --  30\n51  --  30\n52  --  30\n53  --  30\n54  --  30\n55  --  30\n56  --  30\n57  --  30\n58  --  30\n59  --  30\n60  --  30\n61  --  30\n62  --  30\n63  --  30\n64  --  30\n65  --  30\n66  --  30\n67  --  30\n68  --  30\n69  --  30\n70  --  30\n71  --  30\n72  --  30\n73  --  30\n74  --  30\n75  --  30\n76  --  30\n77  --  30\n78  --  30\n79  --  30\n80  --  30\n81  --  30\n82  --  30\n83  --  30\n84  --  30\n85  --  30\n86  --  30\n87  --  30\n88  --  30\n89  --  30\n90  --  30\n91  --  31\n92  --  32\n93  --  33\n94  --  34\n95  --  35\n96  --  36\n97  --  37\n98  --  38\n99  --  39\n100  --  40\n101  --  41\n102  --  42\n103  --  43\n104  --  44\n105  --  45\n106  --  46\n107  --  47\n108  --  48\n109  --  49\n110  --  50\n111  --  51\n112  --  52\n113  --  53\n114  --  54\n115  --  55\n116  --  56\n117  --  57\n118  --  58\n119  --  59\n120  --  60\n121  --  61\n122  --  62\n123  --  63\n124  --  64\n125  --  65\n126  --  66\n127  --  67\n128  --  68\n129  --  69\n130  --  70\n131  --  71\n132  --  72\n133  --  73\n134  --  74\n135  --  75\n136  --  76\n137  --  77\n138  --  78\n139  --  79\n140  --  80\n141  --  81\n142  --  82\n143  --  83\n144  --  84\n145  --  85\n146  --  86\n147  --  87\n148  --  88\n149  --  89\n150  --  90\n151  --  91\n152  --  92\n153  --  93\n154  --  94\n155  --  95\n156  --  96\n157  --  97\n158  --  98\n159  --  99\n160  --  100\n161  --  101\n162  --  102\n163  --  103\n164  --  104\n165  --  105\n166  --  106\n167  --  107\n168  --  108\n169  --  109\n170  --  110\n171  --  111\n172  --  112\n173  --  113\n174  --  114\n175  --  115\n176  --  116\n177  --  117\n178  --  118\n179  --  119\n180  --  120\n181  --  121\n182  --  122\n183  --  123\n184  --  124\n185  --  125\n186  --  126\n187  --  127\n188  --  128\n189  --  129\n190  --  130\n191  --  131\n192  --  132\n193  --  133\n194  --  134\n195  --  135\n196  --  136\n197  --  137\n198  --  138\n199  --  139\n200  --  140\n201  --  141\n202  --  142\n203  --  143\n204  --  144\n205  --  145\n206  --  146\n207  --  147\n208  --  148\n209  --  149\n210  --  150\n211  --  151\n212  --  152\n213  --  153\n214  --  154\n215  --  155\n216  --  156\n217  --  157\n218  --  158\n219  --  159\n220  --  160\n221  --  161\n222  --  162\n223  --  163\n224  --  164\n225  --  165\n226  --  166\n227  --  167\n228  --  168\n229  --  169\n230  --  170\n231  --  171\n232  --  172\n233  --  173\n234  --  174\n235  --  175\n236  --  176\n237  --  177\n238  --  178\n239  --  179\n240  --  180\n241  --  181\n242  --  182\n243  --  183\n244  --  184\n245  --  185\n246  --  186\n247  --  187\n248  --  188\n249  --  189\n250  --  190\n251  --  191\n252  --  192\n253  --  193\n254  --  194\n255  --  195\n256  --  196\n257  --  197\n258  --  198\n259  --  199\n260  --  200\n261  --  201\n262  --  202\n263  --  203\n264  --  204\n265  --  205\n266  --  206\n267  --  207\n268  --  208\n269  --  209\n270  --  210\n271  --  211\n272  --  212\n273  --  213\n274  --  214\n275  --  215\n276  --  216\n277  --  217\n278  --  218\n279  --  219\n280  --  220\n281  --  221\n282  --  222\n283  --  223\n284  --  224\n285  --  225\n286  --  226\n287  --  227\n288  --  228\n289  --  229\n290  --  230\n291  --  231\n292  --  232\n293  --  233\n294  --  234\n295  --  235\n296  --  236\n297  --  237\n298  --  238\n299  --  239\n300  --  240\n",
+							Disabled = true,
+						},
+						Trigger = Input { Value = 0.346, },
+						OnTriggerThreshold = Input { Value = 0.244, },
+						OffTriggerThreshold = Input { Value = 0.126, },
+						SwitchStartFrames = Input { Value = "10", },
+						Switch = Input { Value = 2, },
+						TargetEndFrame = Input { Value = 150, },
+						RoundOutputValues = Input { Value = FuID { "Up" }, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 111.995, 7.87006 } },
+					Version = 211
+				},
+				SwitchOut_1 = Fuse.Switch {
+					CtrlWShown = false,
+					Inputs = {
+						Which = Input {
+							Value = 2,
+							Expression = "iif (time < (ControlsTime_1.NumberIn1 + ControlsTime_1.NumberIn2), 1,2)",
+						},
+						Input1 = Input {
+							SourceOp = "SwitchHold_1",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "PipeRouter3_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 111.769, 54.9471 } },
+					Version = 172
+				},
+				SwitchFX_1 = Fuse.Switch {
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					Inputs = {
+						Which = Input {
+							Value = 1,
+							Expression = "iif (ControlsTime_1.NumberIn1 == 0, 1,2) ",
+						},
+						Input1 = Input {
+							SourceOp = "PipeRouter4_1",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "SwitchOut_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 265, 54.9471 } },
+					Version = 172
+				},
+				TMOut_1 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "ControlsTime_1",
+							Source = "Output",
+						},
+						Mode = Input { Value = FuID { "Offset" }, },
+						Skip = Input { Value = 1, },
+						Offset = Input {
+							Value = 29,
+							Expression = "ControlsTime_1.NumberIn2 - 1",
+						},
+						XFrameNumbers = Input { Disabled = true, },
+						ForceTargetRange = Input { Value = 1, },
+						TargetStartFrame = Input {
+							Value = 29,
+							Expression = "ControlsTime_1.NumberIn2 - 1",
+						},
+						TargetEndFrame = Input { Value = 300, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.223, 168.321 } },
+					Version = 211
+				},
+				PipeRouter3_1 = PipeRouter {
+					CtrlWShown = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "TMOut_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = PipeRouterInfo { Pos = { 111.769, 168.321 } },
+				},
+				PipeRouter4_1 = PipeRouter {
+					CtrlWShown = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "PipeRouter5_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = PipeRouterInfo { Pos = { 265, 227.645 } },
+				},
+				PipeRouter5_1 = PipeRouter {
+					CtrlWShown = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "ControlsTime_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -77.554, 227.645 } },
+				}
+			},
+		},
+		Underlay1 = Underlay {
+			ViewInfo = UnderlayInfo {
+				Pos = { -1063.68, -1.21368 },
+				Size = { 703.062, 267.048 }
+			},
+		},
+		TMXpressions = Fuse.TimeMachineImage {
+			Inputs = {
+				Mode = Input { Value = FuID { "XSheet" }, },
+				TriggerMode = Input { Value = FuID { "Hold" }, },
+				SourceEndFrame = Input { Value = 150, },
+				Delta = Input { Value = 1.797, },
+				DeltaThreshold = Input { Value = 0.717, },
+				Skip = Input { Value = 10, },
+				Offset = Input { Value = 20, },
+				Hold = Input { Value = 50, },
+				XSheet = Input { Value = "0 to 30\n30 hold 60\n31 to 240\n", },
+				XFrameNumbers = Input {
+					Value = "0  --  0\n1  --  1\n2  --  2\n3  --  3\n4  --  4\n5  --  5\n6  --  6\n7  --  7\n8  --  8\n9  --  9\n10  --  10\n11  --  11\n12  --  12\n13  --  13\n14  --  14\n15  --  15\n16  --  16\n17  --  17\n18  --  18\n19  --  19\n20  --  20\n21  --  21\n22  --  22\n23  --  23\n24  --  24\n25  --  25\n26  --  26\n27  --  27\n28  --  28\n29  --  29\n30  --  30\n31  --  30\n32  --  30\n33  --  30\n34  --  30\n35  --  30\n36  --  30\n37  --  30\n38  --  30\n39  --  30\n40  --  30\n41  --  30\n42  --  30\n43  --  30\n44  --  30\n45  --  30\n46  --  30\n47  --  30\n48  --  30\n49  --  30\n50  --  30\n51  --  30\n52  --  30\n53  --  30\n54  --  30\n55  --  30\n56  --  30\n57  --  30\n58  --  30\n59  --  30\n60  --  30\n61  --  30\n62  --  30\n63  --  30\n64  --  30\n65  --  30\n66  --  30\n67  --  30\n68  --  30\n69  --  30\n70  --  30\n71  --  30\n72  --  30\n73  --  30\n74  --  30\n75  --  30\n76  --  30\n77  --  30\n78  --  30\n79  --  30\n80  --  30\n81  --  30\n82  --  30\n83  --  30\n84  --  30\n85  --  30\n86  --  30\n87  --  30\n88  --  30\n89  --  30\n90  --  30\n91  --  31\n92  --  32\n93  --  33\n94  --  34\n95  --  35\n96  --  36\n97  --  37\n98  --  38\n99  --  39\n100  --  40\n101  --  41\n102  --  42\n103  --  43\n104  --  44\n105  --  45\n106  --  46\n107  --  47\n108  --  48\n109  --  49\n110  --  50\n111  --  51\n112  --  52\n113  --  53\n114  --  54\n115  --  55\n116  --  56\n117  --  57\n118  --  58\n119  --  59\n120  --  60\n121  --  61\n122  --  62\n123  --  63\n124  --  64\n125  --  65\n126  --  66\n127  --  67\n128  --  68\n129  --  69\n130  --  70\n131  --  71\n132  --  72\n133  --  73\n134  --  74\n135  --  75\n136  --  76\n137  --  77\n138  --  78\n139  --  79\n140  --  80\n141  --  81\n142  --  82\n143  --  83\n144  --  84\n145  --  85\n146  --  86\n147  --  87\n148  --  88\n149  --  89\n150  --  90\n151  --  91\n152  --  92\n153  --  93\n154  --  94\n155  --  95\n156  --  96\n157  --  97\n158  --  98\n159  --  99\n160  --  100\n161  --  101\n162  --  102\n163  --  103\n164  --  104\n165  --  105\n166  --  106\n167  --  107\n168  --  108\n169  --  109\n170  --  110\n171  --  111\n172  --  112\n173  --  113\n174  --  114\n175  --  115\n176  --  116\n177  --  117\n178  --  118\n179  --  119\n180  --  120\n181  --  121\n182  --  122\n183  --  123\n184  --  124\n185  --  125\n186  --  126\n187  --  127\n188  --  128\n189  --  129\n190  --  130\n191  --  131\n192  --  132\n193  --  133\n194  --  134\n195  --  135\n196  --  136\n197  --  137\n198  --  138\n199  --  139\n200  --  140\n201  --  141\n202  --  142\n203  --  143\n204  --  144\n205  --  145\n206  --  146\n207  --  147\n208  --  148\n209  --  149\n210  --  150\n211  --  151\n212  --  152\n213  --  153\n214  --  154\n215  --  155\n216  --  156\n217  --  157\n218  --  158\n219  --  159\n220  --  160\n221  --  161\n222  --  162\n223  --  163\n224  --  164\n225  --  165\n226  --  166\n227  --  167\n228  --  168\n229  --  169\n230  --  170\n231  --  171\n232  --  172\n233  --  173\n234  --  174\n235  --  175\n236  --  176\n237  --  177\n238  --  178\n239  --  179\n240  --  180\n241  --  181\n242  --  182\n243  --  183\n244  --  184\n245  --  185\n246  --  186\n247  --  187\n248  --  188\n249  --  189\n250  --  190\n251  --  191\n252  --  192\n253  --  193\n254  --  194\n255  --  195\n256  --  196\n257  --  197\n258  --  198\n259  --  199\n260  --  200\n261  --  201\n262  --  202\n263  --  203\n264  --  204\n265  --  205\n266  --  206\n267  --  207\n268  --  208\n269  --  209\n270  --  210\n271  --  211\n272  --  212\n273  --  213\n274  --  214\n275  --  215\n276  --  216\n277  --  217\n278  --  218\n279  --  219\n280  --  220\n281  --  221\n282  --  222\n283  --  223\n284  --  224\n285  --  225\n286  --  226\n287  --  227\n288  --  228\n289  --  229\n290  --  230\n291  --  231\n292  --  232\n293  --  233\n294  --  234\n295  --  235\n296  --  236\n297  --  237\n298  --  238\n299  --  239\n300  --  240\n",
+					Disabled = true,
+				},
+				Trigger = Input { Value = 0.346, },
+				OnTriggerThreshold = Input { Value = 0.244, },
+				OffTriggerThreshold = Input { Value = 0.126, },
+				SwitchStartFrames = Input { Value = "10", },
+				Switch = Input { Value = 2, },
+				TargetEndFrame = Input { Value = 150, },
+				RoundOutputValues = Input { Value = FuID { "Up" }, },
+			},
+			ViewInfo = OperatorInfo { Pos = { -951.157, -1.21368 } },
+			Version = 211
+		},
+		PipeRouter7 = PipeRouter {
+			Inputs = {
+				Input = Input {
+					SourceOp = "TMSpeed_and_Start",
+					Source = "Output",
+				},
+			},
+			ViewInfo = PipeRouterInfo { Pos = { 647.591, 445.559 } },
+		},
+		Merge4 = Merge {
+			Inputs = {
+				Blend = Input { Expression = "Controls.NumberIn5", },
+				Background = Input {
+					SourceOp = "PipeRouter7",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Text1",
+					Source = "Output",
+				},
+				Operator = Input { Value = FuID { "XOr" }, },
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 913.778, 445.559 } },
+		},
+		Text1_1_1_1 = TextPlus {
+			Inputs = {
+				GlobalOut = Input { Value = 300, },
+				Width = Input { Value = 1920, },
+				Height = Input { Value = 1080, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				Center = Input { Value = { 0.5, 0.346325167037862 }, },
+				Green1 = Input { Value = 0, },
+				Blue1 = Input { Value = 0, },
+				StyledText = Input { Value = "Mask 03", },
+				Font = Input { Value = "Open Sans", },
+				Style = Input { Value = "Bold", },
+				Size = Input { Value = 0.1, },
+				VerticalJustificationNew = Input { Value = 3, },
+				HorizontalJustificationNew = Input { Value = 3, },
+				ManualFontKerningPlacement = Input {
+					Value = StyledText {
+						Array = {
+						},
+						Value = ""
+					},
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1177.37, 400.221 } },
+		},
+		Merge1_1_1 = Merge {
+			Inputs = {
+				Blend = Input { Expression = "Controls.NumberIn5", },
+				Background = Input {
+					SourceOp = "Merge4",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Text1_1_1_1",
+					Source = "Output",
+				},
+				Operator = Input { Value = FuID { "XOr" }, },
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1177.37, 445.559 } },
+		},
+		TM02 = Fuse.TimeMachineImage {
+			Inputs = {
+				ImageInput = Input {
+					SourceOp = "Merge1_1_1",
+					Source = "Output",
+				},
+				Mode = Input { Value = FuID { "Offset" }, },
+				Skip = Input { Value = 1, },
+				Offset = Input {
+					Value = 40,
+					Expression = "Controls.NumberIn3 * 2 + Controls.NumberIn4 * 2",
+				},
+				XFrameNumbers = Input { Disabled = true, },
+				ForceTargetRange = Input { Value = 1, },
+				TargetStartFrame = Input {
+					Value = 40,
+					Expression = "Controls.NumberIn3 * 2 + Controls.NumberIn4 * 2",
+				},
+				TargetEndFrame = Input {
+					Value = 300,
+					Expression = "comp.GlobalEnd",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1513.49, 445.559 } },
+			Version = 211
+		},
+		Mask_Out03 = Custom {
+			Inputs = {
+				LUTIn1 = Input {
+					SourceOp = "Mask_Out03LUTIn1",
+					Source = "Value",
+				},
+				LUTIn2 = Input {
+					SourceOp = "Mask_Out03LUTIn2",
+					Source = "Value",
+				},
+				LUTIn3 = Input {
+					SourceOp = "Mask_Out03LUTIn3",
+					Source = "Value",
+				},
+				LUTIn4 = Input {
+					SourceOp = "Mask_Out03LUTIn4",
+					Source = "Value",
+				},
+				ShowNumber1 = Input { Value = 0, },
+				ShowNumber2 = Input { Value = 0, },
+				ShowNumber3 = Input { Value = 0, },
+				ShowNumber4 = Input { Value = 0, },
+				ShowNumber5 = Input { Value = 0, },
+				ShowNumber6 = Input { Value = 0, },
+				ShowNumber7 = Input { Value = 0, },
+				ShowNumber8 = Input { Value = 0, },
+				ShowPoint1 = Input { Value = 0, },
+				ShowPoint2 = Input { Value = 0, },
+				ShowPoint3 = Input { Value = 0, },
+				ShowPoint4 = Input { Value = 0, },
+				ShowLUT1 = Input { Value = 0, },
+				ShowLUT2 = Input { Value = 0, },
+				ShowLUT3 = Input { Value = 0, },
+				ShowLUT4 = Input { Value = 0, },
+				Image1 = Input {
+					SourceOp = "TM02",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1732.11, 445.559 } },
+		},
+		Mask_Out03LUTIn1 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 204, Green = 0, Blue = 0 },
+			NameSet = true,
+		},
+		Mask_Out03LUTIn2 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 0, Green = 204, Blue = 0 },
+			NameSet = true,
+		},
+		Mask_Out03LUTIn3 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 0, Green = 0, Blue = 204 },
+			NameSet = true,
+		},
+		Mask_Out03LUTIn4 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 204, Green = 204, Blue = 204 },
+			NameSet = true,
+		},
+		PipeRouter5 = PipeRouter {
+			Inputs = {
+				Input = Input {
+					SourceOp = "ControlsTime",
+					Source = "Output",
+				},
+			},
+			ViewInfo = PipeRouterInfo { Pos = { -1140.71, 218.561 } },
+		},
+		PipeRouter4 = PipeRouter {
+			Inputs = {
+				Input = Input {
+					SourceOp = "PipeRouter5",
+					Source = "Output",
+				},
+			},
+			ViewInfo = PipeRouterInfo { Pos = { -798.152, 218.561 } },
+		},
+		TMHold = Fuse.TimeMachineImage {
+			Inputs = {
+				ImageInput = Input {
+					SourceOp = "ControlsTime",
+					Source = "Output",
+				},
+				Mode = Input { Value = FuID { "Hold" }, },
+				Skip = Input { Value = 1, },
+				Hold = Input {
+					Value = 20,
+					Expression = "ControlsTime.NumberIn1",
+				},
+				XFrameNumbers = Input { Disabled = true, },
+			},
+			ViewInfo = OperatorInfo { Pos = { -1105.74, 105.86 } },
+			Version = 211
+		},
+		SwitchHold = Fuse.Switch {
+			Inputs = {
+				Which = Input {
+					Value = 1,
+					Expression = "iif (time < ControlsTime.NumberIn1, 1,2) ",
+				},
+				Input1 = Input {
+					SourceOp = "ControlsTime",
+					Source = "Output",
+				},
+				Input2 = Input {
+					SourceOp = "TMHold",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { -1105.74, 45.8633 } },
+			Version = 172
+		},
+		Text2 = TextPlus {
+			Inputs = {
+				GlobalOut = Input { Value = 300, },
+				Width = Input { Value = 1920, },
+				Height = Input { Value = 1080, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				StyledText = Input {
+					Value = "30",
+					Expression = "time",
+				},
+				Font = Input { Value = "Open Sans", },
+				Style = Input { Value = "Bold", },
+				VerticalJustificationNew = Input { Value = 3, },
+				HorizontalJustificationNew = Input { Value = 3, },
+				ManualFontKerningPlacement = Input {
+					Value = StyledText {
+						Array = {
+						},
+						Value = ""
+					},
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { -1607.37, 45.8633 } },
+		},
+		ControlsTime = Custom {
+			Inputs = {
+				NumberIn3 = Input { Value = 20, },
+				NumberIn6 = Input { Value = 1, },
+				LUTIn1 = Input {
+					SourceOp = "ControlsTimeLUTIn1",
+					Source = "Value",
+				},
+				LUTIn2 = Input {
+					SourceOp = "ControlsTimeLUTIn2",
+					Source = "Value",
+				},
+				LUTIn3 = Input {
+					SourceOp = "ControlsTimeLUTIn3",
+					Source = "Value",
+				},
+				LUTIn4 = Input {
+					SourceOp = "ControlsTimeLUTIn4",
+					Source = "Value",
+				},
+				AuxChannelNest = Input { Value = 1, },
+				NumberControls = Input { Value = 1, },
+				NameforNumber1 = Input { Value = "Freeze Frame", },
+				NameforNumber2 = Input { Value = "Freeze Lentgh", },
+				ShowNumber3 = Input { Value = 0, },
+				NameforNumber3 = Input { Value = "", },
+				ShowNumber4 = Input { Value = 0, },
+				NameforNumber4 = Input { Value = "", },
+				ShowNumber5 = Input { Value = 0, },
+				NameforNumber5 = Input { Value = "", },
+				ShowNumber6 = Input { Value = 0, },
+				NameforNumber6 = Input { Value = "", },
+				ShowNumber7 = Input { Value = 0, },
+				NameforNumber7 = Input { Value = "", },
+				ShowNumber8 = Input { Value = 0, },
+				NameforNumber8 = Input { Value = "", },
+				ShowPoint1 = Input { Value = 0, },
+				ShowPoint2 = Input { Value = 0, },
+				ShowPoint3 = Input { Value = 0, },
+				ShowPoint4 = Input { Value = 0, },
+				ShowLUT1 = Input { Value = 0, },
+				ShowLUT2 = Input { Value = 0, },
+				ShowLUT3 = Input { Value = 0, },
+				ShowLUT4 = Input { Value = 0, },
+				Image1 = Input {
+					SourceOp = "Text2",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { -1329.21, 45.8633 } },
+		},
+		ControlsTimeLUTIn1 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 204, Green = 0, Blue = 0 },
+		},
+		ControlsTimeLUTIn2 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 0, Green = 204, Blue = 0 },
+		},
+		ControlsTimeLUTIn3 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 0, Green = 0, Blue = 204 },
+		},
+		ControlsTimeLUTIn4 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 204, Green = 204, Blue = 204 },
+		},
+		TMOut = Fuse.TimeMachineImage {
+			Inputs = {
+				ImageInput = Input {
+					SourceOp = "ControlsTime",
+					Source = "Output",
+				},
+				Mode = Input { Value = FuID { "Offset" }, },
+				Skip = Input { Value = 1, },
+				Offset = Input {
+					Value = 19,
+					Expression = "ControlsTime.NumberIn2 - 1",
+				},
+				XFrameNumbers = Input { Disabled = true, },
+				ForceTargetRange = Input { Value = 1, },
+				TargetStartFrame = Input {
+					Value = 19,
+					Expression = "ControlsTime.NumberIn2 - 1",
+				},
+				TargetEndFrame = Input {
+					Value = 300,
+					Expression = "comp.GlobalEnd",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { -1105.38, 159.237 } },
+			Version = 211
+		},
+		PipeRouter3 = PipeRouter {
+			Inputs = {
+				Input = Input {
+					SourceOp = "TMOut",
+					Source = "Output",
+				},
+			},
+			ViewInfo = PipeRouterInfo { Pos = { -951.383, 159.237 } },
+		},
+		SwitchOut = Fuse.Switch {
+			Inputs = {
+				Which = Input {
+					Value = 1,
+					Expression = "iif (time < (ControlsTime.NumberIn1 + ControlsTime.NumberIn2), 1,2)",
+				},
+				Input1 = Input {
+					SourceOp = "SwitchHold",
+					Source = "Output",
+				},
+				Input2 = Input {
+					SourceOp = "PipeRouter3",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { -951.383, 45.8633 } },
+			Version = 172
+		},
+		SwitchFX = Fuse.Switch {
+			Inputs = {
+				Which = Input {
+					Value = 1,
+					Expression = "iif (ControlsTime.NumberIn1 == 0, 1,2) ",
+				},
+				Input1 = Input {
+					SourceOp = "PipeRouter4",
+					Source = "Output",
+				},
+				Input2 = Input {
+					SourceOp = "SwitchOut",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { -798.152, 45.8633 } },
+			Version = 172
+		},
+		Note1 = Note {
+			CtrlWZoom = false,
+			Inputs = {
+				Comments = Input { Value = "Mask Anim", }
+			},
+			ViewInfo = StickyNoteInfo {
+				Pos = { -81.6525, 168.154 },
+				Flags = {
+					Expanded = true
+				},
+				Size = { 196, 181.364 }
+			},
+		},
+		Background2_1 = Background {
+			Inputs = {
+				GlobalOut = Input { Value = 300, },
+				Width = Input { Value = 1920, },
+				Height = Input { Value = 1080, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				TopLeftRed = Input { Value = 1, },
+				TopLeftGreen = Input { Value = 1, },
+				TopLeftBlue = Input { Value = 1, },
+			},
+			ViewInfo = OperatorInfo { Pos = { -225.358, 117.061 } },
+		},
+		Transform4 = Transform {
+			Inputs = {
+				MotionBlur = Input { Value = 1, },
+				Quality = Input { Value = 10, },
+				Center = Input {
+					SourceOp = "Path1",
+					Source = "Position",
+				},
+				Size = Input { Value = 2.14, },
+				Angle = Input { Value = 78.3, },
+				Input = Input {
+					SourceOp = "Background2_1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { -72.0245, 117.061 } },
+		},
+		Path1 = PolyPath {
+			DrawMode = "InsertAndModify",
+			CtrlWZoom = false,
+			Inputs = {
+				Displacement = Input {
+					SourceOp = "Path1Displacement",
+					Source = "Value",
+				},
+				PolyLine = Input {
+					Value = Polyline {
+						Points = {
+							{ Linear = true, LockY = true, X = -1.18735891647856, Y = 0, RX = 0.391271632806622, RY = 0 },
+							{ Linear = true, LockY = true, X = -0.0135440180586908, Y = 0, LX = -0.391271632806622, LY = 0 }
+						}
+					},
+				},
+			},
+		},
+		Path1Displacement = BezierSpline {
+			SplineColor = { Red = 255, Green = 0, Blue = 255 },
+			NameSet = true,
+			KeyFrames = {
+				[0] = { 0, RH = { 6.66666666666667, 0 }, Flags = { LockedY = true } },
+				[20] = { 1, LH = { 13.3333333333333, 1 }, Flags = { LockedY = true } }
+			}
+		},
+		Crop1 = Crop {
+			Inputs = {
+				XSize = Input { Value = 1920, },
+				YSize = Input { Value = 1080, },
+				Input = Input {
+					SourceOp = "Transform4",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 37.0932, 117.061 } },
+		},
+		Controls = Custom {
+			Inputs = {
+				NumberIn2 = Input { Value = 1, },
+				NumberIn3 = Input { Value = 20, },
+				NumberIn5 = Input { Value = 1, },
+				NumberIn6 = Input { Value = 1, },
+				LUTIn1 = Input {
+					SourceOp = "CustomTool1LUTIn1",
+					Source = "Value",
+				},
+				LUTIn2 = Input {
+					SourceOp = "CustomTool1LUTIn2",
+					Source = "Value",
+				},
+				LUTIn3 = Input {
+					SourceOp = "CustomTool1LUTIn3",
+					Source = "Value",
+				},
+				LUTIn4 = Input {
+					SourceOp = "CustomTool1LUTIn4",
+					Source = "Value",
+				},
+				AuxChannelNest = Input { Value = 1, },
+				NumberControls = Input { Value = 1, },
+				NameforNumber1 = Input { Value = "Start Animation", },
+				NameforNumber2 = Input { Value = "Mask Speed", },
+				NameforNumber3 = Input { Value = "Time Offset", },
+				NameforNumber4 = Input { Value = "Space Between Anim", },
+				NameforNumber5 = Input { Value = "Text Visibility", },
+				ShowNumber6 = Input { Value = 0, },
+				NameforNumber6 = Input { Value = "", },
+				ShowNumber7 = Input { Value = 0, },
+				NameforNumber7 = Input { Value = "", },
+				ShowNumber8 = Input { Value = 0, },
+				NameforNumber8 = Input { Value = "", },
+				ShowPoint1 = Input { Value = 0, },
+				ShowPoint2 = Input { Value = 0, },
+				ShowPoint3 = Input { Value = 0, },
+				ShowPoint4 = Input { Value = 0, },
+				ShowLUT1 = Input { Value = 0, },
+				ShowLUT2 = Input { Value = 0, },
+				ShowLUT3 = Input { Value = 0, },
+				ShowLUT4 = Input { Value = 0, },
+				Image1 = Input {
+					SourceOp = "Crop1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 282.327, 117.061 } },
+		},
+		CustomTool1LUTIn1 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 204, Green = 0, Blue = 0 },
+		},
+		CustomTool1LUTIn2 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 0, Green = 204, Blue = 0 },
+		},
+		CustomTool1LUTIn3 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 0, Green = 0, Blue = 204 },
+		},
+		CustomTool1LUTIn4 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 204, Green = 204, Blue = 204 },
+		},
+		TMSpeed_and_Start = Fuse.TimeMachineImage {
+			Inputs = {
+				ImageInput = Input {
+					SourceOp = "Controls",
+					Source = "Output",
+				},
+				Mode = Input { Value = FuID { "LockStart" }, },
+				Speed = Input { Expression = "Controls.NumberIn2", },
+				Skip = Input { Value = 1, },
+				XFrameNumbers = Input { Disabled = true, },
+				TargetStartFrame = Input { Expression = "Controls.NumberIn1", },
+			},
+			ViewInfo = OperatorInfo { Pos = { 430.695, 117.061 } },
+			Version = 211
+		},
+		Text1 = TextPlus {
+			Inputs = {
+				GlobalOut = Input { Value = 300, },
+				Width = Input { Value = 1920, },
+				Height = Input { Value = 1080, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				Green1 = Input { Value = 0, },
+				Blue1 = Input { Value = 0, },
+				StyledText = Input {
+					Value = "Frame: 110",
+					Expression = "Text(\"Frame: \"..time)",
+				},
+				Font = Input { Value = "Open Sans", },
+				Style = Input { Value = "Bold", },
+				Size = Input { Value = 0.1, },
+				VerticalJustificationNew = Input { Value = 3, },
+				HorizontalJustificationNew = Input { Value = 3, },
+				ManualFontKerningPlacement = Input {
+					Value = StyledText {
+						Array = {
+						},
+						Value = ""
+					},
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 913.778, 2.28473 } },
+		},
+		Merge2 = Merge {
+			Inputs = {
+				Blend = Input { Expression = "Controls.NumberIn5", },
+				Background = Input {
+					SourceOp = "TMSpeed_and_Start",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Text1",
+					Source = "Output",
+				},
+				Operator = Input { Value = FuID { "XOr" }, },
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 913.778, 117.061 } },
+		},
+		Text1_1 = TextPlus {
+			Inputs = {
+				GlobalOut = Input { Value = 300, },
+				Width = Input { Value = 1920, },
+				Height = Input { Value = 1080, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				Center = Input { Value = { 0.5, 0.346325167037862 }, },
+				Green1 = Input { Value = 0, },
+				Blue1 = Input { Value = 0, },
+				StyledText = Input { Value = "Mask 01", },
+				Font = Input { Value = "Open Sans", },
+				Style = Input { Value = "Bold", },
+				Size = Input { Value = 0.1, },
+				VerticalJustificationNew = Input { Value = 3, },
+				HorizontalJustificationNew = Input { Value = 3, },
+				ManualFontKerningPlacement = Input {
+					Value = StyledText {
+						Array = {
+						},
+						Value = ""
+					},
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1182.67, 71.7226 } },
+		},
+		Merge1 = Merge {
+			Inputs = {
+				Blend = Input { Expression = "Controls.NumberIn5", },
+				Background = Input {
+					SourceOp = "Merge2",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Text1_1",
+					Source = "Output",
+				},
+				Operator = Input { Value = FuID { "XOr" }, },
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1182.67, 117.061 } },
+		},
+		Mask_Out01 = Custom {
+			Inputs = {
+				LUTIn1 = Input {
+					SourceOp = "CustomTool1LUTIn11",
+					Source = "Value",
+				},
+				LUTIn2 = Input {
+					SourceOp = "CustomTool1LUTIn21",
+					Source = "Value",
+				},
+				LUTIn3 = Input {
+					SourceOp = "CustomTool1LUTIn31",
+					Source = "Value",
+				},
+				LUTIn4 = Input {
+					SourceOp = "CustomTool1LUTIn41",
+					Source = "Value",
+				},
+				ShowNumber1 = Input { Value = 0, },
+				ShowNumber2 = Input { Value = 0, },
+				ShowNumber3 = Input { Value = 0, },
+				ShowNumber4 = Input { Value = 0, },
+				ShowNumber5 = Input { Value = 0, },
+				ShowNumber6 = Input { Value = 0, },
+				ShowNumber7 = Input { Value = 0, },
+				ShowNumber8 = Input { Value = 0, },
+				ShowPoint1 = Input { Value = 0, },
+				ShowPoint2 = Input { Value = 0, },
+				ShowPoint3 = Input { Value = 0, },
+				ShowPoint4 = Input { Value = 0, },
+				ShowLUT1 = Input { Value = 0, },
+				ShowLUT2 = Input { Value = 0, },
+				ShowLUT3 = Input { Value = 0, },
+				ShowLUT4 = Input { Value = 0, },
+				Image1 = Input {
+					SourceOp = "Merge1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1739.19, 117.061 } },
+		},
+		CustomTool1LUTIn11 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 204, Green = 0, Blue = 0 },
+			NameSet = true,
+		},
+		CustomTool1LUTIn21 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 0, Green = 204, Blue = 0 },
+			NameSet = true,
+		},
+		CustomTool1LUTIn31 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 0, Green = 0, Blue = 204 },
+			NameSet = true,
+		},
+		CustomTool1LUTIn41 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 204, Green = 204, Blue = 204 },
+			NameSet = true,
+		}
+	},
+	Frames = {
+		{
+			FrameTypeID = "ChildFrame",
+			Mode = 3,
+			LayoutPreset = 0,
+			Left = 0,
+			Top = 27,
+			Width = 1920,
+			Height = 984,
+			ZoneInfo = {
+				["!Right"] = {
+				},
+				["!Left"] = {
+				},
+				AuxLeft = { Expanded = true },
+				Right = { Expanded = true, },
+				Left = { Expanded = false, },
+				AuxRight = { Expanded = true }
+			},
+			ViewInfo = {
+				Viewer1 = { Show = true, RatioY = 1, RatioX = 0.670992366412214, },
+				InnerLeft = {
+				},
+				MainSplit = {
+					RatioX = 1,
+					RatioY = 0.409957627118644,
+				},
+				CenterSplit = {
+					RatioX = 0.683881064162754,
+					RatioY = 1,
+				},
+				Viewer2 = { Show = true, RatioY = 1, RatioX = 0.329007633587786, },
+				Comments = { Show = false },
+				Time = { Show = true, PixelY = 83, RatioX = 1, },
+				InnerColumns = {
+					RatioX = 1,
+					RatioY = 0.590042372881356,
+				},
+				Keyframes = { Show = false, Adjust = true, RatioY = 1, MRU = 0, RatioX = 0.5, },
+				LayoutStrip = { Show = true, RatioX = 1, },
+				Inspector = { Show = true, RatioY = 1, RatioX = 1, },
+				InnerRight = {
+				},
+				Clips = { Show = false, },
+				OuterColumns = {
+					RatioX = 1,
+					RatioY = 0.963302752293578,
+				},
+				Effects = { Show = false, },
+				ActionStrip = { Show = false, },
+				Metadata = { Show = false, },
+				OuterLeft = {
+				},
+				ViewerSplit = {
+					RatioX = 1,
+					RatioY = 0.850719424460432,
+				},
+				Nodes = { Show = true, RatioY = 1, RatioX = 1, },
+				OuterRight = {
+					RatioY = 1,
+					PixelX = 606,
+				},
+				MediaPool = { Show = false, },
+				Spline = { Show = false, Adjust = true, RatioY = 1, MRU = 0, RatioX = 0.5, }
+			},
+			Views = ordered() {
+				Effects = MultiView {
+					Active = "EffectView",
+					ViewList = ordered() {
+						EffectView = "EffectView"
+					},
+				},
+				Nodes = MultiView {
+					Active = "FlowView",
+					ViewList = ordered() {
+						FlowView = "FlowView"
+					},
+					Names = {
+						FlowView = "FlowView"
+					},
+					FlowView = FlowView {
+						Flags = {
+							AutoHideNavigator = true,
+							ConnectedSnap = true,
+							AutoSnap = true,
+							RemoveRouters = true
+						},
+						NavigatorSize = { 200, 140 },
+						Direction = "Horizontal",
+						PipeStyle = "Direct",
+						Scale = 1.5,
+						Offset = { 0, 0 }
+					}
+				},
+				Keyframes = MultiView {
+					Active = "TimelineView",
+					ViewList = ordered() {
+						TimelineView = "TimelineView"
+					},
+					Names = {
+						TimelineView = "TimelineView"
+					},
+					TimelineView = TimelineView {
+						TreeControlState = {
+						},
+						DisplayMode = "All Tools",
+						ShowCurrentTimeTools = false,
+						Filter = "Show All",
+						ShowSelectedTools = false,
+						ShowAnimatedToolsOnly = false,
+						ShowEditBoxes = false,
+						KeyFrameView = {
+							Position = { Left = 232, Bottom = 320 },
+							ScaleX = 0.64327485380117,
+							OffsetX = -15.4385964912281,
+							OffsetY = 0,
+							AutoScaling = "scroll",
+							AutoSnapTo = "frame",
+							AutoSnapToGuidelines = false,
+							GuidelinesGrabEnabled = true,
+							GuidelinesSnapTo = "frame"
+						},
+						Spreadsheet = { LeftPos = 232, Visible = false }
+					}
+				},
+				Spline = MultiView {
+					Active = "SplineView",
+					ViewList = ordered() {
+						SplineView = "SplineEditorView"
+					},
+					Names = {
+						SplineView = "SplineView"
+					},
+					SplineView = SplineEditorView {
+						LeftPos = 264,
+						ScaleX = 0.2,
+						ScaleY = 0.00338983050847458,
+						OffsetX = -3.4,
+						OffsetY = 0,
+						AutoScaling = "scroll",
+						AutoSnapTo = "frame",
+						AutoSnapToGuidelines = false,
+						GuidelinesSnapTo = "frame",
+						ShowKeyMarkers = false,
+						IndependentHandles = false,
+						ShowNonSplineModifiers = false,
+						GuidelinesGrabEnabled = true,
+						ShowOneToolOnly = false,
+						ShowSelectedTools = false,
+						ShowAllInputs = false,
+						Filter = "Show All"
+					}
+				},
+				Inspector = MultiView {
+					Active = "Tools",
+					ViewList = ordered() {
+						Tools = "ControlView",
+						Modifiers = "ModifierView"
+					},
+				},
+				Viewer1 = MultiView {
+					Active = "LeftView",
+					ViewList = ordered() {
+						LeftView = "PreviewContainer"
+					},
+					Names = {
+						LeftView = "LeftView"
+					},
+				},
+				Viewer2 = MultiView {
+					Active = "RightView",
+					ViewList = ordered() {
+						RightView = "PreviewContainer"
+					},
+					Names = {
+						RightView = "RightView"
+					},
+				},
+				Time = "TimeView",
+				ActionStrip = "ActionStripView",
+				LayoutStrip = "LayoutStripView"
+			},
+			Layout = {
+				Rows = 2,
+				RatioX = 1,
+				RatioY = 1,
+				{ ID = "LayoutStrip", RatioX = 1, FixedY = 36, Flat = true },
+				{
+					Columns = 2,
+					RatioY = 0.963302752293578,
+					{
+						Rows = 2,
+						RatioX = 0.683881064162754,
+						RatioY = 1,
+						{
+							Rows = 2,
+							RatioX = 1,
+							RatioY = 1,
+							{
+								Columns = 2,
+								RatioX = 1,
+								RatioY = 0.850719424460432,
+								{ ID = "Viewer1", RatioX = 0.670992366412214, RatioY = 1 },
+								{ ID = "Viewer2", RatioX = 0.329007633587786 }
+							},
+							{ ID = "Time", FixedY = 83, Flat = true }
+						},
+						{ ID = "Nodes", RatioX = 1, RatioY = 1 }
+					},
+					{ ID = "Inspector", RatioX = 1, RatioY = 1 }
+				}
+			}
+		}
+	},
+	Prefs = {
+		Comp = {
+			Interactive = {
+				Proxy = {
+					Scale = 5,
+					Auto = true
+				},
+			},
+			Views = {
+				Right = {
+					Viewer = {
+						EnableLUTs = true,
+						LUTPlugin = "GamutViewLUT",
+						ScaleMode = 1,
+						LUTSelected = "Gamut View LUT"
+					},
+					SubView = {
+						Enabled = true,
+						Navigator = false,
+						Magnifier = false,
+						ID = "GLColorInspector",
+						GLHistogramViewer = {
+							AutoBounds = true
+						}
+					},
+					ViewLUT = {
+						{
+							Tools = ordered() {
+								GamutViewLUT1 = ViewOperator {
+									NameSet = true,
+									Inputs = {
+										OutputSpace = Input { Value = FuID { "sRGB" } },
+										DoAlpha = Input { Value = 1 }
+									},
+									CtrlWZoom = false
+								}
+							},
+							ID = "GamutViewLUT"
+						},
+						Recent = {
+							SelectedPlugin = "GamutViewLUT",
+							FusionViewLUT = {
+								Tools = ordered() {
+									FusionViewLUT = ViewLUTOp {
+										NameSet = true,
+										Inputs = {
+										},
+										CtrlWZoom = false
+									}
+								}
+							},
+							SelectedName = "Gamut View LUT"
+						},
+						SelectedName = "Gamut View LUT",
+						SelectedPlugin = "GamutViewLUT"
+					},
+					SideB = {
+						PrevCtrlInactiveColor = 4278255360,
+						PickW = 1,
+						PickH = 1,
+						PrevCtrlActiveColor = 4278190335,
+						Viewer = {
+							EnableLUTs = false,
+							LUTPlugin = "FusionViewLUT",
+							FitMarginY = 0,
+							FitMarginX = 0,
+							FitMarginType = 0,
+							FarZ = -1000,
+							NearZ = 0
+						}
+					},
+					Toolbar = {
+						Style = 0,
+						Size = 0
+					},
+					OpToolbar = {
+						Style = 0,
+						Size = 1
+					}
+				},
+				Left = {
+					Viewer = {
+						EnableLUTs = true,
+						LUTPlugin = "GamutViewLUT",
+						ScaleMode = 1,
+						LUTSelected = "Gamut View LUT"
+					},
+					SubView = {
+						Enabled = true,
+						Navigator = false,
+						Magnifier = false,
+						ID = "GLColorInspector",
+						GLHistogramViewer = {
+							AutoBounds = true
+						}
+					},
+					ViewLUT = {
+						{
+							Tools = ordered() {
+								GamutViewLUT = ViewOperator {
+									NameSet = true,
+									Inputs = {
+										OutputSpace = Input { Value = FuID { "sRGB" } },
+										DoAlpha = Input { Value = 1 }
+									},
+									CtrlWZoom = false
+								}
+							},
+							ID = "GamutViewLUT"
+						},
+						Recent = {
+							SelectedPlugin = "GamutViewLUT",
+							FusionViewLUT = {
+								Tools = ordered() {
+									FusionViewLUT = ViewLUTOp {
+										NameSet = true,
+										Inputs = {
+										}
+									}
+								}
+							},
+							SelectedName = "Gamut View LUT"
+						},
+						SelectedName = "Gamut View LUT",
+						SelectedPlugin = "GamutViewLUT"
+					},
+					SideB = {
+						PrevCtrlInactiveColor = 4278255360,
+						PickW = 1,
+						PickH = 1,
+						PrevCtrlActiveColor = 4278190335,
+						Viewer = {
+							EnableLUTs = false,
+							LUTPlugin = "FusionViewLUT",
+							FitMarginY = 0,
+							FitMarginX = 0,
+							FitMarginType = 0,
+							FarZ = -1000,
+							NearZ = 0
+						}
+					},
+					Toolbar = {
+						Style = 0,
+						Size = 0
+					},
+					OpToolbar = {
+						Style = 0,
+						Size = 1
+					}
+				},
+				View1 = {
+					PrevCtrlInactiveColor = 0,
+					PickW = 1,
+					FullScreen = false,
+					SideB = {
+						PrevCtrlInactiveColor = 4278255360,
+						PickW = 1,
+						PickH = 1,
+						PrevCtrlActiveColor = 4278190335,
+						Viewer = {
+							EnableLUTs = false,
+							LUTPlugin = "FusionViewLUT",
+							FitMarginY = 0,
+							FitMarginX = 0,
+							FitMarginType = 0,
+							FarZ = -1000,
+							NearZ = 0
+						}
+					},
+					AlwaysOnTop = true,
+					PrevCtrlActiveColor = 0,
+					PickH = 1
+				},
+				Defaults = {
+					OpToolbar = {
+						Size = 1
+					},
+				},
+				RightView = {
+					SubView = {
+						Enabled = false,
+						Navigator = false,
+						Magnifier = false,
+						ID = "GLColorInspector",
+						GLColorInspector = {
+							AutoBounds = true
+						},
+						GLHistogramViewer = {
+							AutoBounds = true
+						}
+					},
+					PickW = 1,
+					ViewLUT = {
+						{
+							Tools = ordered() {
+								GamutViewLUT1 = ViewOperator {
+									NameSet = true,
+									Inputs = {
+										OutputSpace = Input { Value = FuID { "sRGB" } },
+										DoAlpha = Input { Value = 1 }
+									},
+									CtrlWZoom = false
+								}
+							},
+							ID = "GamutViewLUT"
+						},
+						SelectedPlugin = "GamutViewLUT",
+						SelectedName = "Gamut View LUT"
+					},
+					PickH = 1,
+					Toolbar = {
+						Style = 0,
+						Size = 0
+					},
+					Viewer = {
+						EnableLUTs = true,
+						LUTPlugin = "GamutViewLUT",
+						LUTSelected = "Gamut View LUT",
+						CheckerUnderlay = false,
+						ScaleMode = 1
+					},
+					OpToolbar = {
+						Style = 0,
+						Size = 0
+					},
+				},
+				View2 = {
+					PickH = 1,
+					FullScreen = false,
+					PickW = 1,
+					AlwaysOnTop = true
+				},
+				LeftView = {
+					SubView = {
+						Enabled = false,
+						Navigator = false,
+						Magnifier = false,
+						ID = "GLColorInspector",
+						GLColorInspector = {
+							AutoBounds = true
+						},
+						GLHistogramViewer = {
+							AutoBounds = true
+						}
+					},
+					PickW = 1,
+					ViewLUT = {
+						{
+							Tools = ordered() {
+								FusionViewLUT = ViewLUTOp {
+									NameSet = true,
+									Inputs = {
+										Red = Input {
+											SourceOp = "FusionViewLUTRed",
+											Source = "Value",
+										},
+										Green = Input {
+											SourceOp = "FusionViewLUTGreen",
+											Source = "Value",
+										},
+										Blue = Input {
+											SourceOp = "FusionViewLUTBlue",
+											Source = "Value",
+										},
+										Alpha = Input {
+											SourceOp = "FusionViewLUTAlpha",
+											Source = "Value",
+										},
+									},
+									Tools = {
+										FusionViewLUTRed = LUTBezier {
+											KeyColorSplines = {
+												[0] = {
+													[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+													[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+												}
+											},
+											SplineColor = { Red = 0, Green = 0, Blue = 0 },
+											NameSet = true,
+										},
+										FusionViewLUTGreen = LUTBezier {
+											KeyColorSplines = {
+												[0] = {
+													[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+													[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+												}
+											},
+											SplineColor = { Red = 0, Green = 0, Blue = 0 },
+											NameSet = true,
+										},
+										FusionViewLUTBlue = LUTBezier {
+											KeyColorSplines = {
+												[0] = {
+													[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+													[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+												}
+											},
+											SplineColor = { Red = 0, Green = 0, Blue = 0 },
+											NameSet = true,
+										},
+										FusionViewLUTAlpha = LUTBezier {
+											KeyColorSplines = {
+												[0] = {
+													[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+													[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+												}
+											},
+											SplineColor = { Red = 0, Green = 0, Blue = 0 },
+											NameSet = true,
+										}
+									},
+								}
+							},
+							ID = "FusionViewLUT"
+						},
+						Recent = {
+							SelectedPlugin = "FusionViewLUT",
+							FusionViewLUT = {
+								Tools = ordered() {
+									FusionViewLUT = ViewLUTOp {
+										NameSet = true,
+										Inputs = {
+										}
+									}
+								}
+							},
+							SelectedName = "Fusion View LUT",
+							GamutViewLUT = {
+								Tools = ordered() {
+									GamutViewLUT = ViewOperator {
+										CtrlWZoom = false,
+										NameSet = true,
+										Inputs = {
+											OutputSpace = Input { Value = FuID { "sRGB" }, },
+											DoAlpha = Input { Value = 1, },
+										},
+									}
+								}
+							}
+						},
+						SelectedName = "Fusion View LUT",
+						SelectedPlugin = "FusionViewLUT"
+					},
+					PickH = 1,
+					Toolbar = {
+						Style = 0,
+						Size = 0
+					},
+					Viewer = {
+						EnableLUTs = false,
+						LUTPlugin = "FusionViewLUT",
+						LUTSelected = "Fusion View LUT",
+						CheckerUnderlay = true,
+						ScaleMode = 1,
+						Channel = 4294967295,
+					},
+					OpToolbar = {
+						Style = 0,
+						Size = 0
+					},
+				}
+			},
+			Preview = {
+				HiQ = false,
+			},
+			FrameFormat = {
+				GuideRatio = 1.77777777777778,
+				DepthFull = 3,
+				DepthPreview = 3,
+				DepthInteractive = 3,
+			},
+			LastFile = "Y:\\My Drive\\Dyne - Works\\Canda Dry - FAXXI '19\\07_Render\\02_PreRender\\02_Animation\\CD_Anim_Coolnic_Scn 010\\CD_Anim_Coolnic_Scn 010_MainPreRenderBG-v02.mov",
+			PolyKeyListDlg = {
+				Window = {
+					Left = 909,
+					Top = 250
+				}
+			},
+			Unsorted = {
+				GlobalEnd = 300,
+				RenderSettings = {
+					Configs = {
+					}
+				}
+			},
+			Tweaks = {
+				OpenCL = {
+					Enable = 1,
+					Caching = 2
+				}
+			},
+			Paths = {
+			},
+			FlowView = {
+				ConnectedSnap = true,
+			},
+			QuickTime = {
+			},
+		}
+	},
+}
+
+ 

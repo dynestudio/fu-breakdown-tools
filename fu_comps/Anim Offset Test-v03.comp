@@ -1,0 +1,4832 @@
+Composition {
+	CurrentTime = 0,
+	RenderRange = { 0, 300 },
+	GlobalRange = { 0, 300 },
+	CurrentID = 419,
+	HiQ = true,
+	PlaybackUpdateMode = 0,
+	Version = "Fusion Studio 16.1.1 build 5",
+	SavedOutputs = 1,
+	HeldTools = 0,
+	DisabledTools = 4,
+	LockedTools = 0,
+	AudioOffset = 0,
+	Resumable = true,
+	OutputClips = {
+		"Y:\\My Drive\\Dyne - Works\\Domestika - Curso CR_IlumDigital\\07_Render\\02_PreRender\\02_Animation\\U04\\Scn_200\\U04_Breakdown_Scn_200_v01\\U04_Breakdown_Scn_200_v01_000.png"
+	},
+	Tools = {
+		Loader2_1_1 = Loader {
+			Clips = {
+				Clip {
+					ID = "Clip1",
+					Filename = "Y:\\My Drive\\Dyne - Works\\Domestika - Curso CR_IlumDigital\\07_Render\\02_PreRender\\02_Animation\\U04\\Scn_170\\U04_Breakdown_Scn_170_v01\\U04_Breakdown_Scn_170_v01_000.png",
+					FormatID = "PNGFormat",
+					Length = 58,
+					LengthSetManually = true,
+					TrimIn = 0,
+					TrimOut = 57,
+					ExtendFirst = 0,
+					ExtendLast = 0,
+					Loop = 0,
+					AspectMode = 0,
+					Depth = 5,
+					TimeCode = 0,
+					GlobalStart = 0,
+					GlobalEnd = 57
+				}
+			},
+			Inputs = {
+				Depth = Input { Value = 5, },
+				["Gamut.ColorType"] = Input { Value = FuID { "Space" }, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1779.29, 1660.39 } },
+		},
+		Loader5_1 = Loader {
+			Clips = {
+				Clip {
+					ID = "Clip1",
+					Filename = "H:\\Dyne - Works BackUp\\2018\\CHV Deportes - IDs\\CHVD_IDs - Transfer\\Render\\PreRender\\Scn_Futbol_Gol\\Scn_010\\FutbolGol_Scn 010_Main PreRender-v02\\FutbolGol_Scn 010_Main PreRender-v02_0000.png",
+					FormatID = "PNGFormat",
+					Length = 32,
+					LengthSetManually = true,
+					TrimIn = 0,
+					TrimOut = 31,
+					ExtendFirst = 0,
+					ExtendLast = 0,
+					Loop = 1,
+					AspectMode = 0,
+					Depth = 5,
+					TimeCode = 0,
+					GlobalStart = 0,
+					GlobalEnd = 31
+				}
+			},
+			Inputs = {
+				Depth = Input { Value = 5, },
+				["Gamut.ColorType"] = Input { Value = FuID { "Space" }, },
+				["Gamut.ColorSpace"] = Input { Value = FuID { "sRGB" }, },
+				["Gamut.GammaType"] = Input { Value = FuID { "Space" }, },
+				["Gamut.GammaSpace"] = Input { Value = FuID { "sRGB" }, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				["Gamut.GammaAction"] = Input { Value = 1, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1520.43, 1916.33 } },
+		},
+		Loader4_1 = Loader {
+			Clips = {
+				Clip {
+					ID = "Clip1",
+					Filename = "H:\\Dyne - Works BackUp\\2018\\CHV Deportes - IDs\\Wip\\Scn_Futbol_Gol\\Scn_010\\Scn_Futbol_010_v03.mp4",
+					FormatID = "QuickTimeMovies",
+					Length = 0,
+					Multiframe = true,
+					TrimIn = 0,
+					TrimOut = 30,
+					ExtendFirst = 0,
+					ExtendLast = 0,
+					Loop = 1,
+					AspectMode = 0,
+					Depth = 5,
+					TimeCode = 0,
+					GlobalStart = 0,
+					GlobalEnd = 30
+				}
+			},
+			Inputs = {
+				Depth = Input { Value = 5, },
+				["Gamut.ColorType"] = Input { Value = FuID { "Space" }, },
+				["Gamut.ColorSpace"] = Input { Value = FuID { "sRGB" }, },
+				["Gamut.GammaType"] = Input { Value = FuID { "Space" }, },
+				["Gamut.GammaSpace"] = Input { Value = FuID { "sRGB" }, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				["Gamut.GammaAction"] = Input { Value = 1, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 4.8782, 1801.25 } },
+		},
+		Loader6_1 = Loader {
+			Clips = {
+				Clip {
+					ID = "Clip1",
+					Filename = "Y:\\My Drive\\Dyne - Works\\Domestika - Curso CR_IlumDigital\\08_Delivery\\03_WIP\\01_Playblast\\U04_Scn_200_v02.mp4",
+					FormatID = "QuickTimeMovies",
+					Length = 115,
+					Multiframe = true,
+					TrimIn = 0,
+					TrimOut = 114,
+					ExtendFirst = 0,
+					ExtendLast = 0,
+					Loop = 1,
+					AspectMode = 0,
+					Depth = 5,
+					TimeCode = 0,
+					GlobalStart = 0,
+					GlobalEnd = 114
+				}
+			},
+			Inputs = {
+				Depth = Input { Value = 5, },
+				["Gamut.ColorType"] = Input { Value = FuID { "Space" }, },
+				["Gamut.ColorSpace"] = Input { Value = FuID { "sRGB" }, },
+				["Gamut.GammaType"] = Input { Value = FuID { "Space" }, },
+				["Gamut.GammaSpace"] = Input { Value = FuID { "sRGB" }, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				["Gamut.GammaAction"] = Input { Value = 1, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 80.8081, 1859.2 } },
+		},
+		Loader2_1 = Loader {
+			Clips = {
+				Clip {
+					ID = "Clip1",
+					Filename = "Y:\\My Drive\\Dyne - Works\\Domestika - Curso CR_IlumDigital\\07_Render\\02_PreRender\\02_Animation\\U04\\Scn_170\\U04_Breakdown_Scn_170_v01\\U04_Breakdown_Scn_170_v01_000.png",
+					FormatID = "PNGFormat",
+					Length = 58,
+					LengthSetManually = true,
+					TrimIn = 0,
+					TrimOut = 57,
+					ExtendFirst = 0,
+					ExtendLast = 0,
+					Loop = 0,
+					AspectMode = 0,
+					Depth = 5,
+					TimeCode = 0,
+					GlobalStart = 0,
+					GlobalEnd = 57
+				}
+			},
+			Inputs = {
+				Depth = Input { Value = 5, },
+				["Gamut.ColorType"] = Input { Value = FuID { "Space" }, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1609.92, 1036.07 } },
+		},
+		Loader5 = Loader {
+			Clips = {
+				Clip {
+					ID = "Clip1",
+					Filename = "Y:\\My Drive\\Dyne - Works\\Domestika - Curso CR_IlumDigital\\07_Render\\02_PreRender\\02_Animation\\U04\\Scn_200\\U04_PreRender_Scn_200_v01\\U04_PreRender_Scn_200_v01_000.png",
+					FormatID = "PNGFormat",
+					Length = 116,
+					LengthSetManually = true,
+					TrimIn = 0,
+					TrimOut = 115,
+					ExtendFirst = 0,
+					ExtendLast = 0,
+					Loop = 1,
+					AspectMode = 0,
+					Depth = 5,
+					TimeCode = 0,
+					GlobalStart = 0,
+					GlobalEnd = 115
+				}
+			},
+			Inputs = {
+				Depth = Input { Value = 5, },
+				["Gamut.ColorType"] = Input { Value = FuID { "Space" }, },
+				["Gamut.ColorSpace"] = Input { Value = FuID { "sRGB" }, },
+				["Gamut.GammaType"] = Input { Value = FuID { "Space" }, },
+				["Gamut.GammaSpace"] = Input { Value = FuID { "sRGB" }, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				["Gamut.GammaAction"] = Input { Value = 1, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1346.54, 1271.75 } },
+		},
+		Loader6 = Loader {
+			Clips = {
+				Clip {
+					ID = "Clip1",
+					Filename = "Y:\\My Drive\\Dyne - Works\\Domestika - Curso CR_IlumDigital\\08_Delivery\\03_WIP\\01_Playblast\\U04_Scn_200_v02.mp4",
+					FormatID = "QuickTimeMovies",
+					Length = 115,
+					Multiframe = true,
+					TrimIn = 0,
+					TrimOut = 114,
+					ExtendFirst = 0,
+					ExtendLast = 0,
+					Loop = 1,
+					AspectMode = 0,
+					Depth = 5,
+					TimeCode = 0,
+					GlobalStart = 0,
+					GlobalEnd = 114
+				}
+			},
+			Inputs = {
+				Depth = Input { Value = 5, },
+				["Gamut.ColorType"] = Input { Value = FuID { "Space" }, },
+				["Gamut.ColorSpace"] = Input { Value = FuID { "sRGB" }, },
+				["Gamut.GammaType"] = Input { Value = FuID { "Space" }, },
+				["Gamut.GammaSpace"] = Input { Value = FuID { "sRGB" }, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				["Gamut.GammaAction"] = Input { Value = 1, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 200.118, 1215.2 } },
+		},
+		Loader4 = Loader {
+			Clips = {
+				Clip {
+					ID = "Clip1",
+					Filename = "Y:\\My Drive\\Dyne - Works\\Domestika - Curso CR_IlumDigital\\08_Delivery\\03_WIP\\01_Playblast\\U04_Scn_200_v01.mp4",
+					FormatID = "QuickTimeMovies",
+					Length = 115,
+					Multiframe = true,
+					TrimIn = 0,
+					TrimOut = 114,
+					ExtendFirst = 0,
+					ExtendLast = 0,
+					Loop = 1,
+					AspectMode = 0,
+					Depth = 5,
+					TimeCode = 0,
+					GlobalStart = 0,
+					GlobalEnd = 114
+				}
+			},
+			Inputs = {
+				Depth = Input { Value = 5, },
+				["Gamut.ColorType"] = Input { Value = FuID { "Space" }, },
+				["Gamut.ColorSpace"] = Input { Value = FuID { "sRGB" }, },
+				["Gamut.GammaType"] = Input { Value = FuID { "Space" }, },
+				["Gamut.GammaSpace"] = Input { Value = FuID { "sRGB" }, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				["Gamut.GammaAction"] = Input { Value = 1, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 203.618, 1173.64 } },
+		},
+		TimeMachine3 = Fuse.TimeMachineImage {
+			Inputs = {
+				Mode = Input { Value = FuID { "XSheet" }, },
+				TriggerMode = Input { Value = FuID { "Hold" }, },
+				SourceEndFrame = Input { Value = 150, },
+				Delta = Input { Value = 1.797, },
+				DeltaThreshold = Input { Value = 0.717, },
+				Skip = Input { Value = 10, },
+				Offset = Input { Value = 20, },
+				Hold = Input { Value = 50, },
+				XSheet = Input { Value = "0 to 30\n30 hold 60\n31 to 240\n", },
+				XFrameNumbers = Input {
+					Value = "0  --  0\n1  --  1\n2  --  2\n3  --  3\n4  --  4\n5  --  5\n6  --  6\n7  --  7\n8  --  8\n9  --  9\n10  --  10\n11  --  11\n12  --  12\n13  --  13\n14  --  14\n15  --  15\n16  --  16\n17  --  17\n18  --  18\n19  --  19\n20  --  20\n21  --  21\n22  --  22\n23  --  23\n24  --  24\n25  --  25\n26  --  26\n27  --  27\n28  --  28\n29  --  29\n30  --  30\n31  --  30\n32  --  30\n33  --  30\n34  --  30\n35  --  30\n36  --  30\n37  --  30\n38  --  30\n39  --  30\n40  --  30\n41  --  30\n42  --  30\n43  --  30\n44  --  30\n45  --  30\n46  --  30\n47  --  30\n48  --  30\n49  --  30\n50  --  30\n51  --  30\n52  --  30\n53  --  30\n54  --  30\n55  --  30\n56  --  30\n57  --  30\n58  --  30\n59  --  30\n60  --  30\n61  --  30\n62  --  30\n63  --  30\n64  --  30\n65  --  30\n66  --  30\n67  --  30\n68  --  30\n69  --  30\n70  --  30\n71  --  30\n72  --  30\n73  --  30\n74  --  30\n75  --  30\n76  --  30\n77  --  30\n78  --  30\n79  --  30\n80  --  30\n81  --  30\n82  --  30\n83  --  30\n84  --  30\n85  --  30\n86  --  30\n87  --  30\n88  --  30\n89  --  30\n90  --  30\n91  --  31\n92  --  32\n93  --  33\n94  --  34\n95  --  35\n96  --  36\n97  --  37\n98  --  38\n99  --  39\n100  --  40\n101  --  41\n102  --  42\n103  --  43\n104  --  44\n105  --  45\n106  --  46\n107  --  47\n108  --  48\n109  --  49\n110  --  50\n111  --  51\n112  --  52\n113  --  53\n114  --  54\n115  --  55\n116  --  56\n117  --  57\n118  --  58\n119  --  59\n120  --  60\n121  --  61\n122  --  62\n123  --  63\n124  --  64\n125  --  65\n126  --  66\n127  --  67\n128  --  68\n129  --  69\n130  --  70\n131  --  71\n132  --  72\n133  --  73\n134  --  74\n135  --  75\n136  --  76\n137  --  77\n138  --  78\n139  --  79\n140  --  80\n141  --  81\n142  --  82\n143  --  83\n144  --  84\n145  --  85\n146  --  86\n147  --  87\n148  --  88\n149  --  89\n150  --  90\n151  --  91\n152  --  92\n153  --  93\n154  --  94\n155  --  95\n156  --  96\n157  --  97\n158  --  98\n159  --  99\n160  --  100\n161  --  101\n162  --  102\n163  --  103\n164  --  104\n165  --  105\n166  --  106\n167  --  107\n168  --  108\n169  --  109\n170  --  110\n171  --  111\n172  --  112\n173  --  113\n174  --  114\n175  --  115\n176  --  116\n177  --  117\n178  --  118\n179  --  119\n180  --  120\n181  --  121\n182  --  122\n183  --  123\n184  --  124\n185  --  125\n186  --  126\n187  --  127\n188  --  128\n189  --  129\n190  --  130\n191  --  131\n192  --  132\n193  --  133\n194  --  134\n195  --  135\n196  --  136\n197  --  137\n198  --  138\n199  --  139\n200  --  140\n201  --  141\n202  --  142\n203  --  143\n204  --  144\n205  --  145\n206  --  146\n207  --  147\n208  --  148\n209  --  149\n210  --  150\n211  --  151\n212  --  152\n213  --  153\n214  --  154\n215  --  155\n216  --  156\n217  --  157\n218  --  158\n219  --  159\n220  --  160\n221  --  161\n222  --  162\n223  --  163\n224  --  164\n225  --  165\n226  --  166\n227  --  167\n228  --  168\n229  --  169\n230  --  170\n231  --  171\n232  --  172\n233  --  173\n234  --  174\n235  --  175\n236  --  176\n237  --  177\n238  --  178\n239  --  179\n240  --  180\n241  --  181\n242  --  182\n243  --  183\n244  --  184\n245  --  185\n246  --  186\n247  --  187\n248  --  188\n249  --  189\n250  --  190\n251  --  191\n252  --  192\n253  --  193\n254  --  194\n255  --  195\n256  --  196\n257  --  197\n258  --  198\n259  --  199\n260  --  200\n261  --  201\n262  --  202\n263  --  203\n264  --  204\n265  --  205\n266  --  206\n267  --  207\n268  --  208\n269  --  209\n270  --  210\n271  --  211\n272  --  212\n273  --  213\n274  --  214\n275  --  215\n276  --  216\n277  --  217\n278  --  218\n279  --  219\n280  --  220\n281  --  221\n282  --  222\n283  --  223\n284  --  224\n285  --  225\n286  --  226\n287  --  227\n288  --  228\n289  --  229\n290  --  230\n291  --  231\n292  --  232\n293  --  233\n294  --  234\n295  --  235\n296  --  236\n297  --  237\n298  --  238\n299  --  239\n300  --  240\n",
+					Disabled = true,
+				},
+				Trigger = Input { Value = 0.346, },
+				OnTriggerThreshold = Input { Value = 0.244, },
+				OffTriggerThreshold = Input { Value = 0.126, },
+				SwitchStartFrames = Input { Value = "10", },
+				Switch = Input { Value = 2, },
+				TargetEndFrame = Input { Value = 150, },
+				RoundOutputValues = Input { Value = FuID { "Up" }, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 199.977, 167.24 } },
+			Version = 211
+		},
+		WirelessLink18 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 431.058, 2085.48 } },
+			Version = 110
+		},
+		WirelessLink19_1 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 555.868, 2088.42 } },
+			Version = 110
+		},
+		WirelessLink20 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 684.078, 2088.63 } },
+			Version = 110
+		},
+		WirelessLink21 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 821.338, 2085.01 } },
+			Version = 110
+		},
+		WirelessLink22 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 955.058, 2086.94 } },
+			Version = 110
+		},
+		Background1_1 = Background {
+			Inputs = {
+				GlobalOut = Input { Value = 300, },
+				Width = Input { Value = 1920, },
+				Height = Input { Value = 1080, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1072.79, 2204.22 } },
+		},
+		WirelessLink23 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 1072.79, 2084.89 } },
+			Version = 110
+		},
+		Merge10 = Merge {
+			Inputs = {
+				Background = Input {
+					SourceOp = "Background1_1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "WirelessLink23",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1072.79, 2146.81 } },
+		},
+		Background1_1_1 = Background {
+			Inputs = {
+				GlobalOut = Input { Value = 300, },
+				Width = Input { Value = 1920, },
+				Height = Input { Value = 1080, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1201.42, 2203.61 } },
+		},
+		WirelessLink24 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 1201.42, 2093.23 } },
+			Version = 110
+		},
+		Merge10_1 = Merge {
+			Inputs = {
+				Background = Input {
+					SourceOp = "Background1_1_1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "WirelessLink24",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1201.42, 2156.66 } },
+		},
+		Background1_1_1_1 = Background {
+			Inputs = {
+				GlobalOut = Input { Value = 300, },
+				Width = Input { Value = 1920, },
+				Height = Input { Value = 1080, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1358.85, 2199.15 } },
+		},
+		WirelessLink25 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 1358.85, 2089.56 } },
+			Version = 110
+		},
+		Merge10_1_1 = Merge {
+			Inputs = {
+				Background = Input {
+					SourceOp = "Background1_1_1_1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "WirelessLink25",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1358.85, 2135.94 } },
+		},
+		Crop4 = Crop {
+			Inputs = {
+				XSize = Input { Value = 1920, },
+				YSize = Input { Value = 1080, },
+				Input = Input {
+					SourceOp = "Merge10_1_1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1507.91, 2135.94 } },
+		},
+		AlphaMultiply2 = AlphaMultiply {
+			Inputs = {
+				Input = Input {
+					SourceOp = "Crop4",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1645.66, 2135.94 } },
+		},
+		Gamma_Output_1_1_1 = GamutConvert {
+			NameSet = true,
+			Inputs = {
+				OutputSpace = Input { Value = FuID { "sRGB" }, },
+				Input = Input {
+					SourceOp = "MainOut_1_1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1735.99, 2219.09 } },
+		},
+		Saver2_1_1 = Saver {
+			PassThrough = true,
+			Inputs = {
+				StartEndRenderScripts = Input { Value = 1, },
+				ProcessWhenBlendIs00 = Input { Value = 0, },
+				Clip = Input {
+					Value = Clip {
+						Filename = "H:\\Dyne - Works BackUp\\2018\\CHV Deportes - IDs\\CHVD_IDs - Transfer\\Render\\PreRender\\Scn_Futbol_Gol\\Scn_010\\FutbolGol_Scn_010_ContactSheet_v01\\FutbolGol_Scn_010_ContactSheet_v01.png",
+						FormatID = "PNGFormat",
+						Length = 0,
+						Saving = true,
+						TrimIn = 0,
+						ExtendFirst = 0,
+						ExtendLast = 0,
+						Loop = 1,
+						AspectMode = 0,
+						Depth = 0,
+						TimeCode = 0,
+						GlobalStart = -2000000000,
+						GlobalEnd = 0
+					},
+				},
+				OutputFormat = Input { Value = FuID { "PNGFormat" }, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				VideoType = Input { Value = FuID { "NTSC" }, },
+				Input = Input {
+					SourceOp = "Gamma_Output_1_1_1",
+					Source = "Output",
+				},
+				FrameSavedScript = Input { Value = "fu:PurgeCache()", },
+				FrameRenderScript = Input { Value = "fu:PurgeCache()", },
+				StartRenderScript = Input { Value = "fu:PurgeCache()", },
+				EndRenderScript = Input { Value = "fu:PurgeCache()", },
+				["PNGFormat.SaveAlpha"] = Input { Value = 0, },
+				["PNGFormat.Depth"] = Input { Value = 1, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1908.52, 2219.09 } },
+		},
+		Underlay14_1_1 = Underlay {
+			ViewInfo = UnderlayInfo {
+				Pos = { 1859.37, 1634.14 },
+				Size = { 296.451, 126.075 }
+			},
+		},
+		Saver1_1_1 = Saver {
+			PassThrough = true,
+			Inputs = {
+				StartEndRenderScripts = Input { Value = 1, },
+				ProcessWhenBlendIs00 = Input { Value = 0, },
+				Clip = Input {
+					Value = Clip {
+						Filename = "Y:\\My Drive\\Dyne - Works\\Domestika - Curso CR_IlumDigital\\07_Render\\02_PreRender\\02_Animation\\U04\\Scn_170\\U04_Breakdown_Scn_170_v01.mov",
+						FormatID = "QuickTimeMovies",
+						Length = 0,
+						Multiframe = true,
+						Saving = true,
+						TrimIn = 0,
+						ExtendFirst = 0,
+						ExtendLast = 0,
+						Loop = 1,
+						AspectMode = 0,
+						Depth = 0,
+						TimeCode = 0,
+						GlobalStart = -2000000000,
+						GlobalEnd = 0
+					},
+				},
+				OutputFormat = Input { Value = FuID { "QuickTimeMovies" }, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				VideoType = Input { Value = FuID { "NTSC" }, },
+				Input = Input {
+					SourceOp = "Loader2_1_1",
+					Source = "Output",
+				},
+				FrameSavedScript = Input { Value = "fu:PurgeCache()", },
+				FrameRenderScript = Input { Value = "fu:PurgeCache()", },
+				StartRenderScript = Input { Value = "fu:PurgeCache()", },
+				EndRenderScript = Input { Value = "fu:PurgeCache()", },
+				["QuickTimeMovies.Compression"] = Input { Value = FuID { "Apple ProRes 422 HQ_apch" }, },
+				["QuickTimeMovies.FrameRateFps"] = Input { Value = 24, },
+				["QuickTimeMovies.Advanced"] = Input { Value = 1, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1931.92, 1660.39 } },
+		},
+		WirelessLink8 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 1514.84, 2089.11 } },
+			Version = 110
+		},
+		Mask_10 = PolylineMask {
+			DrawMode = "InsertAndModify",
+			DrawMode2 = "InsertAndModify",
+			Inputs = {
+				MaskWidth = Input { Value = 1920, },
+				MaskHeight = Input { Value = 1080, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Polyline = Input {
+					SourceOp = "Mask_10Polyline",
+					Source = "Value",
+				},
+				Polyline2 = Input {
+					Value = Polyline {
+					},
+					Disabled = true,
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1520.43, 1708.68 } },
+		},
+		Mask_10Polyline = BezierSpline {
+			SplineColor = { Red = 173, Green = 255, Blue = 47 },
+			NameSet = true,
+			KeyFrames = {
+				[95.701602367758] = { 0, RH = { 99.0349357010912, 0 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.476628350572111, RY = 0.00136053132362105 },
+							{ Linear = true, X = 0.902298830021387, Y = 0.557142840842811, LX = -0.476628350572111, LY = -0.00136053132362105, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = 0.51034481073248, Y = -0.548979588430755, LX = 0.130651339762969, LY = 0.368707476424522, RX = -0.344061297657846, RY = -0.00272108843537415 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = 0.344061297657846, LY = 0.00272108843537415, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} },
+				[105.701602367758] = { 1, LH = { 102.368269034425, 1 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.00923704622428508, RY = 0.00227880496916747 },
+							{ Linear = true, X = -0.499875083022091, Y = 0.559897661779451, LX = -0.00923704622428508, LY = -0.00227880496916747, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = -0.891829102310998, Y = -0.546224767494116, LX = 0.130651339762969, LY = 0.368707476424522, RX = 0.12333000668998, RY = -0.00363936208092056 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = -0.12333000668998, LY = 0.00363936208092056, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} }
+			}
+		},
+		Instance_TimeStretcher1_8 = TimeStretcher {
+			SourceOp = "TimeStretcher1",
+			Inputs = {
+				SettingsNest = Input { },
+				SampleSpread = Input { Disabled = true, },
+				Input = Input {
+					SourceOp = "Loader5_1",
+					Source = "Output",
+				},
+				["EnableWarp.Nest"] = Input { },
+				CommentsNest = Input { },
+				FrameRenderScriptNest = Input { },
+				StartRenderScripts = Input { },
+				EndRenderScripts = Input { },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1520.43, 1855.6 } },
+		},
+		TimeStretcher1SourceTime = BezierSpline {
+			SplineColor = { Red = 233, Green = 217, Blue = 243 },
+			NameSet = true,
+			KeyFrames = {
+				[0] = { 0, RH = { 6, 6 }, Flags = { Linear = true } },
+				[18] = { 18, LH = { 12, 12 }, RH = { 47, 18 }, Flags = { Linear = true } },
+				[105] = { 18, LH = { 76, 18 }, RH = { 109.333333333333, 22 }, Flags = { Linear = true } },
+				[118] = { 30, LH = { 113.666666666667, 26 }, Flags = { Linear = true } }
+			}
+		},
+		Mask_8 = PolylineMask {
+			DrawMode = "InsertAndModify",
+			DrawMode2 = "InsertAndModify",
+			Inputs = {
+				MaskWidth = Input { Value = 1920, },
+				MaskHeight = Input { Value = 1080, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Polyline = Input {
+					SourceOp = "Mask_8Polyline",
+					Source = "Value",
+				},
+				Polyline2 = Input {
+					Value = Polyline {
+					},
+					Disabled = true,
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1347.35, 1706.04 } },
+		},
+		Mask_8Polyline = BezierSpline {
+			SplineColor = { Red = 173, Green = 255, Blue = 47 },
+			NameSet = true,
+			KeyFrames = {
+				[86.0806612691454] = { 0, RH = { 89.4139946024789, 0 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.476628350572111, RY = 0.00136053132362105 },
+							{ Linear = true, X = 0.902298830021387, Y = 0.557142840842811, LX = -0.476628350572111, LY = -0.00136053132362105, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = 0.51034481073248, Y = -0.548979588430755, LX = 0.130651339762969, LY = 0.368707476424522, RX = -0.344061297657846, RY = -0.00272108843537415 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = 0.344061297657846, LY = 0.00272108843537415, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} },
+				[96.0806612691454] = { 1, LH = { 92.7473279358122, 1 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.00923704622428508, RY = 0.00227880496916747 },
+							{ Linear = true, X = -0.499875083022091, Y = 0.559897661779451, LX = -0.00923704622428508, LY = -0.00227880496916747, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = -0.891829102310998, Y = -0.546224767494116, LX = 0.130651339762969, LY = 0.368707476424522, RX = 0.12333000668998, RY = -0.00363936208092056 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = -0.12333000668998, LY = 0.00363936208092056, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} }
+			}
+		},
+		WirelessLink15_1_1_1 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 1347.35, 1914.63 } },
+			Version = 110
+		},
+		Instance_TimeStretcher1_7 = TimeStretcher {
+			SourceOp = "TimeStretcher1",
+			Inputs = {
+				SettingsNest = Input { },
+				SampleSpread = Input { Disabled = true, },
+				Input = Input {
+					SourceOp = "WirelessLink15_1_1_1",
+					Source = "Output",
+				},
+				["EnableWarp.Nest"] = Input { },
+				CommentsNest = Input { },
+				FrameRenderScriptNest = Input { },
+				StartRenderScripts = Input { },
+				EndRenderScripts = Input { },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1347.35, 1857.57 } },
+		},
+		Mask_7_1 = PolylineMask {
+			DrawMode = "InsertAndModify",
+			DrawMode2 = "InsertAndModify",
+			Inputs = {
+				MaskWidth = Input { Value = 1920, },
+				MaskHeight = Input { Value = 1080, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Polyline = Input {
+					SourceOp = "Mask_7_1Polyline",
+					Source = "Value",
+				},
+				Polyline2 = Input {
+					Value = Polyline {
+					},
+					Disabled = true,
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1217.34, 1710.54 } },
+		},
+		Mask_7_1Polyline = BezierSpline {
+			SplineColor = { Red = 173, Green = 255, Blue = 47 },
+			NameSet = true,
+			KeyFrames = {
+				[75.5755323576222] = { 0, RH = { 78.9088656909556, 0 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.476628350572111, RY = 0.00136053132362105 },
+							{ Linear = true, X = 0.902298830021387, Y = 0.557142840842811, LX = -0.476628350572111, LY = -0.00136053132362105, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = 0.51034481073248, Y = -0.548979588430755, LX = 0.130651339762969, LY = 0.368707476424522, RX = -0.344061297657846, RY = -0.00272108843537415 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = 0.344061297657846, LY = 0.00272108843537415, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} },
+				[85.5755323576222] = { 1, LH = { 82.2421990242889, 1 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.00923704622428508, RY = 0.00227880496916747 },
+							{ Linear = true, X = -0.499875083022091, Y = 0.559897661779451, LX = -0.00923704622428508, LY = -0.00227880496916747, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = -0.891829102310998, Y = -0.546224767494116, LX = 0.130651339762969, LY = 0.368707476424522, RX = 0.12333000668998, RY = -0.00363936208092056 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = -0.12333000668998, LY = 0.00363936208092056, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} }
+			}
+		},
+		WirelessLink15_1_1 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 1217.34, 1913.31 } },
+			Version = 110
+		},
+		Instance_TimeStretcher1_6 = TimeStretcher {
+			SourceOp = "TimeStretcher1",
+			Inputs = {
+				SettingsNest = Input { },
+				SampleSpread = Input { Disabled = true, },
+				Input = Input {
+					SourceOp = "WirelessLink15_1_1",
+					Source = "Output",
+				},
+				["EnableWarp.Nest"] = Input { },
+				CommentsNest = Input { },
+				FrameRenderScriptNest = Input { },
+				StartRenderScripts = Input { },
+				EndRenderScripts = Input { },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1217.34, 1853.51 } },
+		},
+		Mask_6_1 = PolylineMask {
+			DrawMode = "InsertAndModify",
+			DrawMode2 = "InsertAndModify",
+			Inputs = {
+				MaskWidth = Input { Value = 1920, },
+				MaskHeight = Input { Value = 1080, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Polyline = Input {
+					SourceOp = "Mask_6_1Polyline",
+					Source = "Value",
+				},
+				Polyline2 = Input {
+					Value = Polyline {
+					},
+					Disabled = true,
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1074.39, 1712.36 } },
+		},
+		Mask_6_1Polyline = BezierSpline {
+			SplineColor = { Red = 173, Green = 255, Blue = 47 },
+			NameSet = true,
+			KeyFrames = {
+				[65.6142699879618] = { 0, RH = { 68.9476033212952, 0 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.476628350572111, RY = 0.00136053132362105 },
+							{ Linear = true, X = 0.902298830021387, Y = 0.557142840842811, LX = -0.476628350572111, LY = -0.00136053132362105, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = 0.51034481073248, Y = -0.548979588430755, LX = 0.130651339762969, LY = 0.368707476424522, RX = -0.344061297657846, RY = -0.00272108843537415 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = 0.344061297657846, LY = 0.00272108843537415, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} },
+				[75.6142699879618] = { 1, LH = { 72.2809366546285, 1 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.00923704622428508, RY = 0.00227880496916747 },
+							{ Linear = true, X = -0.499875083022091, Y = 0.559897661779451, LX = -0.00923704622428508, LY = -0.00227880496916747, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = -0.891829102310998, Y = -0.546224767494116, LX = 0.130651339762969, LY = 0.368707476424522, RX = 0.12333000668998, RY = -0.00363936208092056 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = -0.12333000668998, LY = 0.00363936208092056, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} }
+			}
+		},
+		WirelessLink15_1 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 1074.39, 1914.56 } },
+			Version = 110
+		},
+		Instance_TimeStretcher1_5 = TimeStretcher {
+			SourceOp = "TimeStretcher1",
+			Inputs = {
+				SettingsNest = Input { },
+				SampleSpread = Input { Disabled = true, },
+				Input = Input {
+					SourceOp = "WirelessLink15_1",
+					Source = "Output",
+				},
+				["EnableWarp.Nest"] = Input { },
+				CommentsNest = Input { },
+				FrameRenderScriptNest = Input { },
+				StartRenderScripts = Input { },
+				EndRenderScripts = Input { },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1074.39, 1854.95 } },
+		},
+		Mask_5_1 = PolylineMask {
+			DrawMode = "InsertAndModify",
+			DrawMode2 = "InsertAndModify",
+			Inputs = {
+				MaskWidth = Input { Value = 1920, },
+				MaskHeight = Input { Value = 1080, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Polyline = Input {
+					SourceOp = "Mask_5_1Polyline",
+					Source = "Value",
+				},
+				Polyline2 = Input {
+					Value = Polyline {
+					},
+					Disabled = true,
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 916.468, 1709.84 } },
+		},
+		Mask_5_1Polyline = BezierSpline {
+			SplineColor = { Red = 173, Green = 255, Blue = 47 },
+			NameSet = true,
+			KeyFrames = {
+				[55.3118235074735] = { 0, RH = { 58.6451568408068, 0 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.476628350572111, RY = 0.00136053132362105 },
+							{ Linear = true, X = 0.902298830021387, Y = 0.557142840842811, LX = -0.476628350572111, LY = -0.00136053132362105, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = 0.51034481073248, Y = -0.548979588430755, LX = 0.130651339762969, LY = 0.368707476424522, RX = -0.344061297657846, RY = -0.00272108843537415 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = 0.344061297657846, LY = 0.00272108843537415, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} },
+				[65.3118235074735] = { 1, LH = { 61.9784901741402, 1 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.00923704622428508, RY = 0.00227880496916747 },
+							{ Linear = true, X = -0.499875083022091, Y = 0.559897661779451, LX = -0.00923704622428508, LY = -0.00227880496916747, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = -0.891829102310998, Y = -0.546224767494116, LX = 0.130651339762969, LY = 0.368707476424522, RX = 0.12333000668998, RY = -0.00363936208092056 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = -0.12333000668998, LY = 0.00363936208092056, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} }
+			}
+		},
+		WirelessLink14_1 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 916.468, 1923.34 } },
+			Version = 110
+		},
+		Instance_TimeStretcher1_4 = TimeStretcher {
+			SourceOp = "TimeStretcher1",
+			Inputs = {
+				SettingsNest = Input { },
+				SampleSpread = Input { Disabled = true, },
+				Input = Input {
+					SourceOp = "WirelessLink14_1",
+					Source = "Output",
+				},
+				["EnableWarp.Nest"] = Input { },
+				CommentsNest = Input { },
+				FrameRenderScriptNest = Input { },
+				StartRenderScripts = Input { },
+				EndRenderScripts = Input { },
+			},
+			ViewInfo = OperatorInfo { Pos = { 916.468, 1851.03 } },
+		},
+		Mask_4_1 = PolylineMask {
+			DrawMode = "InsertAndModify",
+			DrawMode2 = "InsertAndModify",
+			Inputs = {
+				MaskWidth = Input { Value = 1920, },
+				MaskHeight = Input { Value = 1080, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Polyline = Input {
+					SourceOp = "Mask_4_1Polyline",
+					Source = "Value",
+				},
+				Polyline2 = Input {
+					Value = Polyline {
+					},
+					Disabled = true,
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 773.178, 1714.32 } },
+		},
+		Mask_4_1Polyline = BezierSpline {
+			SplineColor = { Red = 173, Green = 255, Blue = 47 },
+			NameSet = true,
+			KeyFrames = {
+				[45.0880048273764] = { 0, RH = { 48.4213381607098, 0 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.476628350572111, RY = 0.00136053132362105 },
+							{ Linear = true, X = 0.902298830021387, Y = 0.557142840842811, LX = -0.476628350572111, LY = -0.00136053132362105, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = 0.51034481073248, Y = -0.548979588430755, LX = 0.130651339762969, LY = 0.368707476424522, RX = -0.344061297657846, RY = -0.00272108843537415 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = 0.344061297657846, LY = 0.00272108843537415, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} },
+				[55.0880048273764] = { 1, LH = { 51.7546714940431, 1 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.00923704622428508, RY = 0.00227880496916747 },
+							{ Linear = true, X = -0.499875083022091, Y = 0.559897661779451, LX = -0.00923704622428508, LY = -0.00227880496916747, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = -0.891829102310998, Y = -0.546224767494116, LX = 0.130651339762969, LY = 0.368707476424522, RX = 0.12333000668998, RY = -0.00363936208092056 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = -0.12333000668998, LY = 0.00363936208092056, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} }
+			}
+		},
+		WirelessLink13_1 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 773.178, 1923.63 } },
+			Version = 110
+		},
+		Instance_TimeStretcher1_3 = TimeStretcher {
+			SourceOp = "TimeStretcher1",
+			Inputs = {
+				SettingsNest = Input { },
+				SampleSpread = Input { Disabled = true, },
+				Input = Input {
+					SourceOp = "WirelessLink13_1",
+					Source = "Output",
+				},
+				["EnableWarp.Nest"] = Input { },
+				CommentsNest = Input { },
+				FrameRenderScriptNest = Input { },
+				StartRenderScripts = Input { },
+				EndRenderScripts = Input { },
+			},
+			ViewInfo = OperatorInfo { Pos = { 773.178, 1851.5 } },
+		},
+		Mask_3_1 = PolylineMask {
+			DrawMode = "InsertAndModify",
+			DrawMode2 = "InsertAndModify",
+			Inputs = {
+				MaskWidth = Input { Value = 1920, },
+				MaskHeight = Input { Value = 1080, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Polyline = Input {
+					SourceOp = "Mask_3_1Polyline",
+					Source = "Value",
+				},
+				Polyline2 = Input {
+					Value = Polyline {
+					},
+					Disabled = true,
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 638.788, 1719.61 } },
+		},
+		Mask_3_1Polyline = BezierSpline {
+			SplineColor = { Red = 173, Green = 255, Blue = 47 },
+			NameSet = true,
+			KeyFrames = {
+				[35.4052114433515] = { 0, RH = { 38.7385447766848, 0 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.476628350572111, RY = 0.00136053132362105 },
+							{ Linear = true, X = 0.902298830021387, Y = 0.557142840842811, LX = -0.476628350572111, LY = -0.00136053132362105, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = 0.51034481073248, Y = -0.548979588430755, LX = 0.130651339762969, LY = 0.368707476424522, RX = -0.344061297657846, RY = -0.00272108843537415 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = 0.344061297657846, LY = 0.00272108843537415, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} },
+				[45.4052114433515] = { 1, LH = { 42.0718781100182, 1 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.00923704622428508, RY = 0.00227880496916747 },
+							{ Linear = true, X = -0.499875083022091, Y = 0.559897661779451, LX = -0.00923704622428508, LY = -0.00227880496916747, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = -0.891829102310998, Y = -0.546224767494116, LX = 0.130651339762969, LY = 0.368707476424522, RX = 0.12333000668998, RY = -0.00363936208092056 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = -0.12333000668998, LY = 0.00363936208092056, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} }
+			}
+		},
+		WirelessLink12_1 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 638.788, 1924.4 } },
+			Version = 110
+		},
+		Instance_TimeStretcher1_2 = TimeStretcher {
+			SourceOp = "TimeStretcher1",
+			Inputs = {
+				SettingsNest = Input { },
+				SampleSpread = Input { Disabled = true, },
+				Input = Input {
+					SourceOp = "WirelessLink12_1",
+					Source = "Output",
+				},
+				["EnableWarp.Nest"] = Input { },
+				CommentsNest = Input { },
+				FrameRenderScriptNest = Input { },
+				StartRenderScripts = Input { },
+				EndRenderScripts = Input { },
+			},
+			ViewInfo = OperatorInfo { Pos = { 638.788, 1854.95 } },
+		},
+		Mask_2_1 = PolylineMask {
+			DrawMode = "InsertAndModify",
+			DrawMode2 = "InsertAndModify",
+			Inputs = {
+				MaskWidth = Input { Value = 1920, },
+				MaskHeight = Input { Value = 1080, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Polyline = Input {
+					SourceOp = "Mask_2_1Polyline",
+					Source = "Value",
+				},
+				Polyline2 = Input {
+					Value = Polyline {
+					},
+					Disabled = true,
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 502.548, 1716.29 } },
+		},
+		Mask_2_1Polyline = BezierSpline {
+			SplineColor = { Red = 173, Green = 255, Blue = 47 },
+			NameSet = true,
+			KeyFrames = {
+				[25.3761125715573] = { 0, RH = { 28.7094459048906, 0 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.476628350572111, RY = 0.00136053132362105 },
+							{ Linear = true, X = 0.902298830021387, Y = 0.557142840842811, LX = -0.476628350572111, LY = -0.00136053132362105, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = 0.51034481073248, Y = -0.548979588430755, LX = 0.130651339762969, LY = 0.368707476424522, RX = -0.344061297657846, RY = -0.00272108843537415 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = 0.344061297657846, LY = 0.00272108843537415, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} },
+				[35.3761125715573] = { 1, LH = { 32.042779238224, 1 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.00923704622428508, RY = 0.00227880496916747 },
+							{ Linear = true, X = -0.499875083022091, Y = 0.559897661779451, LX = -0.00923704622428508, LY = -0.00227880496916747, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = -0.891829102310998, Y = -0.546224767494116, LX = 0.130651339762969, LY = 0.368707476424522, RX = 0.12333000668998, RY = -0.00363936208092056 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = -0.12333000668998, LY = 0.00363936208092056, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} }
+			}
+		},
+		WirelessLink11_1 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 502.548, 1924.49 } },
+			Version = 110
+		},
+		Instance_TimeStretcher1_1 = TimeStretcher {
+			SourceOp = "TimeStretcher1",
+			Inputs = {
+				SettingsNest = Input { },
+				SampleSpread = Input { Disabled = true, },
+				Input = Input {
+					SourceOp = "WirelessLink11_1",
+					Source = "Output",
+				},
+				["EnableWarp.Nest"] = Input { },
+				CommentsNest = Input { },
+				FrameRenderScriptNest = Input { },
+				StartRenderScripts = Input { },
+				EndRenderScripts = Input { },
+			},
+			ViewInfo = OperatorInfo { Pos = { 502.548, 1861.71 } },
+		},
+		Mask_1_1 = PolylineMask {
+			DrawMode = "InsertAndModify",
+			DrawMode2 = "InsertAndModify",
+			Inputs = {
+				MaskWidth = Input { Value = 1920, },
+				MaskHeight = Input { Value = 1080, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Polyline = Input {
+					SourceOp = "Mask_1_1Polyline",
+					Source = "Value",
+				},
+				Polyline2 = Input {
+					Value = Polyline {
+					},
+					Disabled = true,
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 359.258, 1721.44 } },
+		},
+		Mask_1_1Polyline = BezierSpline {
+			SplineColor = { Red = 173, Green = 255, Blue = 47 },
+			NameSet = true,
+			KeyFrames = {
+				[15.3922214498257] = { 0, RH = { 18.725554783159, 0 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.476628350572111, RY = 0.00136053132362105 },
+							{ Linear = true, X = 0.902298830021387, Y = 0.557142840842811, LX = -0.476628350572111, LY = -0.00136053132362105, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = 0.51034481073248, Y = -0.548979588430755, LX = 0.130651339762969, LY = 0.368707476424522, RX = -0.344061297657846, RY = -0.00272108843537415 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = 0.344061297657846, LY = 0.00272108843537415, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} },
+				[25.3922214498257] = { 1, LH = { 22.0588881164924, 1 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.00923704622428508, RY = 0.00227880496916747 },
+							{ Linear = true, X = -0.499875083022091, Y = 0.559897661779451, LX = -0.00923704622428508, LY = -0.00227880496916747, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = -0.891829102310998, Y = -0.546224767494116, LX = 0.130651339762969, LY = 0.368707476424522, RX = 0.12333000668998, RY = -0.00363936208092056 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = -0.12333000668998, LY = 0.00363936208092056, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} }
+			}
+		},
+		WirelessLink16_1 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 359.258, 1922.56 } },
+			Version = 110
+		},
+		Instance_TimeStretcher1 = TimeStretcher {
+			SourceOp = "TimeStretcher1",
+			Inputs = {
+				SettingsNest = Input { },
+				SampleSpread = Input { Disabled = true, },
+				Input = Input {
+					SourceOp = "WirelessLink16_1",
+					Source = "Output",
+				},
+				["EnableWarp.Nest"] = Input { },
+				CommentsNest = Input { },
+				FrameRenderScriptNest = Input { },
+				StartRenderScripts = Input { },
+				EndRenderScripts = Input { },
+			},
+			ViewInfo = OperatorInfo { Pos = { 359.258, 1864.24 } },
+		},
+		Resize1 = BetterResize {
+			Inputs = {
+				Width = Input { Value = 1920, },
+				Height = Input { Value = 1080, },
+				HiQOnly = Input { Value = 0, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				Input = Input {
+					SourceOp = "Loader4_1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 124.078, 1801.25 } },
+		},
+		TimeStretcher1 = TimeStretcher {
+			Inputs = {
+				SourceTime = Input {
+					SourceOp = "TimeStretcher1SourceTime",
+					Source = "Value",
+				},
+				InterpolateBetweenFrames = Input { Value = 0, },
+				SampleSpread = Input { Disabled = true, },
+				Input = Input {
+					SourceOp = "Resize1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 249.318, 1801.25 } },
+			Colors = { TileColor = { R = 0.92156862745098, G = 0.431372549019608, B = 0 }, }
+		},
+		Merge3_2 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_1_1",
+					Source = "Mask",
+				},
+				Background = Input {
+					SourceOp = "Instance_TimeStretcher1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "TimeStretcher1",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 359.258, 1801.25 } },
+		},
+		Merge4_1 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_2_1",
+					Source = "Mask",
+				},
+				Background = Input {
+					SourceOp = "Instance_TimeStretcher1_1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Merge3_2",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 502.548, 1801.25 } },
+		},
+		Merge5_2 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_3_1",
+					Source = "Mask",
+				},
+				Background = Input {
+					SourceOp = "Instance_TimeStretcher1_2",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Merge4_1",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 638.788, 1801.25 } },
+		},
+		Merge6_2 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_4_1",
+					Source = "Mask",
+				},
+				Background = Input {
+					SourceOp = "Instance_TimeStretcher1_3",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Merge5_2",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 773.178, 1801.25 } },
+		},
+		Merge7_1 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_5_1",
+					Source = "Mask",
+				},
+				Background = Input {
+					SourceOp = "Instance_TimeStretcher1_4",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Merge6_2",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 916.468, 1801.25 } },
+		},
+		Merge8_1 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_6_1",
+					Source = "Mask",
+				},
+				Background = Input {
+					SourceOp = "Instance_TimeStretcher1_5",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Merge7_1",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1074.39, 1801.25 } },
+		},
+		Merge8_1_1 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_7_1",
+					Source = "Mask",
+				},
+				Background = Input {
+					SourceOp = "Instance_TimeStretcher1_6",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Merge8_1",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1217.34, 1801.25 } },
+		},
+		Merge8_1_1_2 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_8",
+					Source = "Mask",
+				},
+				Background = Input {
+					SourceOp = "Instance_TimeStretcher1_7",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Merge8_1_1",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1347.35, 1801.25 } },
+		},
+		Merge9_1 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_10",
+					Source = "Mask",
+				},
+				Background = Input {
+					SourceOp = "Instance_TimeStretcher1_8",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Merge8_1_1_2",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1520.43, 1801.25 } },
+		},
+		Gamma_Output_1_1 = GamutConvert {
+			NameSet = true,
+			Inputs = {
+				OutputSpace = Input { Value = FuID { "sRGB" }, },
+				Input = Input {
+					SourceOp = "Merge9_1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1680.48, 1801.25 } },
+		},
+		Saver4 = Saver {
+			PassThrough = true,
+			Inputs = {
+				ProcessWhenBlendIs00 = Input { Value = 0, },
+				Clip = Input {
+					Value = Clip {
+						Filename = "H:\\Dyne - Works BackUp\\2018\\CHV Deportes - IDs\\CHVD_IDs - Transfer\\Render\\PreRender\\Scn_Futbol_Gol\\Scn_010\\FutbolGol_Breakdown_Scn_010_v01\\FutbolGol_Breakdown_Scn_010_v01_000.png",
+						FormatID = "PNGFormat",
+						Length = 0,
+						Saving = true,
+						TrimIn = 0,
+						ExtendFirst = 0,
+						ExtendLast = 0,
+						Loop = 1,
+						AspectMode = 0,
+						Depth = 0,
+						TimeCode = 0,
+						GlobalStart = -2000000000,
+						GlobalEnd = 0
+					},
+				},
+				OutputFormat = Input { Value = FuID { "PNGFormat" }, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				Input = Input {
+					SourceOp = "Gamma_Output_1_1",
+					Source = "Output",
+				},
+				["PNGFormat.PreDivide"] = Input { Value = 1, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1835.07, 1801.25 } },
+		},
+		Export_Render_1_1 = Note {
+			NameSet = true,
+			Inputs = {
+				Comments = Input { Value = "Mov Export", }
+			},
+			ViewInfo = StickyNoteInfo {
+				Pos = { 1773.08, 1574.27 },
+				Flags = {
+					Expanded = true
+				},
+				Size = { 240.696, 49.192 }
+			},
+		},
+		Note18_3_1 = Note {
+			Inputs = {
+				Comments = Input { Value = "Final - Output", }
+			},
+			ViewInfo = StickyNoteInfo {
+				Pos = { 1478.21, 1839.66 },
+				Flags = {
+					Expanded = true
+				},
+				Size = { 196, 119.438 }
+			},
+		},
+		Note18_2_1 = Note {
+			Inputs = {
+				Comments = Input { Value = "Input", }
+			},
+			ViewInfo = StickyNoteInfo {
+				Pos = { 34.968, 1733.74 },
+				Flags = {
+					Expanded = true
+				},
+				Size = { 196, 179.3 }
+			},
+		},
+		Note18_1_1 = Note {
+			Inputs = {
+				Comments = Input { Value = "Breakdown", }
+			},
+			ViewInfo = StickyNoteInfo {
+				Pos = { 116.548, 1565.64 },
+				Flags = {
+					Expanded = true
+				},
+				Size = { 1299.93, 59.3536 }
+			},
+		},
+		Underlay14_1 = Underlay {
+			ViewInfo = UnderlayInfo {
+				Pos = { 1690.01, 1009.82 },
+				Size = { 296.451, 126.075 }
+			},
+		},
+		Saver1_1 = Saver {
+			PassThrough = true,
+			Inputs = {
+				StartEndRenderScripts = Input { Value = 1, },
+				ProcessWhenBlendIs00 = Input { Value = 0, },
+				Clip = Input {
+					Value = Clip {
+						Filename = "Y:\\My Drive\\Dyne - Works\\Domestika - Curso CR_IlumDigital\\07_Render\\02_PreRender\\02_Animation\\U04\\Scn_170\\U04_Breakdown_Scn_170_v01.mov",
+						FormatID = "QuickTimeMovies",
+						Length = 0,
+						Multiframe = true,
+						Saving = true,
+						TrimIn = 0,
+						ExtendFirst = 0,
+						ExtendLast = 0,
+						Loop = 1,
+						AspectMode = 0,
+						Depth = 0,
+						TimeCode = 0,
+						GlobalStart = -2000000000,
+						GlobalEnd = 0
+					},
+				},
+				OutputFormat = Input { Value = FuID { "QuickTimeMovies" }, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				VideoType = Input { Value = FuID { "NTSC" }, },
+				Input = Input {
+					SourceOp = "Loader2_1",
+					Source = "Output",
+				},
+				FrameSavedScript = Input { Value = "fu:PurgeCache()", },
+				FrameRenderScript = Input { Value = "fu:PurgeCache()", },
+				StartRenderScript = Input { Value = "fu:PurgeCache()", },
+				EndRenderScript = Input { Value = "fu:PurgeCache()", },
+				["QuickTimeMovies.Compression"] = Input { Value = FuID { "Apple ProRes 422 HQ_apch" }, },
+				["QuickTimeMovies.FrameRateFps"] = Input { Value = 24, },
+				["QuickTimeMovies.Advanced"] = Input { Value = 1, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1762.56, 1036.07 } },
+		},
+		Mask_7 = PolylineMask {
+			DrawMode = "InsertAndModify",
+			DrawMode2 = "InsertAndModify",
+			Inputs = {
+				MaskWidth = Input { Value = 1920, },
+				MaskHeight = Input { Value = 1080, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Polyline = Input {
+					SourceOp = "Mask_7Polyline",
+					Source = "Value",
+				},
+				Polyline2 = Input {
+					Value = Polyline {
+					},
+					Disabled = true,
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1346.54, 1101.13 } },
+		},
+		Mask_7Polyline = BezierSpline {
+			SplineColor = { Red = 173, Green = 255, Blue = 47 },
+			NameSet = true,
+			KeyFrames = {
+				[64.9917145502781] = { 0, RH = { 68.3250478836113, 0 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.476628350572111, RY = 0.00136053132362105 },
+							{ Linear = true, X = 0.902298830021387, Y = 0.557142840842811, LX = -0.476628350572111, LY = -0.00136053132362105, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = 0.51034481073248, Y = -0.548979588430755, LX = 0.130651339762969, LY = 0.368707476424522, RX = -0.344061297657846, RY = -0.00272108843537415 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = 0.344061297657846, LY = 0.00272108843537415, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} },
+				[74.9917145502781] = { 1, LH = { 71.6583812169447, 1 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.00923704622428508, RY = 0.00227880496916747 },
+							{ Linear = true, X = -0.499875083022091, Y = 0.559897661779451, LX = -0.00923704622428508, LY = -0.00227880496916747, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = -0.891829102310998, Y = -0.546224767494116, LX = 0.130651339762969, LY = 0.368707476424522, RX = 0.12333000668998, RY = -0.00363936208092056 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = -0.12333000668998, LY = 0.00363936208092056, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} }
+			}
+		},
+		Mask_6 = PolylineMask {
+			DrawMode = "InsertAndModify",
+			DrawMode2 = "InsertAndModify",
+			Inputs = {
+				MaskWidth = Input { Value = 1920, },
+				MaskHeight = Input { Value = 1080, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Polyline = Input {
+					SourceOp = "Mask_6Polyline",
+					Source = "Value",
+				},
+				Polyline2 = Input {
+					Value = Polyline {
+					},
+					Disabled = true,
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1202.12, 1100.29 } },
+		},
+		Mask_6Polyline = BezierSpline {
+			SplineColor = { Red = 173, Green = 255, Blue = 47 },
+			NameSet = true,
+			KeyFrames = {
+				[54.8023438899036] = { 0, RH = { 58.135677223237, 0 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.476628350572111, RY = 0.00136053132362105 },
+							{ Linear = true, X = 0.902298830021387, Y = 0.557142840842811, LX = -0.476628350572111, LY = -0.00136053132362105, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = 0.51034481073248, Y = -0.548979588430755, LX = 0.130651339762969, LY = 0.368707476424522, RX = -0.344061297657846, RY = -0.00272108843537415 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = 0.344061297657846, LY = 0.00272108843537415, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} },
+				[64.8023438899036] = { 1, LH = { 61.4690105565703, 1 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.00923704622428508, RY = 0.00227880496916747 },
+							{ Linear = true, X = -0.499875083022091, Y = 0.559897661779451, LX = -0.00923704622428508, LY = -0.00227880496916747, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = -0.891829102310998, Y = -0.546224767494116, LX = 0.130651339762969, LY = 0.368707476424522, RX = 0.12333000668998, RY = -0.00363936208092056 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = -0.12333000668998, LY = 0.00363936208092056, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} }
+			}
+		},
+		WirelessLink15 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 1202.12, 1271.36 } },
+			Version = 110
+		},
+		Mask_5 = PolylineMask {
+			DrawMode = "InsertAndModify",
+			DrawMode2 = "InsertAndModify",
+			Inputs = {
+				MaskWidth = Input { Value = 1920, },
+				MaskHeight = Input { Value = 1080, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Polyline = Input {
+					SourceOp = "Mask_5Polyline",
+					Source = "Value",
+				},
+				Polyline2 = Input {
+					Value = Polyline {
+					},
+					Disabled = true,
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1015.33, 1097.77 } },
+		},
+		Mask_5Polyline = BezierSpline {
+			SplineColor = { Red = 173, Green = 255, Blue = 47 },
+			NameSet = true,
+			KeyFrames = {
+				[45.0616601939622] = { 0, RH = { 48.3949935272955, 0 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.476628350572111, RY = 0.00136053132362105 },
+							{ Linear = true, X = 0.902298830021387, Y = 0.557142840842811, LX = -0.476628350572111, LY = -0.00136053132362105, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = 0.51034481073248, Y = -0.548979588430755, LX = 0.130651339762969, LY = 0.368707476424522, RX = -0.344061297657846, RY = -0.00272108843537415 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = 0.344061297657846, LY = 0.00272108843537415, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} },
+				[55.0616601939622] = { 1, LH = { 51.7283268606289, 1 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.00923704622428508, RY = 0.00227880496916747 },
+							{ Linear = true, X = -0.499875083022091, Y = 0.559897661779451, LX = -0.00923704622428508, LY = -0.00227880496916747, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = -0.891829102310998, Y = -0.546224767494116, LX = 0.130651339762969, LY = 0.368707476424522, RX = 0.12333000668998, RY = -0.00363936208092056 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = -0.12333000668998, LY = 0.00363936208092056, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} }
+			}
+		},
+		WirelessLink14 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 1015.33, 1271.72 } },
+			Version = 110
+		},
+		Mask_4 = PolylineMask {
+			DrawMode = "InsertAndModify",
+			DrawMode2 = "InsertAndModify",
+			Inputs = {
+				MaskWidth = Input { Value = 1920, },
+				MaskHeight = Input { Value = 1080, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Polyline = Input {
+					SourceOp = "Mask_4Polyline",
+					Source = "Value",
+				},
+				Polyline2 = Input {
+					Value = Polyline {
+					},
+					Disabled = true,
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 872.031, 1101.13 } },
+		},
+		Mask_4Polyline = BezierSpline {
+			SplineColor = { Red = 173, Green = 255, Blue = 47 },
+			NameSet = true,
+			KeyFrames = {
+				[35.2705062552409] = { 0, RH = { 38.6038395885743, 0 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.476628350572111, RY = 0.00136053132362105 },
+							{ Linear = true, X = 0.902298830021387, Y = 0.557142840842811, LX = -0.476628350572111, LY = -0.00136053132362105, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = 0.51034481073248, Y = -0.548979588430755, LX = 0.130651339762969, LY = 0.368707476424522, RX = -0.344061297657846, RY = -0.00272108843537415 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = 0.344061297657846, LY = 0.00272108843537415, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} },
+				[45.2705062552409] = { 1, LH = { 41.9371729219076, 1 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.00923704622428508, RY = 0.00227880496916747 },
+							{ Linear = true, X = -0.499875083022091, Y = 0.559897661779451, LX = -0.00923704622428508, LY = -0.00227880496916747, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = -0.891829102310998, Y = -0.546224767494116, LX = 0.130651339762969, LY = 0.368707476424522, RX = 0.12333000668998, RY = -0.00363936208092056 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = -0.12333000668998, LY = 0.00363936208092056, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} }
+			}
+		},
+		WirelessLink13 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 872.031, 1271.03 } },
+			Version = 110
+		},
+		Mask_3 = PolylineMask {
+			DrawMode = "InsertAndModify",
+			DrawMode2 = "InsertAndModify",
+			Inputs = {
+				MaskWidth = Input { Value = 1920, },
+				MaskHeight = Input { Value = 1080, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Polyline = Input {
+					SourceOp = "Mask_3Polyline",
+					Source = "Value",
+				},
+				Polyline2 = Input {
+					Value = Polyline {
+					},
+					Disabled = true,
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 737.645, 1101.97 } },
+		},
+		Mask_3Polyline = BezierSpline {
+			SplineColor = { Red = 173, Green = 255, Blue = 47 },
+			NameSet = true,
+			KeyFrames = {
+				[25.0655177354967] = { 0, RH = { 28.39885106883, 0 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.476628350572111, RY = 0.00136053132362105 },
+							{ Linear = true, X = 0.902298830021387, Y = 0.557142840842811, LX = -0.476628350572111, LY = -0.00136053132362105, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = 0.51034481073248, Y = -0.548979588430755, LX = 0.130651339762969, LY = 0.368707476424522, RX = -0.344061297657846, RY = -0.00272108843537415 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = 0.344061297657846, LY = 0.00272108843537415, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} },
+				[35.0655177354967] = { 1, LH = { 31.7321844021634, 1 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.00923704622428508, RY = 0.00227880496916747 },
+							{ Linear = true, X = -0.499875083022091, Y = 0.559897661779451, LX = -0.00923704622428508, LY = -0.00227880496916747, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = -0.891829102310998, Y = -0.546224767494116, LX = 0.130651339762969, LY = 0.368707476424522, RX = 0.12333000668998, RY = -0.00363936208092056 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = -0.12333000668998, LY = 0.00363936208092056, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} }
+			}
+		},
+		WirelessLink12 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 737.645, 1275.4 } },
+			Version = 110
+		},
+		Mask_2 = PolylineMask {
+			DrawMode = "InsertAndModify",
+			DrawMode2 = "InsertAndModify",
+			Inputs = {
+				MaskWidth = Input { Value = 1920, },
+				MaskHeight = Input { Value = 1080, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Polyline = Input {
+					SourceOp = "Mask_2Polyline",
+					Source = "Value",
+				},
+				Polyline2 = Input {
+					Value = Polyline {
+					},
+					Disabled = true,
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 601.405, 1105.33 } },
+		},
+		Mask_2Polyline = BezierSpline {
+			SplineColor = { Red = 173, Green = 255, Blue = 47 },
+			NameSet = true,
+			KeyFrames = {
+				[15.0604929577465] = { 0, RH = { 18.3938262910798, 0 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.476628350572111, RY = 0.00136053132362105 },
+							{ Linear = true, X = 0.902298830021387, Y = 0.557142840842811, LX = -0.476628350572111, LY = -0.00136053132362105, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = 0.51034481073248, Y = -0.548979588430755, LX = 0.130651339762969, LY = 0.368707476424522, RX = -0.344061297657846, RY = -0.00272108843537415 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = 0.344061297657846, LY = 0.00272108843537415, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} },
+				[25.0604929577465] = { 1, LH = { 21.7271596244132, 1 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.00923704622428508, RY = 0.00227880496916747 },
+							{ Linear = true, X = -0.499875083022091, Y = 0.559897661779451, LX = -0.00923704622428508, LY = -0.00227880496916747, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = -0.891829102310998, Y = -0.546224767494116, LX = 0.130651339762969, LY = 0.368707476424522, RX = 0.12333000668998, RY = -0.00363936208092056 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = -0.12333000668998, LY = 0.00363936208092056, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} }
+			}
+		},
+		WirelessLink11 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 601.405, 1267.78 } },
+			Version = 110
+		},
+		Mask_1 = PolylineMask {
+			DrawMode = "InsertAndModify",
+			DrawMode2 = "InsertAndModify",
+			Inputs = {
+				MaskWidth = Input { Value = 1920, },
+				MaskHeight = Input { Value = 1080, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Polyline = Input {
+					SourceOp = "Mask_1Polyline",
+					Source = "Value",
+				},
+				Polyline2 = Input {
+					Value = Polyline {
+					},
+					Disabled = true,
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 450.885, 1105.67 } },
+		},
+		Mask_1Polyline = BezierSpline {
+			SplineColor = { Red = 173, Green = 255, Blue = 47 },
+			NameSet = true,
+			KeyFrames = {
+				[10.1781690140845] = { 0, RH = { 13.5115023474178, 0 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.476628350572111, RY = 0.00136053132362105 },
+							{ Linear = true, X = 0.902298830021387, Y = 0.557142840842811, LX = -0.476628350572111, LY = -0.00136053132362105, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = 0.51034481073248, Y = -0.548979588430755, LX = 0.130651339762969, LY = 0.368707476424522, RX = -0.344061297657846, RY = -0.00272108843537415 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = 0.344061297657846, LY = 0.00272108843537415, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} },
+				[20.1781690140845] = { 1, LH = { 16.8448356807512, 1 }, Flags = { LockedY = true }, Value = Polyline {
+						Closed = true,
+						Points = {
+							{ Linear = true, X = -0.527586221694946, Y = 0.553061246871948, LX = 0.00191571315129598, LY = -0.370068033536275, RX = 0.00923704622428508, RY = 0.00227880496916747 },
+							{ Linear = true, X = -0.499875083022091, Y = 0.559897661779451, LX = -0.00923704622428508, LY = -0.00227880496916747, RX = -0.130651339762969, RY = -0.368707476424522 },
+							{ Linear = true, X = -0.891829102310998, Y = -0.546224767494116, LX = 0.130651339762969, LY = 0.368707476424522, RX = 0.12333000668998, RY = -0.00363936208092056 },
+							{ Linear = true, X = -0.521839082241058, Y = -0.557142853736877, LX = -0.12333000668998, LY = 0.00363936208092056, RX = -0.00191571315129598, RY = 0.370068033536275 }
+						}
+					} }
+			}
+		},
+		WirelessLink16 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 450.885, 1266.12 } },
+			Version = 110
+		},
+		Merge3_1 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_1",
+					Source = "Mask",
+				},
+				Background = Input {
+					SourceOp = "WirelessLink16",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Loader6",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 450.885, 1176.93 } },
+		},
+		Merge4 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_2",
+					Source = "Mask",
+				},
+				Background = Input {
+					SourceOp = "WirelessLink11",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Merge3_1",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 601.405, 1176.93 } },
+		},
+		Merge5_1 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_3",
+					Source = "Mask",
+				},
+				Background = Input {
+					SourceOp = "WirelessLink12",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Merge4",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 737.645, 1176.93 } },
+		},
+		Merge6_1 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_4",
+					Source = "Mask",
+				},
+				Background = Input {
+					SourceOp = "WirelessLink13",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Merge5_1",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 872.031, 1176.93 } },
+		},
+		Merge7 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_5",
+					Source = "Mask",
+				},
+				Background = Input {
+					SourceOp = "WirelessLink14",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Merge6_1",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1015.33, 1176.93 } },
+		},
+		Merge8 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_6",
+					Source = "Mask",
+				},
+				Background = Input {
+					SourceOp = "WirelessLink15",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Merge7",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1202.12, 1176.93 } },
+		},
+		Merge9 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_7",
+					Source = "Mask",
+				},
+				Background = Input {
+					SourceOp = "Loader5",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Merge8",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1346.54, 1176.93 } },
+		},
+		Gamma_Output_1 = GamutConvert {
+			NameSet = true,
+			Inputs = {
+				OutputSpace = Input { Value = FuID { "sRGB" }, },
+				Input = Input {
+					SourceOp = "Merge9",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1539.19, 1176.93 } },
+		},
+		Saver2_1 = Saver {
+			Inputs = {
+				StartEndRenderScripts = Input { Value = 1, },
+				ProcessWhenBlendIs00 = Input { Value = 0, },
+				Clip = Input {
+					Value = Clip {
+						Filename = "Y:\\My Drive\\Dyne - Works\\Domestika - Curso CR_IlumDigital\\07_Render\\02_PreRender\\02_Animation\\U04\\Scn_200\\U04_Breakdown_Scn_200_v01\\U04_Breakdown_Scn_200_v01_000.png",
+						FormatID = "PNGFormat",
+						Length = 0,
+						Saving = true,
+						TrimIn = 0,
+						ExtendFirst = 0,
+						ExtendLast = 0,
+						Loop = 1,
+						AspectMode = 0,
+						Depth = 0,
+						TimeCode = 0,
+						GlobalStart = -2000000000,
+						GlobalEnd = 0
+					},
+				},
+				OutputFormat = Input { Value = FuID { "PNGFormat" }, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				VideoType = Input { Value = FuID { "NTSC" }, },
+				Input = Input {
+					SourceOp = "Gamma_Output_1",
+					Source = "Output",
+				},
+				FrameSavedScript = Input { Value = "fu:PurgeCache()", },
+				FrameRenderScript = Input { Value = "fu:PurgeCache()", },
+				StartRenderScript = Input { Value = "fu:PurgeCache()", },
+				EndRenderScript = Input { Value = "fu:PurgeCache()", },
+				["PNGFormat.SaveAlpha"] = Input { Value = 0, },
+				["PNGFormat.Depth"] = Input { Value = 1, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1759.64, 1176.93 } },
+		},
+		Export_Render_1 = Note {
+			NameSet = true,
+			Inputs = {
+				Comments = Input { Value = "Mov Export", }
+			},
+			ViewInfo = StickyNoteInfo {
+				Pos = { 1603.71, 949.948 },
+				Flags = {
+					Expanded = true
+				},
+				Size = { 240.696, 49.192 }
+			},
+		},
+		Note18_3 = Note {
+			Inputs = {
+				Comments = Input { Value = "Final - Output", }
+			},
+			ViewInfo = StickyNoteInfo {
+				Pos = { 1310.99, 1215.34 },
+				Flags = {
+					Expanded = true
+				},
+				Size = { 196, 119.438 }
+			},
+		},
+		Note18_2 = Note {
+			Inputs = {
+				Comments = Input { Value = "Input", }
+			},
+			ViewInfo = StickyNoteInfo {
+				Pos = { 153.558, 1104.39 },
+				Flags = {
+					Expanded = true
+				},
+				Size = { 196, 179.3 }
+			},
+		},
+		Note18_1 = Note {
+			Inputs = {
+				Comments = Input { Value = "Breakdown", }
+			},
+			ViewInfo = StickyNoteInfo {
+				Pos = { 193.248, 987.346 },
+				Flags = {
+					Expanded = true
+				},
+				Size = { 1299.93, 67.9842 }
+			},
+		},
+		Transform1 = Transform {
+			Inputs = {
+				Center = Input { Value = { 0.5, 0.777472527472527 }, },
+				Size = Input { Value = 0.25, },
+				Input = Input {
+					SourceOp = "TimeMachine2",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 615.214, 117.061 } },
+		},
+		Transform2 = Transform {
+			Inputs = {
+				Input = Input {
+					SourceOp = "Text1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 801.425, -72.4079 } },
+		},
+		Merge2 = Merge {
+			Inputs = {
+				Background = Input {
+					SourceOp = "Transform1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Transform2",
+					Source = "Output",
+				},
+				Center = Input { Value = { 0.1707882534776, 0.7967032967033 }, },
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 801.425, 117.061 } },
+		},
+		Transform1_1 = Transform {
+			Inputs = {
+				Center = Input { Value = { 0.5, 0.255494505494505 }, },
+				Size = Input { Value = 0.25, },
+				Input = Input {
+					SourceOp = "TimeMachine2",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 611.724, 186.758 } },
+		},
+		Transform3 = Transform {
+			Inputs = {
+				Center = Input { Value = { 0.1707882534776, 0.263736263736264 }, },
+				Input = Input {
+					SourceOp = "Text1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 801.863, -19.9719 } },
+		},
+		Merge3 = Merge {
+			Inputs = {
+				Background = Input {
+					SourceOp = "Transform1_1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Transform3",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 801.863, 186.758 } },
+		},
+		TimeMachine1 = Fuse.TimeMachineImage {
+			Inputs = {
+				ImageInput = Input {
+					SourceOp = "Merge3",
+					Source = "Output",
+				},
+				Mode = Input { Value = FuID { "LockStart" }, },
+				Skip = Input { Value = 1, },
+				XFrameNumbers = Input { Disabled = true, },
+				TargetStartFrame = Input {
+					Value = 20,
+					Expression = "Controls.NumberIn1+Controls.NumberIn2",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1090.71, 186.758 } },
+			Version = 211
+		},
+		PipeRouter1 = PipeRouter {
+			Inputs = {
+				Input = Input {
+					SourceOp = "TimeMachine1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = PipeRouterInfo { Pos = { 1546.06, 186.758 } },
+		},
+		Merge1 = Merge {
+			Inputs = {
+				Background = Input {
+					SourceOp = "Merge2",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "PipeRouter1",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1546.06, 117.061 } },
+		},
+		Background2_1 = Background {
+			Inputs = {
+				GlobalOut = Input { Value = 300, },
+				Width = Input { Value = 1920, },
+				Height = Input { Value = 1080, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				TopLeftRed = Input { Value = 1, },
+				TopLeftGreen = Input { Value = 1, },
+				TopLeftBlue = Input { Value = 1, },
+			},
+			ViewInfo = OperatorInfo { Pos = { -157.58, 117.061 } },
+		},
+		Transform4 = Transform {
+			Inputs = {
+				Center = Input {
+					SourceOp = "Path1",
+					Source = "Position",
+				},
+				Size = Input { Value = 2.14, },
+				Angle = Input { Value = 78.3, },
+				Input = Input {
+					SourceOp = "Background2_1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { -5.81807, 117.061 } },
+		},
+		Path1 = PolyPath {
+			DrawMode = "InsertAndModify",
+			CtrlWZoom = false,
+			Inputs = {
+				Displacement = Input {
+					SourceOp = "Path1Displacement",
+					Source = "Value",
+				},
+				PolyLine = Input {
+					Value = Polyline {
+						Points = {
+							{ Linear = true, LockY = true, X = -1.18735891647856, Y = 0, RX = 0.391271632806622, RY = 0 },
+							{ Linear = true, LockY = true, X = -0.0135440180586908, Y = 0, LX = -0.391271632806622, LY = 0 }
+						}
+					},
+				},
+			},
+		},
+		Path1Displacement = BezierSpline {
+			SplineColor = { Red = 255, Green = 0, Blue = 255 },
+			NameSet = true,
+			KeyFrames = {
+				[0] = { 0, RH = { 6.66666666666667, 0 }, Flags = { LockedY = true } },
+				[20] = { 1, LH = { 13.3333333333333, 1 }, Flags = { LockedY = true } }
+			}
+		},
+		Crop1 = Crop {
+			Inputs = {
+				XSize = Input { Value = 1920, },
+				YSize = Input { Value = 1080, },
+				Input = Input {
+					SourceOp = "Transform4",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 109.585, 117.061 } },
+		},
+		TimeMachine2 = Fuse.TimeMachineImage {
+			Inputs = {
+				ImageInput = Input {
+					SourceOp = "Crop1",
+					Source = "Output",
+				},
+				Mode = Input { Value = FuID { "LockStart" }, },
+				Skip = Input { Value = 1, },
+				XFrameNumbers = Input { Disabled = true, },
+				TargetStartFrame = Input { Expression = "Controls.NumberIn3", },
+			},
+			ViewInfo = OperatorInfo { Pos = { 450.988, 117.061 } },
+			Version = 211
+		},
+		Transform1_1_1 = Transform {
+			Inputs = {
+				Center = Input { Value = { 0.815254237288136, 0.255494505494505 }, },
+				Size = Input { Value = 0.25, },
+				Input = Input {
+					SourceOp = "TimeMachine2",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 608.48, 264.14 } },
+		},
+		Text1 = TextPlus {
+			Inputs = {
+				GlobalOut = Input { Value = 300, },
+				Width = Input { Value = 1920, },
+				Height = Input { Value = 1080, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				Green1 = Input { Value = 0, },
+				Blue1 = Input { Value = 0, },
+				StyledText = Input {
+					Value = "110",
+					Expression = "Text(time)",
+				},
+				Font = Input { Value = "Open Sans", },
+				Style = Input { Value = "Bold", },
+				Size = Input { Value = 0.04562, },
+				VerticalJustificationNew = Input { Value = 3, },
+				HorizontalJustificationNew = Input { Value = 3, },
+				ManualFontKerningPlacement = Input {
+					Value = StyledText {
+						Array = {
+						},
+						Value = ""
+					},
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 801.863, -135.089 } },
+		},
+		Transform3_1 = Transform {
+			Inputs = {
+				Center = Input { Value = { 0.820505767601894, 0.528796504700119 }, },
+				Input = Input {
+					SourceOp = "Text1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 801.813, 27.5736 } },
+		},
+		Merge5 = Merge {
+			Inputs = {
+				Background = Input {
+					SourceOp = "Transform1_1_1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Transform3_1",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 801.813, 264.14 } },
+		},
+		TimeMachine1_1 = Fuse.TimeMachineImage {
+			Inputs = {
+				ImageInput = Input {
+					SourceOp = "Merge5",
+					Source = "Output",
+				},
+				Mode = Input { Value = FuID { "LockStart" }, },
+				Skip = Input { Value = 1, },
+				XFrameNumbers = Input { Disabled = true, },
+				TargetStartFrame = Input {
+					Value = 40,
+					Expression = "Controls.NumberIn1*2+Controls.NumberIn2*2",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1089.59, 264.14 } },
+			Version = 211
+		},
+		PipeRouter2 = PipeRouter {
+			Inputs = {
+				Input = Input {
+					SourceOp = "TimeMachine1_1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = PipeRouterInfo { Pos = { 1708.3, 264.14 } },
+		},
+		Merge6 = Merge {
+			Inputs = {
+				Background = Input {
+					SourceOp = "Merge1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "PipeRouter2",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1708.3, 117.061 } },
+		},
+		Controls = Custom {
+			Inputs = {
+				NumberIn1 = Input { Value = 20, },
+				LUTIn1 = Input {
+					SourceOp = "CustomTool1LUTIn1",
+					Source = "Value",
+				},
+				LUTIn2 = Input {
+					SourceOp = "CustomTool1LUTIn2",
+					Source = "Value",
+				},
+				LUTIn3 = Input {
+					SourceOp = "CustomTool1LUTIn3",
+					Source = "Value",
+				},
+				LUTIn4 = Input {
+					SourceOp = "CustomTool1LUTIn4",
+					Source = "Value",
+				},
+				AuxChannelNest = Input { Value = 1, },
+				NumberControls = Input { Value = 1, },
+				NameforNumber1 = Input { Value = "Time Offset", },
+				NameforNumber2 = Input { Value = "Space Between Anim", },
+				NameforNumber3 = Input { Value = "Start Animation", },
+				ShowNumber4 = Input { Value = 0, },
+				ShowNumber5 = Input { Value = 0, },
+				ShowNumber6 = Input { Value = 0, },
+				ShowNumber7 = Input { Value = 0, },
+				ShowNumber8 = Input { Value = 0, },
+				ShowPoint1 = Input { Value = 0, },
+				ShowPoint2 = Input { Value = 0, },
+				ShowPoint3 = Input { Value = 0, },
+				ShowPoint4 = Input { Value = 0, },
+				ShowLUT1 = Input { Value = 0, },
+				ShowLUT2 = Input { Value = 0, },
+				ShowLUT3 = Input { Value = 0, },
+				ShowLUT4 = Input { Value = 0, },
+				Image1 = Input {
+					SourceOp = "Merge6",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1853.35, 117.061 } },
+		},
+		CustomTool1LUTIn1 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 204, Green = 0, Blue = 0 },
+			NameSet = true,
+		},
+		CustomTool1LUTIn2 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 0, Green = 204, Blue = 0 },
+			NameSet = true,
+		},
+		CustomTool1LUTIn3 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 0, Green = 0, Blue = 204 },
+			NameSet = true,
+		},
+		CustomTool1LUTIn4 = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+					[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 204, Green = 204, Blue = 204 },
+			NameSet = true,
+		},
+		TimeMachine4 = Fuse.TimeMachineImage {
+			Inputs = {
+				ImageInput = Input {
+					SourceOp = "Text2",
+					Source = "Output",
+				},
+				Mode = Input { Value = FuID { "Hold" }, },
+				Skip = Input { Value = 1, },
+				Hold = Input { Value = 50, },
+				XFrameNumbers = Input { Disabled = true, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 39.1068, 268.6 } },
+			Version = 211
+		},
+		SwitchFuse1 = Fuse.Switch {
+			Inputs = {
+				Which = Input {
+					Value = 1,
+					Expression = "iif (time < 50, 1,2) ",
+				},
+				Input1 = Input {
+					SourceOp = "Text2",
+					Source = "Output",
+				},
+				Input2 = Input {
+					SourceOp = "TimeMachine4",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 39.1068, 208.603 } },
+			Version = 172
+		},
+		Text2 = TextPlus {
+			Inputs = {
+				GlobalOut = Input { Value = 300, },
+				Width = Input { Value = 1920, },
+				Height = Input { Value = 1080, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				StyledText = Input {
+					Value = "195",
+					Expression = "time",
+				},
+				Font = Input { Value = "Open Sans", },
+				Style = Input { Value = "Bold", },
+				VerticalJustificationNew = Input { Value = 3, },
+				HorizontalJustificationNew = Input { Value = 3, },
+				ManualFontKerningPlacement = Input {
+					Value = StyledText {
+						Array = {
+						},
+						Value = ""
+					},
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { -201.948, 208.603 } },
+		},
+		TimeMachine5 = Fuse.TimeMachineImage {
+			Inputs = {
+				ImageInput = Input {
+					SourceOp = "Text2",
+					Source = "Output",
+				},
+				Mode = Input { Value = FuID { "Offset" }, },
+				Skip = Input { Value = 1, },
+				Offset = Input { Value = 29, },
+				XFrameNumbers = Input { Disabled = true, },
+				ForceTargetRange = Input { Value = 1, },
+				TargetStartFrame = Input { Value = 29, },
+				TargetEndFrame = Input { Value = 300, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 40.2585, 321.977 } },
+			Version = 211
+		},
+		PipeRouter3 = PipeRouter {
+			Inputs = {
+				Input = Input {
+					SourceOp = "TimeMachine5",
+					Source = "Output",
+				},
+			},
+			ViewInfo = PipeRouterInfo { Pos = { 193.465, 321.977 } },
+		},
+		SwitchFuse2 = Fuse.Switch {
+			CtrlWZoom = false,
+			Inputs = {
+				Which = Input {
+					Value = 1,
+					Expression = "iif (time < 80, 1,2)",
+				},
+				Input1 = Input {
+					SourceOp = "SwitchFuse1",
+					Source = "Output",
+				},
+				Input2 = Input {
+					SourceOp = "PipeRouter3",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 193.465, 208.603 } },
+			Version = 172
+		},
+		se_ContactSheet1 = GroupOperator {
+			Inputs = ordered() {
+				MainInput1 = InstanceInput {
+					SourceOp = "inMain_1",
+					Source = "Background",
+					Name = "MainInput",
+				},
+				MainInput2 = InstanceInput {
+					SourceOp = "in2_1",
+					Source = "Input",
+					Name = "Input2",
+				},
+				Input1 = InstanceInput {
+					SourceOp = "CS_In_1_1",
+					Source = "GapSize",
+					Default = 0.0500000007450581,
+				},
+				Input2 = InstanceInput {
+					SourceOp = "CS_In_1_1",
+					Source = "ShowInputNumber",
+					Default = 1,
+				},
+				Input3 = InstanceInput {
+					SourceOp = "CS_In_1_1",
+					Source = "IdentSize",
+					Default = 0.0506329,
+				},
+				Input4 = InstanceInput {
+					SourceOp = "CS_In_1_1",
+					Source = "ShowWarningLabel",
+					Default = 1,
+				},
+				MainInput3 = InstanceInput {
+					SourceOp = "in3_1",
+					Source = "Input",
+					Name = "Input3",
+				},
+				MainInput4 = InstanceInput {
+					SourceOp = "in4_1",
+					Source = "Input",
+					Name = "Input4",
+				},
+				MainInput5 = InstanceInput {
+					SourceOp = "in5_1",
+					Source = "Input",
+					Name = "Input5",
+				},
+				MainInput6 = InstanceInput {
+					SourceOp = "in6_1",
+					Source = "Input",
+					Name = "Input6",
+				},
+				MainInput7 = InstanceInput {
+					SourceOp = "in7_1",
+					Source = "Input",
+					Name = "Input7",
+				},
+				MainInput8 = InstanceInput {
+					SourceOp = "in8_1",
+					Source = "Input",
+					Name = "Input8",
+				},
+				MainInput9 = InstanceInput {
+					SourceOp = "in9_1",
+					Source = "Input",
+					Name = "Input9",
+				},
+				Input5 = InstanceInput {
+					SourceOp = "bgColor_1",
+					Source = "TopLeftRed",
+					Name = "Background Color",
+					ControlGroup = 14,
+					Default = 0.25,
+				},
+				Input6 = InstanceInput {
+					SourceOp = "bgColor_1",
+					Source = "TopLeftGreen",
+					ControlGroup = 14,
+					Default = 0.25,
+				},
+				Input7 = InstanceInput {
+					SourceOp = "bgColor_1",
+					Source = "TopLeftBlue",
+					ControlGroup = 14,
+					Default = 0.25,
+				},
+				Input8 = InstanceInput {
+					SourceOp = "bgColor_1",
+					Source = "TopLeftAlpha",
+					ControlGroup = 14,
+					Default = 1,
+				}
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "MainOut_1_1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo {
+				Pos = { 139.368, 2118.15 },
+				Flags = {
+					AllowPan = false,
+					ConnectedSnap = true,
+					AutoSnap = true,
+					RemoveRouters = true
+				},
+				Size = { 2491, 526.3, 1245.5, 22 },
+				Direction = "Horizontal",
+				PipeStyle = "Direct",
+				Scale = 1,
+				Offset = { 0, 0 }
+			},
+			Tools = ordered() {
+				Merge1_1_2 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "BrightnessContrast2_4_1_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "ShowLabel_1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -632.5, 208.15 } },
+				},
+				ShowLabel_1 = Dissolve {
+					Transitions = {
+						[0] = "DFTDissolve"
+					},
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Mix = Input {
+							Value = 0,
+							Expression = "1-CS_In_1_1.ShowWarningLabel",
+						},
+						Background = Input {
+							SourceOp = "SetCanvasColor1_1_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "BrightnessContrast2_4_1_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -632.5, 109.15 } },
+				},
+				SetCanvasColor1_1_1 = SetCanvasColor {
+					CtrlWShown = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "SetDomain1_1_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -632.5, 76.15 } },
+				},
+				T_Ident_1_1_1_1 = TextPlus {
+					CtrlWShown = false,
+					NameSet = true,
+					CustomData = {
+						Settings = {
+							[1] = {
+								Tools = ordered() {
+									Text1 = TextPlus {
+										Inputs = {
+											DPTType = Input { Disabled = true },
+											ShadingGradient7 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ShadingGradient4 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ShadingGradient2 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ShadingGradient3 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ShadingGradient1 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											Style = Input { Value = "Regular" },
+											Width = Input { Value = 1280 },
+											DPTResolution = Input { Disabled = true },
+											Font = Input { Value = "Arial" },
+											ShadingGradient6 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ShadingGradient5 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											Height = Input { Value = 720 },
+											RenderToDPTFile = Input { Disabled = true },
+											ManualFontKerningPlacement = Input {
+												Value = StyledText {
+													Value = "",
+													Array = {
+													}
+												}
+											},
+											ShadingGradient8 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											}
+										},
+										Name = "Text1",
+										CtrlWZoom = false,
+										ViewInfo = OperatorInfo { Pos = { 55, 17.05 } },
+										CustomData = {
+										}
+									}
+								}
+							},
+							[2] = {
+								Tools = ordered() {
+									Text1 = TextPlus {
+										Inputs = {
+											ShadingGradient8 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											DPTResolution = Input { Disabled = true },
+											StyledText = Input { Value = "!@#$\r\nFUSION\r\neyeon\r\nGENERATION\r\nrOTATION" },
+											ShadingGradient6 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ShadingGradient5 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ShadingGradient4 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											DPTType = Input { Disabled = true },
+											ShadingGradient2 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											Width = Input { Value = 1280 },
+											ShadingGradient1 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											Font = Input { Value = "eyeon" },
+											Style = Input { Value = "Regular" },
+											RenderToDPTFile = Input { Disabled = true },
+											Height = Input { Value = 720 },
+											ShadingGradient3 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ManualFontKerningPlacement = Input {
+												Value = StyledText {
+													Value = "",
+													Array = {
+													}
+												}
+											},
+											ShadingGradient7 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											}
+										},
+										CtrlWZoom = false,
+										ViewInfo = OperatorInfo { Pos = { 55, 17.05 } },
+										CustomData = {
+										}
+									}
+								}
+							}
+						}
+					},
+					Inputs = {
+						HorizontalJustification = Input { Value = 1, },
+						ShadingGradient8 = Input {
+							Value = Gradient {
+								Colors = {
+									[0] = { 0, 0, 0, 1 },
+									[1] = { 1, 1, 1, 1 }
+								}
+							},
+						},
+						Softness3 = Input { Value = 1, },
+						ShadingGradient6 = Input {
+							Value = Gradient {
+								Colors = {
+									[0] = { 0, 0, 0, 1 },
+									[1] = { 1, 1, 1, 1 }
+								}
+							},
+						},
+						ShadingGradient5 = Input {
+							Value = Gradient {
+								Colors = {
+									[0] = { 0, 0, 0, 1 },
+									[1] = { 1, 1, 1, 1 }
+								}
+							},
+						},
+						ShadingGradient4 = Input {
+							Value = Gradient {
+								Colors = {
+									[0] = { 0, 0, 0, 1 },
+									[1] = { 1, 1, 1, 1 }
+								}
+							},
+						},
+						SoftnessX3 = Input { Value = 1, },
+						Alignment = Input { Value = 1, },
+						ShadingGradient7 = Input {
+							Value = Gradient {
+								Colors = {
+									[0] = { 0, 0, 0, 1 },
+									[1] = { 1, 1, 1, 1 }
+								}
+							},
+						},
+						SoftnessY3 = Input { Value = 1, },
+						ShadingGradient2 = Input {
+							Value = Gradient {
+								Colors = {
+									[0] = { 0, 0, 0, 1 },
+									[1] = { 1, 1, 1, 1 }
+								}
+							},
+						},
+						Transform3 = Input { Value = 1, },
+						GlobalOut = Input { Value = 300, },
+						Width = Input {
+							Value = 1920,
+							Expression = "CS_In_1_1.Input.OriginalWidth",
+						},
+						Height = Input {
+							Value = 1080,
+							Expression = "CS_In_1_1.Input.OriginalHeight",
+						},
+						Red = Input { Value = 0.16405, },
+						Green = Input { Value = 0.1747253203883, },
+						Blue = Input { Value = 0.193, },
+						Alpha = Input { Value = 1, },
+						StyledText = Input { Value = "media not connected", },
+						Font = Input { Value = "Arial", },
+						Style = Input { Value = "Regular", },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalJustificationNew = Input { Value = 3, },
+						ManualFontKerningPlacement = Input {
+							Value = StyledText {
+								Array = {
+								},
+								Value = ""
+							},
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -632.5, 10.15 } },
+				},
+				BrightnessContrast2_4_1_1 = BrightnessContrast {
+					CtrlWShown = false,
+					Inputs = {
+						Alpha = Input { Value = 1, },
+						Gain = Input { Value = 0, },
+						Input = Input {
+							SourceOp = "CS_In_1_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -797.5, 208.15 } },
+				},
+				SetDomain1_1_1 = SetDomain {
+					CtrlWShown = false,
+					Inputs = {
+						Mode = Input { Value = FuID { "Set" }, },
+						Left = Input {
+							Value = 0.00425,
+							Expression = "CS_In_1_1.GapSize/2",
+						},
+						Bottom = Input {
+							Value = 0.00425,
+							Expression = "CS_In_1_1.GapSize/2",
+						},
+						Right = Input {
+							Value = 0.99575,
+							Expression = "1.0-CS_In_1_1.GapSize/2",
+						},
+						Top = Input {
+							Value = 0.99575,
+							Expression = "1.0-CS_In_1_1.GapSize/2",
+						},
+						Input = Input {
+							SourceOp = "T_Ident_1_1_1_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -632.5, 43.15 } },
+				},
+				TimeStretcher1_1_1 = TimeStretcher {
+					CtrlWShown = false,
+					Inputs = {
+						SourceTime = Input { Value = 2, },
+						InterpolateBetweenFrames = Input { Value = 0, },
+						SampleSpread = Input { Disabled = true, },
+						Input = Input {
+							SourceOp = "T_Ident_1_1_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -412.5, 274.15 } },
+				},
+				T_Ident_1_1_2 = TextPlus {
+					CtrlWShown = false,
+					NameSet = true,
+					CustomData = {
+						Settings = {
+							[1] = {
+								Tools = ordered() {
+									Text1 = TextPlus {
+										Inputs = {
+											DPTType = Input { Disabled = true },
+											ShadingGradient7 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ShadingGradient4 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ShadingGradient2 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ShadingGradient3 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ShadingGradient1 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											Style = Input { Value = "Regular" },
+											Width = Input { Value = 1280 },
+											DPTResolution = Input { Disabled = true },
+											Font = Input { Value = "Arial" },
+											ShadingGradient6 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ShadingGradient5 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											Height = Input { Value = 720 },
+											RenderToDPTFile = Input { Disabled = true },
+											ManualFontKerningPlacement = Input {
+												Value = StyledText {
+													Value = "",
+													Array = {
+													}
+												}
+											},
+											ShadingGradient8 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											}
+										},
+										Name = "Text1",
+										CtrlWZoom = false,
+										ViewInfo = OperatorInfo { Pos = { 55, 17.05 } },
+										CustomData = {
+										}
+									}
+								}
+							},
+							[2] = {
+								Tools = ordered() {
+									Text1 = TextPlus {
+										Inputs = {
+											ShadingGradient8 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											DPTResolution = Input { Disabled = true },
+											StyledText = Input { Value = "!@#$\r\nFUSION\r\neyeon\r\nGENERATION\r\nrOTATION" },
+											ShadingGradient6 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ShadingGradient5 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ShadingGradient4 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											DPTType = Input { Disabled = true },
+											ShadingGradient2 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											Width = Input { Value = 1280 },
+											ShadingGradient1 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											Font = Input { Value = "eyeon" },
+											Style = Input { Value = "Regular" },
+											RenderToDPTFile = Input { Disabled = true },
+											Height = Input { Value = 720 },
+											ShadingGradient3 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ManualFontKerningPlacement = Input {
+												Value = StyledText {
+													Value = "",
+													Array = {
+													}
+												}
+											},
+											ShadingGradient7 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											}
+										},
+										CtrlWZoom = false,
+										ViewInfo = OperatorInfo { Pos = { 55, 17.05 } },
+										CustomData = {
+										}
+									}
+								}
+							}
+						}
+					},
+					Inputs = {
+						HorizontalJustification = Input { Value = 2, },
+						ShadingGradient8 = Input {
+							Value = Gradient {
+								Colors = {
+									[0] = { 0, 0, 0, 1 },
+									[1] = { 1, 1, 1, 1 }
+								}
+							},
+						},
+						ShadingGradient6 = Input {
+							Value = Gradient {
+								Colors = {
+									[0] = { 0, 0, 0, 1 },
+									[1] = { 1, 1, 1, 1 }
+								}
+							},
+						},
+						ShadingGradient5 = Input {
+							Value = Gradient {
+								Colors = {
+									[0] = { 0, 0, 0, 1 },
+									[1] = { 1, 1, 1, 1 }
+								}
+							},
+						},
+						ShadingGradient4 = Input {
+							Value = Gradient {
+								Colors = {
+									[0] = { 0, 0, 0, 1 },
+									[1] = { 1, 1, 1, 1 }
+								}
+							},
+						},
+						Transform3 = Input { Value = 1, },
+						ShadingGradient7 = Input {
+							Value = Gradient {
+								Colors = {
+									[0] = { 0, 0, 0, 1 },
+									[1] = { 1, 1, 1, 1 }
+								}
+							},
+						},
+						Alignment = Input { Value = 1, },
+						ShadingGradient2 = Input {
+							Value = Gradient {
+								Colors = {
+									[0] = { 0, 0, 0, 1 },
+									[1] = { 1, 1, 1, 1 }
+								}
+							},
+						},
+						GlobalOut = Input { Value = 300, },
+						Width = Input {
+							Value = 1920,
+							Expression = "CS_In_1_1.Input.OriginalWidth",
+						},
+						Height = Input {
+							Value = 1080,
+							Expression = "CS_In_1_1.Input.OriginalHeight",
+						},
+						Center = Input { Value = { 0.946745562130177, 0.930692165582306 }, },
+						SelectElement = Input { Value = 2, },
+						Select = Input { Value = 2, },
+						Enabled3 = Input { Value = 1, },
+						Softness3 = Input { Value = 1, },
+						SoftnessX3 = Input { Value = 1, },
+						SoftnessY3 = Input { Value = 1, },
+						StyledText = Input {
+							Value = "Input 9",
+							Expression = "Text(\"Input \" .. time)",
+						},
+						Font = Input { Value = "Arial", },
+						Style = Input { Value = "Regular", },
+						Size = Input {
+							Value = 0.06,
+							Expression = "CS_In_1_1.IdentSize",
+						},
+						VerticalTopCenterBottom = Input { Value = -1, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalLeftCenterRight = Input { Value = 1, },
+						HorizontalJustificationNew = Input { Value = 3, },
+						ManualFontKerningPlacement = Input {
+							Value = StyledText {
+								Array = {
+								},
+								Value = ""
+							},
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -632.5, 307.15 } },
+				},
+				in2_1 = Transform {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Size = Input {
+							Value = 0.9915,
+							Expression = "CS_In_1_1.Size",
+						},
+						Input = Input {
+							SourceOp = "WirelessLink18",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -302.5, 43.15 } },
+				},
+				InpMrg_1_1_1 = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "CS_In_1_1.ShowInputNumber", },
+						Background = Input {
+							SourceOp = "Dissolve1_1_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "TimeStretcher1_1_1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -302.5, 274.15 } },
+				},
+				Dissolve1_1_1 = Dissolve {
+					Transitions = {
+						[0] = "DFTDissolve"
+					},
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge1_1_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "in2_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -302.5, 142.15 } },
+				},
+				TimeStretcher1_9 = TimeStretcher {
+					CtrlWShown = false,
+					Inputs = {
+						SourceTime = Input { Value = 1, },
+						InterpolateBetweenFrames = Input { Value = 0, },
+						SampleSpread = Input { Disabled = true, },
+						Input = Input {
+							SourceOp = "T_Ident_1_1_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -522.5, 340.15 } },
+				},
+				CS_In_1_1 = Transform {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Size = Input {
+							Value = 0.95,
+							Expression = "1-GapSize",
+						},
+						Input = Input {
+							SourceOp = "inMain_1",
+							Source = "Output",
+						},
+						GapSize = Input { Value = 0.0085, },
+						ShowInputNumber = Input { Value = 1, },
+						IdentSize = Input { Value = 0.06, },
+						ShowWarningLabel = Input { Value = 1, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -1017.5, 340.15 } },
+					UserControls = ordered() {
+						GapSize = {
+							INP_MaxAllowed = 0.5,
+							INP_Integer = false,
+							INPID_InputControl = "SliderControl",
+							INP_MaxScale = 0.5,
+							INP_Default = 0.0500000007450581,
+							INP_MinScale = 0,
+							INP_MinAllowed = 0,
+							LINKID_DataType = "Number",
+							INP_External = false,
+							LINKS_Name = "Gap Size",
+						},
+						Columns = {
+							INP_Integer = true,
+							INP_MinAllowed = 1,
+							INPID_InputControl = "SliderControl",
+							INP_MinScale = 1,
+							LINKID_DataType = "Number",
+							INP_MaxScale = 5,
+							INP_Default = 3,
+						},
+						JumpFrame = {
+							LINKS_Name = "Jump Frame",
+							INP_Integer = true,
+							INP_MinAllowed = 1,
+							INPID_InputControl = "SliderControl",
+							LINKID_DataType = "Number",
+							INP_MinScale = 1,
+							INP_MaxScale = 10,
+							INP_Default = 1,
+						},
+						ShowInputNumber = {
+							LINKS_Name = "Show Input Number",
+							LINKID_DataType = "Number",
+							INPID_InputControl = "CheckboxControl",
+							INP_Default = 0,
+						},
+						IdentSize = {
+							INP_Default = 0.08,
+							INPID_InputControl = "SliderControl",
+							LINKS_Name = "Ident Size",
+							LINKID_DataType = "Number",
+						},
+						ShowWarningLabel = {
+							CBC_TriState = false,
+							INP_Integer = false,
+							INP_External = false,
+							LINKID_DataType = "Number",
+							INPID_InputControl = "CheckboxControl",
+							LINKS_Name = "Show Warning Label",
+						}
+					}
+				},
+				inMain_1 = Dissolve {
+					Transitions = {
+						[0] = "DFTDissolve"
+					},
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Mix = Input { Value = 0, },
+						Background = Input {
+							SourceOp = "Resize1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "SetCanvasColor1_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -1182.5, 340.15 } },
+				},
+				TimeStretcher1_2_1 = TimeStretcher {
+					CtrlWShown = false,
+					Inputs = {
+						SourceTime = Input { Value = 3, },
+						InterpolateBetweenFrames = Input { Value = 0, },
+						SampleSpread = Input { Disabled = true, },
+						Input = Input {
+							SourceOp = "T_Ident_1_1_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -192.5, 241.15 } },
+				},
+				Dissolve2_1_1 = Dissolve {
+					Transitions = {
+						[0] = "DFTDissolve"
+					},
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge1_1_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "in3_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -137.5, 142.15 } },
+				},
+				in3_1 = Transform {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Size = Input {
+							Value = 0.9915,
+							Expression = "CS_In_1_1.Size",
+						},
+						Input = Input {
+							SourceOp = "WirelessLink19_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -137.5, 43.15 } },
+				},
+				InpMrg_2_1_1 = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "CS_In_1_1.ShowInputNumber", },
+						Background = Input {
+							SourceOp = "Dissolve2_1_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "TimeStretcher1_2_1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -82.5, 241.15 } },
+				},
+				TimeStretcher1_3_1 = TimeStretcher {
+					CtrlWShown = false,
+					Inputs = {
+						SourceTime = Input { Value = 4, },
+						InterpolateBetweenFrames = Input { Value = 0, },
+						SampleSpread = Input { Disabled = true, },
+						Input = Input {
+							SourceOp = "T_Ident_1_1_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -27.5, 274.15 } },
+				},
+				SetCanvasColor1_2 = SetCanvasColor {
+					CtrlWShown = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "SetDomain1_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -1182.5, 406.15 } },
+				},
+				in4_1 = Transform {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Size = Input {
+							Value = 0.9915,
+							Expression = "CS_In_1_1.Size",
+						},
+						Input = Input {
+							SourceOp = "WirelessLink20",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 27.5, 43.15 } },
+				},
+				InpMrg_3_1_1 = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "CS_In_1_1.ShowInputNumber", },
+						Background = Input {
+							SourceOp = "Dissolve3_1_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "TimeStretcher1_3_1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 82.5, 274.15 } },
+				},
+				Dissolve3_1_1 = Dissolve {
+					Transitions = {
+						[0] = "DFTDissolve"
+					},
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge1_1_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "in4_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 82.5, 142.15 } },
+				},
+				TimeStretcher1_4_1 = TimeStretcher {
+					CtrlWShown = false,
+					Inputs = {
+						SourceTime = Input { Value = 5, },
+						InterpolateBetweenFrames = Input { Value = 0, },
+						SampleSpread = Input { Disabled = true, },
+						Input = Input {
+							SourceOp = "T_Ident_1_1_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 137.5, 241.15 } },
+				},
+				SetDomain1_2 = SetDomain {
+					CtrlWShown = false,
+					Inputs = {
+						Mode = Input { Value = FuID { "Set" }, },
+						Input = Input {
+							SourceOp = "Text1_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -1182.5, 439.15 } },
+				},
+				in5_1 = Transform {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Size = Input {
+							Value = 0.9915,
+							Expression = "CS_In_1_1.Size",
+						},
+						Input = Input {
+							SourceOp = "WirelessLink21",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 192.5, 43.15 } },
+				},
+				InpMrg_9_1 = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "CS_In_1_1.ShowInputNumber", },
+						Background = Input {
+							SourceOp = "CS_In_1_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "TimeStretcher1_9",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -522.5, 472.15 } },
+				},
+				CS_XF_1_1_1 = Transform {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Center = Input {
+							Value = { 0.125, 0.875 },
+							Expression = "Point(Size/2,1- Size/2)",
+						},
+						Size = Input {
+							Value = 0.25,
+							Expression = "1/CS_In_1_1.Columns",
+						},
+						Input = Input {
+							SourceOp = "InpMrg_9_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -412.5, 472.15 } },
+					UserControls = ordered() {
+						IdentSize = {
+							INP_MinScale = 0.001,
+							LINKID_DataType = "Number",
+							INP_Default = 0.08,
+							INPID_InputControl = "SliderControl",
+							LINKS_Name = "Ident Size",
+						}
+					}
+				},
+				Merge6_2_1_1 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "CS_XF_1_1_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "InpMrg_1_1_1",
+							Source = "Output",
+						},
+						Center = Input {
+							Value = { 0.5, 0.833333333333333 },
+							Expression = "Point((Size/2)*3,1- Size/2)",
+						},
+						Size = Input {
+							Value = 0.333333333333333,
+							Expression = "1/CS_In_1_1.Columns",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -302.5, 472.15 } },
+				},
+				Merge8_1_1_1 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge6_2_1_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "InpMrg_2_1_1",
+							Source = "Output",
+						},
+						Center = Input { Expression = "Point((Size/2)*5,1- Size/2)", },
+						Size = Input { Expression = "1/CS_In_1_1.Columns", },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -82.5, 472.15 } },
+				},
+				Merge10_2_1_1 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge9_1_1_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "InpMrg_4_1_1",
+							Source = "Output",
+						},
+						Center = Input { Expression = "Point((Size/2*3),1- Size/2*3)", },
+						Size = Input { Expression = "1/CS_In_1_1.Columns", },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 247.5, 472.15 } },
+				},
+				Merge9_1_1_1 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge8_1_1_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "InpMrg_3_1_1",
+							Source = "Output",
+						},
+						Center = Input { Expression = "Point((Size/2),1- Size/2*3)", },
+						Size = Input { Expression = "1/CS_In_1_1.Columns", },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 82.5, 472.15 } },
+				},
+				InpMrg_4_1_1 = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "CS_In_1_1.ShowInputNumber", },
+						Background = Input {
+							SourceOp = "Dissolve4_1_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "TimeStretcher1_4_1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 247.5, 241.15 } },
+				},
+				Dissolve4_1_1 = Dissolve {
+					Transitions = {
+						[0] = "DFTDissolve"
+					},
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge1_1_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "in5_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 247.5, 142.15 } },
+				},
+				Text1_1 = TextPlus {
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					Inputs = {
+						GlobalOut = Input { Value = 300, },
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Red = Input { Value = 0.7, },
+						Green = Input { Value = 0.2, },
+						Blue = Input { Value = 0.2, },
+						Alpha = Input { Value = 1, },
+						StyledText = Input { Value = "Main Input\nnot connected", },
+						Font = Input { Value = "Open Sans", },
+						Style = Input { Value = "Bold", },
+						Size = Input { Value = 0.1325, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalJustificationNew = Input { Value = 3, },
+						ManualFontKerningPlacement = Input {
+							Value = StyledText {
+								Array = {
+								},
+								Value = ""
+							},
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -1182.5, 472.15 } },
+				},
+				TimeStretcher1_5_1 = TimeStretcher {
+					CtrlWShown = false,
+					Inputs = {
+						SourceTime = Input { Value = 6, },
+						InterpolateBetweenFrames = Input { Value = 0, },
+						SampleSpread = Input { Disabled = true, },
+						Input = Input {
+							SourceOp = "T_Ident_1_1_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 302.5, 274.15 } },
+				},
+				in6_1 = Transform {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Size = Input {
+							Value = 0.9915,
+							Expression = "CS_In_1_1.Size",
+						},
+						Input = Input {
+							SourceOp = "WirelessLink22",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 357.5, 43.15 } },
+				},
+				Merge11_2_1_1 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge10_2_1_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "InpMrg_5_1_1",
+							Source = "Output",
+						},
+						Center = Input { Expression = "Point((Size/2*5),1- Size/2*3)", },
+						Size = Input { Expression = "1/CS_In_1_1.Columns", },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 412.5, 472.15 } },
+				},
+				Dissolve5_1_1 = Dissolve {
+					Transitions = {
+						[0] = "DFTDissolve"
+					},
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge1_1_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "in6_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 412.5, 142.15 } },
+				},
+				InpMrg_5_1_1 = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "CS_In_1_1.ShowInputNumber", },
+						Background = Input {
+							SourceOp = "Dissolve5_1_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "TimeStretcher1_5_1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 412.5, 274.15 } },
+				},
+				TimeStretcher1_6_1 = TimeStretcher {
+					CtrlWShown = false,
+					Inputs = {
+						SourceTime = Input { Value = 7, },
+						InterpolateBetweenFrames = Input { Value = 0, },
+						SampleSpread = Input { Disabled = true, },
+						Input = Input {
+							SourceOp = "T_Ident_1_1_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 467.5, 241.15 } },
+				},
+				in7_1 = Transform {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Size = Input {
+							Value = 0.9915,
+							Expression = "CS_In_1_1.Size",
+						},
+						Input = Input {
+							SourceOp = "Merge10",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 522.5, 43.15 } },
+				},
+				Merge12_1_2_1 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge11_2_1_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "InpMrg_6_1_1",
+							Source = "Output",
+						},
+						Center = Input { Expression = "Point((Size/2),1- Size/2*5)", },
+						Size = Input { Expression = "1/CS_In_1_1.Columns", },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 577.5, 472.15 } },
+				},
+				Dissolve6_1_1 = Dissolve {
+					Transitions = {
+						[0] = "DFTDissolve"
+					},
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge1_1_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "in7_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 577.5, 142.15 } },
+				},
+				InpMrg_6_1_1 = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "CS_In_1_1.ShowInputNumber", },
+						Background = Input {
+							SourceOp = "Dissolve6_1_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "TimeStretcher1_6_1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 577.5, 241.15 } },
+				},
+				TimeStretcher1_7_1 = TimeStretcher {
+					CtrlWShown = false,
+					Inputs = {
+						SourceTime = Input { Value = 8, },
+						InterpolateBetweenFrames = Input { Value = 0, },
+						SampleSpread = Input { Disabled = true, },
+						Input = Input {
+							SourceOp = "T_Ident_1_1_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 632.5, 274.15 } },
+				},
+				in8_1 = Transform {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Size = Input {
+							Value = 0.9915,
+							Expression = "CS_In_1_1.Size",
+						},
+						Input = Input {
+							SourceOp = "Merge10_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 707.079, 45.0194 } },
+				},
+				Merge12_1_1_1_1 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge12_1_2_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "InpMrg_7_1_1",
+							Source = "Output",
+						},
+						Center = Input { Expression = "Point((Size/2*3),1- Size/2*5)", },
+						Size = Input { Expression = "1/CS_In_1_1.Columns", },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 742.5, 472.15 } },
+				},
+				InpMrg_7_1_1 = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "CS_In_1_1.ShowInputNumber", },
+						Background = Input {
+							SourceOp = "Dissolve7_1_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "TimeStretcher1_7_1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 742.5, 274.15 } },
+				},
+				Dissolve7_1_1 = Dissolve {
+					Transitions = {
+						[0] = "DFTDissolve"
+					},
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge1_1_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "in8_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 742.5, 142.15 } },
+				},
+				TimeStretcher1_8_1 = TimeStretcher {
+					CtrlWShown = false,
+					Inputs = {
+						SourceTime = Input { Value = 9, },
+						InterpolateBetweenFrames = Input { Value = 0, },
+						SampleSpread = Input { Disabled = true, },
+						Input = Input {
+							SourceOp = "T_Ident_1_1_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 775.568, 241.15 } },
+				},
+				in9_1 = Transform {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Size = Input {
+							Value = 0.9915,
+							Expression = "CS_In_1_1.Size",
+						},
+						Input = Input {
+							SourceOp = "AlphaMultiply2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 902.768, 39.6928 } },
+				},
+				Merge12_2_1_1 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge12_1_1_1_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "InpMrg_8_1_1",
+							Source = "Output",
+						},
+						Center = Input {
+							Value = { 0.833333333333333, 0.166666666666667 },
+							Expression = "Point((Size/2*5),1- Size/2*5)",
+						},
+						Size = Input {
+							Value = 0.333333333333333,
+							Expression = "1/CS_In_1_1.Columns",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 906.476, 472.15 } },
+				},
+				Dissolve8_1_1 = Dissolve {
+					Transitions = {
+						[0] = "DFTDissolve"
+					},
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge1_1_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "in9_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 923.365, 158.904 } },
+				},
+				InpMrg_8_1_1 = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "CS_In_1_1.ShowInputNumber", },
+						Background = Input {
+							SourceOp = "Dissolve8_1_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "TimeStretcher1_8_1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 923.365, 241.15 } },
+				},
+				bgColor_1 = Background {
+					CtrlWShown = false,
+					NameSet = true,
+					CustomData = {
+						Settings = {
+							[1] = {
+								Tools = ordered() {
+									Text1 = TextPlus {
+										Inputs = {
+											DPTType = Input { Disabled = true },
+											ShadingGradient7 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ShadingGradient4 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ShadingGradient2 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ShadingGradient3 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ShadingGradient1 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											Style = Input { Value = "Regular" },
+											Width = Input { Value = 1280 },
+											DPTResolution = Input { Disabled = true },
+											Font = Input { Value = "Arial" },
+											ShadingGradient6 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ShadingGradient5 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											Height = Input { Value = 720 },
+											RenderToDPTFile = Input { Disabled = true },
+											ManualFontKerningPlacement = Input {
+												Value = StyledText {
+													Value = "",
+													Array = {
+													}
+												}
+											},
+											ShadingGradient8 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											}
+										},
+										Name = "Text1",
+										CtrlWZoom = false,
+										ViewInfo = OperatorInfo { Pos = { 55, 17.05 } },
+										CustomData = {
+										}
+									}
+								}
+							},
+							[2] = {
+								Tools = ordered() {
+									Text1 = TextPlus {
+										Inputs = {
+											ShadingGradient8 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											DPTResolution = Input { Disabled = true },
+											StyledText = Input { Value = "!@#$\r\nFUSION\r\neyeon\r\nGENERATION\r\nrOTATION" },
+											ShadingGradient6 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ShadingGradient5 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ShadingGradient4 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											DPTType = Input { Disabled = true },
+											ShadingGradient2 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											Width = Input { Value = 1280 },
+											ShadingGradient1 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											Font = Input { Value = "eyeon" },
+											Style = Input { Value = "Regular" },
+											RenderToDPTFile = Input { Disabled = true },
+											Height = Input { Value = 720 },
+											ShadingGradient3 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											},
+											ManualFontKerningPlacement = Input {
+												Value = StyledText {
+													Value = "",
+													Array = {
+													}
+												}
+											},
+											ShadingGradient7 = Input {
+												Value = Gradient {
+													Colors = {
+														[0] = { 0, 0, 0, 1 },
+														[1] = { 1, 1, 1, 1 }
+													}
+												}
+											}
+										},
+										CtrlWZoom = false,
+										ViewInfo = OperatorInfo { Pos = { 55, 17.05 } },
+										CustomData = {
+										}
+									}
+								}
+							}
+						}
+					},
+					Inputs = {
+						GlobalOut = Input { Value = 300, },
+						Width = Input {
+							Value = 1920,
+							Expression = "CS_In_1_1.Input.OriginalWidth",
+						},
+						Height = Input {
+							Value = 1080,
+							Expression = "CS_In_1_1.Input.OriginalHeight",
+						},
+						TopLeftRed = Input { Value = 0.012, },
+						TopLeftGreen = Input { Value = 0.012, },
+						TopLeftBlue = Input { Value = 0.012, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 1040.81, 408.891 } },
+				},
+				Merge2_1 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "bgColor_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Merge12_2_1_1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 1040.81, 472.15 } },
+				},
+				MainOut_1_1 = BrightnessContrast {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Input = Input {
+							SourceOp = "Merge2_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 1170.62, 472.15 } },
+				}
+			},
+		}
+	},
+	Frames = {
+		{
+			FrameTypeID = "ChildFrame",
+			Mode = 3,
+			LayoutPreset = 0,
+			Left = 0,
+			Top = 27,
+			Width = 1920,
+			Height = 984,
+			ZoneInfo = {
+				AuxRight = { Expanded = true },
+				["!Left"] = {
+				},
+				AuxLeft = { Expanded = true },
+				Right = { Expanded = true, },
+				Left = { Expanded = false, },
+				["!Right"] = {
+				}
+			},
+			ViewInfo = {
+				Viewer1 = { Show = true, RatioY = 1, RatioX = 0.670992366412214, },
+				InnerLeft = {
+				},
+				MainSplit = {
+					RatioX = 1,
+					RatioY = 0.308262711864407,
+				},
+				CenterSplit = {
+					RatioX = 0.683881064162754,
+					RatioY = 1,
+				},
+				Viewer2 = { Show = true, RatioY = 1, RatioX = 0.329007633587786, },
+				Comments = { Show = false },
+				Time = { Show = true, RatioX = 1, PixelY = 83, },
+				InnerColumns = {
+					RatioX = 1,
+					RatioY = 0.691737288135593,
+				},
+				Keyframes = { Show = false, Adjust = true, RatioY = 1, MRU = 0, RatioX = 0.5, },
+				LayoutStrip = { Show = true, RatioX = 1, },
+				Inspector = { Show = true, RatioY = 1, RatioX = 1, },
+				InnerRight = {
+				},
+				MediaPool = { Show = false, },
+				OuterColumns = {
+					RatioX = 1,
+					RatioY = 0.963302752293578,
+				},
+				Effects = { Show = false, },
+				ActionStrip = { Show = false, },
+				Metadata = { Show = false, },
+				OuterLeft = {
+				},
+				ViewerSplit = {
+					RatioX = 1,
+					RatioY = 0.872699386503067,
+				},
+				Nodes = { Show = true, RatioY = 1, RatioX = 1, },
+				OuterRight = {
+					PixelX = 606,
+					RatioY = 1,
+				},
+				Clips = { Show = false, },
+				Spline = { Show = false, Adjust = true, RatioY = 1, MRU = 0, RatioX = 0.5, }
+			},
+			Views = ordered() {
+				Effects = MultiView {
+					Active = "EffectView",
+					ViewList = ordered() {
+						EffectView = "EffectView"
+					},
+				},
+				Nodes = MultiView {
+					Active = "FlowView",
+					ViewList = ordered() {
+						FlowView = "FlowView"
+					},
+					Names = {
+						FlowView = "FlowView"
+					},
+					FlowView = FlowView {
+						Flags = {
+							Navigator = true,
+							AutoHideNavigator = true,
+							ConnectedSnap = true,
+							AutoSnap = true,
+							RemoveRouters = true
+						},
+						NavigatorSize = { 200, 140 },
+						Direction = "Horizontal",
+						PipeStyle = "Direct",
+						Scale = 1.5,
+						Offset = { 0, 0 }
+					}
+				},
+				Keyframes = MultiView {
+					Active = "TimelineView",
+					ViewList = ordered() {
+						TimelineView = "TimelineView"
+					},
+					Names = {
+						TimelineView = "TimelineView"
+					},
+					TimelineView = TimelineView {
+						TreeControlState = {
+						},
+						DisplayMode = "All Tools",
+						ShowCurrentTimeTools = false,
+						Filter = "Show All",
+						ShowSelectedTools = true,
+						ShowAnimatedToolsOnly = false,
+						ShowEditBoxes = false,
+						KeyFrameView = {
+							Position = { Left = 232, Bottom = 229 },
+							ScaleX = 0.809861001495179,
+							OffsetX = -14.7532127503051,
+							OffsetY = 0,
+							AutoScaling = "scroll",
+							AutoSnapTo = "frame",
+							AutoSnapToGuidelines = false,
+							GuidelinesGrabEnabled = true,
+							GuidelinesSnapTo = "none"
+						},
+						Spreadsheet = { LeftPos = 232, Visible = false }
+					}
+				},
+				Spline = MultiView {
+					Active = "SplineView",
+					ViewList = ordered() {
+						SplineView = "SplineEditorView"
+					},
+					Names = {
+						SplineView = "SplineView"
+					},
+					SplineView = SplineEditorView {
+						LeftPos = 264,
+						ScaleX = 0.2,
+						ScaleY = 0.00338983050847458,
+						OffsetX = -3.4,
+						OffsetY = 0,
+						AutoScaling = "scroll",
+						AutoSnapTo = "frame",
+						AutoSnapToGuidelines = false,
+						GuidelinesSnapTo = "frame",
+						ShowKeyMarkers = false,
+						IndependentHandles = false,
+						ShowNonSplineModifiers = false,
+						GuidelinesGrabEnabled = true,
+						ShowOneToolOnly = false,
+						ShowSelectedTools = false,
+						ShowAllInputs = false,
+						Filter = "Show All"
+					}
+				},
+				Inspector = MultiView {
+					Active = "Tools",
+					ViewList = ordered() {
+						Tools = "ControlView",
+						Modifiers = "ModifierView"
+					},
+				},
+				Viewer1 = MultiView {
+					Active = "LeftView",
+					ViewList = ordered() {
+						LeftView = "PreviewContainer"
+					},
+					Names = {
+						LeftView = "LeftView"
+					},
+				},
+				Viewer2 = MultiView {
+					Active = "RightView",
+					ViewList = ordered() {
+						RightView = "PreviewContainer"
+					},
+					Names = {
+						RightView = "RightView"
+					},
+				},
+				Time = "TimeView",
+				ActionStrip = "ActionStripView",
+				LayoutStrip = "LayoutStripView"
+			},
+			Layout = {
+				Rows = 2,
+				RatioX = 1,
+				RatioY = 1,
+				{ ID = "LayoutStrip", RatioX = 1, FixedY = 36, Flat = true },
+				{
+					Columns = 2,
+					RatioY = 0.963302752293578,
+					{
+						Rows = 2,
+						RatioX = 0.683881064162754,
+						RatioY = 1,
+						{
+							Rows = 2,
+							RatioX = 1,
+							RatioY = 1,
+							{
+								Columns = 2,
+								RatioX = 1,
+								RatioY = 0.872699386503067,
+								{ ID = "Viewer1", RatioX = 0.670992366412214, RatioY = 1 },
+								{ ID = "Viewer2", RatioX = 0.329007633587786 }
+							},
+							{ ID = "Time", FixedY = 83, Flat = true }
+						},
+						{ ID = "Nodes", RatioX = 1, RatioY = 1 }
+					},
+					{ ID = "Inspector", RatioX = 1, RatioY = 1 }
+				}
+			}
+		}
+	},
+	Prefs = {
+		Comp = {
+			Interactive = {
+				Proxy = {
+					Auto = true
+				},
+			},
+			Views = {
+				Right = {
+					Viewer = {
+						EnableLUTs = true,
+						LUTPlugin = "GamutViewLUT",
+						ScaleMode = 1,
+						LUTSelected = "Gamut View LUT"
+					},
+					SubView = {
+						Enabled = true,
+						Navigator = false,
+						Magnifier = false,
+						ID = "GLColorInspector",
+						GLHistogramViewer = {
+							AutoBounds = true
+						}
+					},
+					ViewLUT = {
+						{
+							Tools = ordered() {
+								GamutViewLUT1 = ViewOperator {
+									NameSet = true,
+									Inputs = {
+										OutputSpace = Input { Value = FuID { "sRGB" } },
+										DoAlpha = Input { Value = 1 }
+									},
+									CtrlWZoom = false
+								}
+							},
+							ID = "GamutViewLUT"
+						},
+						Recent = {
+							SelectedPlugin = "GamutViewLUT",
+							FusionViewLUT = {
+								Tools = ordered() {
+									FusionViewLUT = ViewLUTOp {
+										NameSet = true,
+										Inputs = {
+										},
+										CtrlWZoom = false
+									}
+								}
+							},
+							SelectedName = "Gamut View LUT"
+						},
+						SelectedName = "Gamut View LUT",
+						SelectedPlugin = "GamutViewLUT"
+					},
+					SideB = {
+						PrevCtrlInactiveColor = 4278255360,
+						PickW = 1,
+						PickH = 1,
+						PrevCtrlActiveColor = 4278190335,
+						Viewer = {
+							EnableLUTs = false,
+							LUTPlugin = "FusionViewLUT",
+							NearZ = 0,
+							FitMarginX = 0,
+							FitMarginType = 0,
+							FarZ = -1000,
+							FitMarginY = 0
+						}
+					},
+					Toolbar = {
+						Style = 0,
+						Size = 0
+					},
+					OpToolbar = {
+						Style = 0,
+						Size = 1
+					}
+				},
+				Left = {
+					Viewer = {
+						EnableLUTs = true,
+						LUTPlugin = "GamutViewLUT",
+						ScaleMode = 1,
+						LUTSelected = "Gamut View LUT"
+					},
+					SubView = {
+						Enabled = true,
+						Navigator = false,
+						Magnifier = false,
+						ID = "GLColorInspector",
+						GLHistogramViewer = {
+							AutoBounds = true
+						}
+					},
+					ViewLUT = {
+						{
+							Tools = ordered() {
+								GamutViewLUT = ViewOperator {
+									NameSet = true,
+									Inputs = {
+										OutputSpace = Input { Value = FuID { "sRGB" } },
+										DoAlpha = Input { Value = 1 }
+									},
+									CtrlWZoom = false
+								}
+							},
+							ID = "GamutViewLUT"
+						},
+						Recent = {
+							SelectedPlugin = "GamutViewLUT",
+							FusionViewLUT = {
+								Tools = ordered() {
+									FusionViewLUT = ViewLUTOp {
+										NameSet = true,
+										Inputs = {
+										}
+									}
+								}
+							},
+							SelectedName = "Gamut View LUT"
+						},
+						SelectedName = "Gamut View LUT",
+						SelectedPlugin = "GamutViewLUT"
+					},
+					SideB = {
+						PrevCtrlInactiveColor = 4278255360,
+						PickW = 1,
+						PickH = 1,
+						PrevCtrlActiveColor = 4278190335,
+						Viewer = {
+							EnableLUTs = false,
+							LUTPlugin = "FusionViewLUT",
+							NearZ = 0,
+							FitMarginX = 0,
+							FitMarginType = 0,
+							FarZ = -1000,
+							FitMarginY = 0
+						}
+					},
+					Toolbar = {
+						Style = 0,
+						Size = 0
+					},
+					OpToolbar = {
+						Style = 0,
+						Size = 1
+					}
+				},
+				View1 = {
+					PrevCtrlInactiveColor = 0,
+					PickW = 1,
+					SideB = {
+						PrevCtrlInactiveColor = 4278255360,
+						PickW = 1,
+						PickH = 1,
+						PrevCtrlActiveColor = 4278190335,
+						Viewer = {
+							EnableLUTs = false,
+							LUTPlugin = "FusionViewLUT",
+							NearZ = 0,
+							FitMarginX = 0,
+							FitMarginType = 0,
+							FarZ = -1000,
+							FitMarginY = 0
+						}
+					},
+					PickH = 1,
+					PrevCtrlActiveColor = 0,
+					AlwaysOnTop = true,
+					FullScreen = false
+				},
+				Defaults = {
+					OpToolbar = {
+						Size = 1
+					},
+				},
+				RightView = {
+					SubView = {
+						Enabled = false,
+						Navigator = false,
+						Magnifier = false,
+						ID = "GLColorInspector",
+						GLColorInspector = {
+							AutoBounds = true
+						},
+						GLHistogramViewer = {
+							AutoBounds = true
+						}
+					},
+					PickW = 1,
+					ViewLUT = {
+						{
+							Tools = ordered() {
+								GamutViewLUT1 = ViewOperator {
+									CtrlWZoom = false,
+									NameSet = true,
+									Inputs = {
+										OutputSpace = Input { Value = FuID { "sRGB" }, },
+										DoAlpha = Input { Value = 1, },
+									},
+								}
+							},
+							ID = "GamutViewLUT"
+						},
+						SelectedPlugin = "GamutViewLUT",
+						SelectedName = "Gamut View LUT"
+					},
+					PickH = 1,
+					Viewer = {
+						EnableLUTs = true,
+						LUTPlugin = "GamutViewLUT",
+						LUTSelected = "Gamut View LUT",
+						CheckerUnderlay = false,
+						ScaleMode = 1,
+					},
+					Toolbar = {
+						Style = 0,
+						Size = 0
+					},
+					OpToolbar = {
+						Style = 0,
+						Size = 0
+					},
+				},
+				View2 = {
+					PickH = 1,
+					PickW = 1,
+					AlwaysOnTop = true,
+					FullScreen = false
+				},
+				LeftView = {
+					SubView = {
+						Enabled = false,
+						Navigator = false,
+						Magnifier = false,
+						ID = "GLColorInspector",
+						GLColorInspector = {
+							AutoBounds = true
+						},
+						GLHistogramViewer = {
+							AutoBounds = true
+						}
+					},
+					PickW = 1,
+					ViewLUT = {
+						{
+							Tools = ordered() {
+								GamutViewLUT = ViewOperator {
+									CtrlWZoom = false,
+									NameSet = true,
+									Inputs = {
+										OutputSpace = Input { Value = FuID { "sRGB" }, },
+										DoAlpha = Input { Value = 1, },
+									},
+								}
+							},
+							ID = "GamutViewLUT"
+						},
+						Recent = {
+							SelectedPlugin = "GamutViewLUT",
+							FusionViewLUT = {
+								Tools = ordered() {
+									FusionViewLUT = ViewLUTOp {
+										NameSet = true,
+										Inputs = {
+										}
+									}
+								}
+							},
+							SelectedName = "Gamut View LUT"
+						},
+						SelectedName = "Gamut View LUT",
+						SelectedPlugin = "GamutViewLUT"
+					},
+					PickH = 1,
+					Viewer = {
+						EnableLUTs = true,
+						LUTPlugin = "GamutViewLUT",
+						LUTSelected = "Gamut View LUT",
+						CheckerUnderlay = false,
+						ScaleMode = 1,
+						Channel = 4294967295,
+					},
+					Toolbar = {
+						Style = 0,
+						Size = 0
+					},
+					OpToolbar = {
+						Style = 0,
+						Size = 0
+					},
+				}
+			},
+			Preview = {
+				HiQ = false,
+			},
+			FrameFormat = {
+				GuideRatio = 1.77777777777778,
+				DepthFull = 3,
+				DepthPreview = 3,
+				DepthInteractive = 3,
+			},
+			LastFile = "Y:\\My Drive\\Dyne - Works\\Canda Dry - FAXXI '19\\07_Render\\02_PreRender\\02_Animation\\CD_Anim_Coolnic_Scn 010\\CD_Anim_Coolnic_Scn 010_MainPreRenderBG-v02.mov",
+			PolyKeyListDlg = {
+				Window = {
+					Left = 909,
+					Top = 250
+				}
+			},
+			Unsorted = {
+				GlobalEnd = 300,
+				RenderSettings = {
+					Configs = {
+					}
+				}
+			},
+			Tweaks = {
+				OpenCL = {
+					Enable = 1,
+					Caching = 2
+				}
+			},
+			Paths = {
+			},
+			FlowView = {
+				ConnectedSnap = true,
+			},
+			QuickTime = {
+			},
+		}
+	},
+}
+
+ 

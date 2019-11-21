@@ -1,0 +1,4450 @@
+{
+	Tools = ordered() {
+		dy_Breakdown_Masks_1 = MacroOperator {
+			Inputs = ordered() {
+				Input1 = InstanceInput {
+					SourceOp = "Controls_2",
+					Source = "NumberIn1",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "Controls_2",
+					Source = "NumberIn2",
+					Default = 1,
+				},
+				Input3 = InstanceInput {
+					SourceOp = "Controls_2",
+					Source = "NumberIn3",
+					Default = 20,
+				},
+				Input4 = InstanceInput {
+					SourceOp = "Controls_2",
+					Source = "NumberIn4",
+					Default = 10,
+				},
+				Input5 = InstanceInput {
+					SourceOp = "Controls_2",
+					Source = "NumberIn5",
+				}
+			},
+			Outputs = {
+				MainOutput7 = InstanceOutput {
+					SourceOp = "Mask_Out01_2",
+					Source = "Output",
+					Name = "Output01",
+				},
+				MainOutput3 = InstanceOutput {
+					SourceOp = "Mask_Out07_2",
+					Source = "Output",
+					Name = "Output07",
+				},
+				MainOutput4 = InstanceOutput {
+					SourceOp = "Mask_Out06_2",
+					Source = "Output",
+					Name = "Output06",
+				},
+				MainOutput6 = InstanceOutput {
+					SourceOp = "Mask_Out03_2",
+					Source = "Output",
+				},
+				MainOutput8 = InstanceOutput {
+					SourceOp = "Mask_Out08_2",
+					Source = "Output",
+					Name = "Output08",
+				},
+				MainOutput1 = InstanceOutput {
+					SourceOp = "Mask_Out04_2",
+					Source = "Output",
+					Name = "Output04",
+				},
+				MainOutput5 = InstanceOutput {
+					SourceOp = "Mask_Out02_2",
+					Source = "Output",
+					Name = "Output02",
+				},
+				MainOutput9 = InstanceOutput {
+					SourceOp = "Mask_Out09_2",
+					Source = "Output",
+					Name = "Output09",
+				},
+				MainOutput2 = InstanceOutput {
+					SourceOp = "Mask_Out05_2",
+					Source = "Output",
+					Name = "Output05",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 5477.56, 664.821 } },
+			Tools = ordered() {
+				Crop1_2 = Crop {
+					CtrlWShown = false,
+					Inputs = {
+						XSize = Input { Value = 1920, },
+						YSize = Input { Value = 1080, },
+						Input = Input {
+							SourceOp = "Transform4_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -696.763, 122.886 } },
+				},
+				Transform4_2 = Transform {
+					CtrlWShown = false,
+					Inputs = {
+						Quality = Input { Value = 10, },
+						Center = Input {
+							SourceOp = "Path1_2",
+							Source = "Position",
+						},
+						Size = Input { Value = 2.14, },
+						Angle = Input { Value = 78.3, },
+						Input = Input {
+							SourceOp = "Background2_1_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -829.214, 122.886 } },
+				},
+				Path1_2 = PolyPath {
+					DrawMode = "InsertAndModify",
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					Inputs = {
+						Displacement = Input {
+							SourceOp = "Path1_2Displacement",
+							Source = "Value",
+						},
+						PolyLine = Input {
+							Value = Polyline {
+								Points = {
+									{ Linear = true, LockY = true, X = -1.18735891647856, Y = 0, RX = 0.391271632806622, RY = 0 },
+									{ Linear = true, LockY = true, X = -0.0135440180586908, Y = 0, LX = -0.391271632806622, LY = 0 }
+								}
+							},
+						},
+					},
+				},
+				Path1_2Displacement = BezierSpline {
+					SplineColor = { Red = 255, Green = 0, Blue = 255 },
+					CtrlWShown = false,
+					NameSet = true,
+					KeyFrames = {
+						[0] = { 0, RH = { 6.66666666666667, 0 }, Flags = { LockedY = true } },
+						[20] = { 1, LH = { 13.3333333333333, 1 }, Flags = { LockedY = true } }
+					}
+				},
+				Background2_1_2 = Background {
+					CtrlWShown = false,
+					Inputs = {
+						GlobalOut = Input { Value = 300, },
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						TopLeftRed = Input { Value = 1, },
+						TopLeftGreen = Input { Value = 1, },
+						TopLeftBlue = Input { Value = 1, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -982.548, 122.886 } },
+				},
+				Controls_2 = Custom {
+					CtrlWShown = false,
+					Inputs = {
+						NumberIn2 = Input { Value = 1, },
+						NumberIn3 = Input { Value = 20, },
+						NumberIn4 = Input { Value = 10, },
+						NumberIn6 = Input { Value = 1, },
+						LUTIn1 = Input {
+							SourceOp = "CustomTool1LUTIn1_2",
+							Source = "Value",
+						},
+						LUTIn2 = Input {
+							SourceOp = "CustomTool1LUTIn2_2",
+							Source = "Value",
+						},
+						LUTIn3 = Input {
+							SourceOp = "CustomTool1LUTIn3_2",
+							Source = "Value",
+						},
+						LUTIn4 = Input {
+							SourceOp = "CustomTool1LUTIn4_2",
+							Source = "Value",
+						},
+						AuxChannelNest = Input { Value = 1, },
+						NumberControls = Input { Value = 1, },
+						NameforNumber1 = Input { Value = "Start Animation", },
+						NameforNumber2 = Input { Value = "Mask Speed", },
+						NameforNumber3 = Input { Value = "Time Offset", },
+						NameforNumber4 = Input { Value = "Space Between Anim", },
+						NameforNumber5 = Input { Value = "Text Visibility", },
+						ShowNumber6 = Input { Value = 0, },
+						NameforNumber6 = Input { Value = "", },
+						ShowNumber7 = Input { Value = 0, },
+						NameforNumber7 = Input { Value = "", },
+						ShowNumber8 = Input { Value = 0, },
+						NameforNumber8 = Input { Value = "", },
+						ShowPoint1 = Input { Value = 0, },
+						ShowPoint2 = Input { Value = 0, },
+						ShowPoint3 = Input { Value = 0, },
+						ShowPoint4 = Input { Value = 0, },
+						ShowLUT1 = Input { Value = 0, },
+						ShowLUT2 = Input { Value = 0, },
+						ShowLUT3 = Input { Value = 0, },
+						ShowLUT4 = Input { Value = 0, },
+						Image1 = Input {
+							SourceOp = "Crop1_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -474.863, 122.886 } },
+				},
+				CustomTool1LUTIn1_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 0, Blue = 0 },
+					CtrlWShown = false,
+				},
+				CustomTool1LUTIn2_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 204, Blue = 0 },
+					CtrlWShown = false,
+				},
+				CustomTool1LUTIn3_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 0, Blue = 204 },
+					CtrlWShown = false,
+				},
+				CustomTool1LUTIn4_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 204, Blue = 204 },
+					CtrlWShown = false,
+				},
+				Note1_2 = Note {
+					CtrlWShown = false,
+					Inputs = {
+						Comments = Input { Value = "Mask Anim", }
+					},
+					ViewInfo = StickyNoteInfo {
+						Pos = { -838.842, 173.979 },
+						Flags = {
+							Expanded = true
+						},
+						Size = { 196, 181.364 }
+					},
+				},
+				TMSpeed_and_Start_2 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Controls_2",
+							Source = "Output",
+						},
+						Mode = Input { Value = FuID { "LockStart" }, },
+						Speed = Input { Expression = "Controls_2.NumberIn2", },
+						Skip = Input { Value = 1, },
+						XFrameNumbers = Input { Disabled = true, },
+						TargetStartFrame = Input { Expression = "Controls_2.NumberIn1", },
+					},
+					ViewInfo = OperatorInfo { Pos = { -326.495, 122.886 } },
+					Version = 211
+				},
+				PipeRouter6_2 = PipeRouter {
+					CtrlWShown = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "TMSpeed_and_Start_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -111.821, 269.722 } },
+				},
+				Merge2_2 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Blend = Input { Expression = "Controls_2.NumberIn5", },
+						Background = Input {
+							SourceOp = "TMSpeed_and_Start_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text1_3",
+							Source = "Output",
+						},
+						Operator = Input { Value = FuID { "XOr" }, },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 156.588, 122.886 } },
+				},
+				Merge4_4 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Blend = Input { Expression = "Controls_2.NumberIn5", },
+						Background = Input {
+							SourceOp = "PipeRouter7_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text1_3",
+							Source = "Output",
+						},
+						Operator = Input { Value = FuID { "XOr" }, },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 156.588, 451.384 } },
+				},
+				Text1_3 = TextPlus {
+					CtrlWShown = false,
+					Inputs = {
+						GlobalOut = Input { Value = 300, },
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Green1 = Input { Value = 0, },
+						Blue1 = Input { Value = 0, },
+						StyledText = Input {
+							Value = "Frame: 50",
+							Expression = "Text(\"Frame: \"..time)",
+						},
+						Font = Input { Value = "Open Sans", },
+						Style = Input { Value = "Bold", },
+						Size = Input { Value = 0.1, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalJustificationNew = Input { Value = 3, },
+						ManualFontKerningPlacement = Input {
+							Value = StyledText {
+								Array = {
+								},
+								Value = ""
+							},
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 156.588, 8.10999 } },
+				},
+				Merge3_3 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Blend = Input { Expression = "Controls_2.NumberIn5", },
+						Background = Input {
+							SourceOp = "PipeRouter6_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text1_3",
+							Source = "Output",
+						},
+						Operator = Input { Value = FuID { "XOr" }, },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 156.588, 269.722 } },
+				},
+				PipeRouter7_2 = PipeRouter {
+					CtrlWShown = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "TMSpeed_and_Start_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -109.599, 451.384 } },
+				},
+				Note2_2 = Note {
+					CtrlWShown = false,
+					Inputs = {
+						Comments = Input { Value = "Pendings:\n\n- Better Controls\n- Boole for text visibility.\n- Boole for motion Blur.\n- Mask Angle control.\n- Custom Mask input.\n- Mask Crop Size.", }
+					},
+					ViewInfo = StickyNoteInfo {
+						Pos = { -833.728, 446.858 },
+						Flags = {
+							Expanded = true
+						},
+						Size = { 423.846, 318.499 }
+					},
+				},
+				Merge4_1_3 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Blend = Input { Expression = "Controls_2.NumberIn5", },
+						Background = Input {
+							SourceOp = "PipeRouter1_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text1_3",
+							Source = "Output",
+						},
+						Operator = Input { Value = FuID { "XOr" }, },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 156.588, 636.839 } },
+				},
+				PipeRouter1_2 = PipeRouter {
+					CtrlWShown = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "TMSpeed_and_Start_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -106.248, 636.839 } },
+				},
+				Merge1_1_1_1_3 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Blend = Input { Expression = "Controls_2.NumberIn5", },
+						Background = Input {
+							SourceOp = "Merge4_1_3",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text1_1_1_1_1_3",
+							Source = "Output",
+						},
+						Operator = Input { Value = FuID { "XOr" }, },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 420.18, 636.839 } },
+				},
+				Text1_1_1_1_1_3 = TextPlus {
+					CtrlWShown = false,
+					Inputs = {
+						GlobalOut = Input { Value = 300, },
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Center = Input { Value = { 0.5, 0.346325167037862 }, },
+						Green1 = Input { Value = 0, },
+						Blue1 = Input { Value = 0, },
+						StyledText = Input { Value = "Mask 04", },
+						Font = Input { Value = "Open Sans", },
+						Style = Input { Value = "Bold", },
+						Size = Input { Value = 0.1, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalJustificationNew = Input { Value = 3, },
+						ManualFontKerningPlacement = Input {
+							Value = StyledText {
+								Array = {
+								},
+								Value = ""
+							},
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 420.18, 591.5 } },
+				},
+				Merge1_1_1_3 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Blend = Input { Expression = "Controls_2.NumberIn5", },
+						Background = Input {
+							SourceOp = "Merge4_4",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text1_1_1_1_3",
+							Source = "Output",
+						},
+						Operator = Input { Value = FuID { "XOr" }, },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 420.18, 451.384 } },
+				},
+				Text1_1_1_1_3 = TextPlus {
+					CtrlWShown = false,
+					Inputs = {
+						GlobalOut = Input { Value = 300, },
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Center = Input { Value = { 0.5, 0.346325167037862 }, },
+						Green1 = Input { Value = 0, },
+						Blue1 = Input { Value = 0, },
+						StyledText = Input { Value = "Mask 03", },
+						Font = Input { Value = "Open Sans", },
+						Style = Input { Value = "Bold", },
+						Size = Input { Value = 0.1, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalJustificationNew = Input { Value = 3, },
+						ManualFontKerningPlacement = Input {
+							Value = StyledText {
+								Array = {
+								},
+								Value = ""
+							},
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 420.18, 406.046 } },
+				},
+				Merge1_1_3 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Blend = Input { Expression = "Controls_2.NumberIn5", },
+						Background = Input {
+							SourceOp = "Merge3_3",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text1_1_1_3",
+							Source = "Output",
+						},
+						Operator = Input { Value = FuID { "XOr" }, },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 422.4, 269.722 } },
+				},
+				Text1_1_1_3 = TextPlus {
+					CtrlWShown = false,
+					Inputs = {
+						GlobalOut = Input { Value = 300, },
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Center = Input { Value = { 0.5, 0.346325167037862 }, },
+						Green1 = Input { Value = 0, },
+						Blue1 = Input { Value = 0, },
+						StyledText = Input { Value = "Mask 02", },
+						Font = Input { Value = "Open Sans", },
+						Style = Input { Value = "Bold", },
+						Size = Input { Value = 0.1, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalJustificationNew = Input { Value = 3, },
+						ManualFontKerningPlacement = Input {
+							Value = StyledText {
+								Array = {
+								},
+								Value = ""
+							},
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 422.4, 224.383 } },
+				},
+				Merge1_3 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Blend = Input { Expression = "Controls_2.NumberIn5", },
+						Background = Input {
+							SourceOp = "Merge2_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text1_1_3",
+							Source = "Output",
+						},
+						Operator = Input { Value = FuID { "XOr" }, },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 425.48, 122.886 } },
+				},
+				Text1_1_3 = TextPlus {
+					CtrlWShown = false,
+					Inputs = {
+						GlobalOut = Input { Value = 300, },
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Center = Input { Value = { 0.5, 0.346325167037862 }, },
+						Green1 = Input { Value = 0, },
+						Blue1 = Input { Value = 0, },
+						StyledText = Input { Value = "Mask 01", },
+						Font = Input { Value = "Open Sans", },
+						Style = Input { Value = "Bold", },
+						Size = Input { Value = 0.1, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalJustificationNew = Input { Value = 3, },
+						ManualFontKerningPlacement = Input {
+							Value = StyledText {
+								Array = {
+								},
+								Value = ""
+							},
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 425.48, 77.5479 } },
+				},
+				Text1_1_1_1_1_1_6 = TextPlus {
+					CtrlWShown = false,
+					Inputs = {
+						GlobalOut = Input { Value = 300, },
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Center = Input { Value = { 0.5, 0.346325167037862 }, },
+						Green1 = Input { Value = 0, },
+						Blue1 = Input { Value = 0, },
+						StyledText = Input { Value = "Mask 05", },
+						Font = Input { Value = "Open Sans", },
+						Style = Input { Value = "Bold", },
+						Size = Input { Value = 0.1, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalJustificationNew = Input { Value = 3, },
+						ManualFontKerningPlacement = Input {
+							Value = StyledText {
+								Array = {
+								},
+								Value = ""
+							},
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 420.18, 790.241 } },
+				},
+				Merge1_1_1_1_1_6 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Blend = Input { Expression = "Controls_2.NumberIn5", },
+						Background = Input {
+							SourceOp = "Merge4_1_1_6",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text1_1_1_1_1_1_6",
+							Source = "Output",
+						},
+						Operator = Input { Value = FuID { "XOr" }, },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 420.18, 835.579 } },
+				},
+				Merge4_1_1_6 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Blend = Input { Expression = "Controls_2.NumberIn5", },
+						Background = Input {
+							SourceOp = "PipeRouter2_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text1_3",
+							Source = "Output",
+						},
+						Operator = Input { Value = FuID { "XOr" }, },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 156.588, 835.579 } },
+				},
+				PipeRouter2_2 = PipeRouter {
+					CtrlWShown = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "TMSpeed_and_Start_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -80.1979, 835.579 } },
+				},
+				Text1_1_1_1_1_1_1_2 = TextPlus {
+					CtrlWShown = false,
+					Inputs = {
+						GlobalOut = Input { Value = 300, },
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Center = Input { Value = { 0.5, 0.346325167037862 }, },
+						Green1 = Input { Value = 0, },
+						Blue1 = Input { Value = 0, },
+						StyledText = Input { Value = "Mask 06", },
+						Font = Input { Value = "Open Sans", },
+						Style = Input { Value = "Bold", },
+						Size = Input { Value = 0.1, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalJustificationNew = Input { Value = 3, },
+						ManualFontKerningPlacement = Input {
+							Value = StyledText {
+								Array = {
+								},
+								Value = ""
+							},
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 420.18, 996.32 } },
+				},
+				TM03_2 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Merge1_1_1_3",
+							Source = "Output",
+						},
+						Mode = Input { Value = FuID { "Offset" }, },
+						Skip = Input { Value = 1, },
+						Offset = Input {
+							Value = 40,
+							Expression = "Controls_2.NumberIn3 * 2 + Controls_2.NumberIn4 * 2",
+						},
+						XFrameNumbers = Input { Disabled = true, },
+						ForceTargetRange = Input { Value = 1, },
+						TargetStartFrame = Input {
+							Value = 40,
+							Expression = "Controls_2.NumberIn3 * 2 + Controls_2.NumberIn4 * 2",
+						},
+						TargetEndFrame = Input {
+							Value = 300,
+							Expression = "comp.GlobalEnd",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 755.52, 451.384 } },
+					Version = 211
+				},
+				TM06_2 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Merge1_1_1_1_1_1_2",
+							Source = "Output",
+						},
+						Mode = Input { Value = FuID { "Offset" }, },
+						Skip = Input { Value = 1, },
+						Offset = Input {
+							Value = 100,
+							Expression = "Controls_2.NumberIn3 * 5 + Controls_2.NumberIn4 * 5",
+						},
+						XFrameNumbers = Input { Disabled = true, },
+						ForceTargetRange = Input { Value = 1, },
+						TargetStartFrame = Input {
+							Value = 100,
+							Expression = "Controls_2.NumberIn3 * 5 + Controls_2.NumberIn4 * 5",
+						},
+						TargetEndFrame = Input {
+							Value = 300,
+							Expression = "comp.GlobalEnd",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 757.97, 1042.67 } },
+					Version = 211
+				},
+				TM05_2 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Merge1_1_1_1_1_6",
+							Source = "Output",
+						},
+						Mode = Input { Value = FuID { "Offset" }, },
+						Skip = Input { Value = 1, },
+						Offset = Input {
+							Value = 80,
+							Expression = "Controls_2.NumberIn3 * 4 + Controls_2.NumberIn4 * 4",
+						},
+						XFrameNumbers = Input { Disabled = true, },
+						ForceTargetRange = Input { Value = 1, },
+						TargetStartFrame = Input {
+							Value = 80,
+							Expression = "Controls_2.NumberIn3 * 4 + Controls_2.NumberIn4 * 4",
+						},
+						TargetEndFrame = Input {
+							Value = 300,
+							Expression = "comp.GlobalEnd",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 757.97, 835.579 } },
+					Version = 211
+				},
+				TM02_2 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Merge1_1_3",
+							Source = "Output",
+						},
+						Mode = Input { Value = FuID { "Offset" }, },
+						Skip = Input { Value = 1, },
+						Offset = Input {
+							Value = 20,
+							Expression = "Controls_2.NumberIn3+Controls_2.NumberIn4",
+						},
+						XFrameNumbers = Input { Disabled = true, },
+						ForceTargetRange = Input { Value = 1, },
+						TargetStartFrame = Input {
+							Value = 20,
+							Expression = "Controls_2.NumberIn3+Controls_2.NumberIn4",
+						},
+						TargetEndFrame = Input {
+							Value = 300,
+							Expression = "comp.GlobalEnd",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 759.65, 269.722 } },
+					Version = 211
+				},
+				TM04_2 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Merge1_1_1_1_3",
+							Source = "Output",
+						},
+						Mode = Input { Value = FuID { "Offset" }, },
+						Skip = Input { Value = 1, },
+						Offset = Input {
+							Value = 60,
+							Expression = "Controls_2.NumberIn3 * 3 + Controls_2.NumberIn4 * 3",
+						},
+						XFrameNumbers = Input { Disabled = true, },
+						ForceTargetRange = Input { Value = 1, },
+						TargetStartFrame = Input {
+							Value = 60,
+							Expression = "Controls_2.NumberIn3 * 3 + Controls_2.NumberIn4 * 3",
+						},
+						TargetEndFrame = Input {
+							Value = 300,
+							Expression = "comp.GlobalEnd",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 757.97, 636.839 } },
+					Version = 211
+				},
+				Merge1_1_1_1_1_1_2 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Blend = Input { Expression = "Controls_2.NumberIn5", },
+						Background = Input {
+							SourceOp = "Merge4_1_1_1_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text1_1_1_1_1_1_1_2",
+							Source = "Output",
+						},
+						Operator = Input { Value = FuID { "XOr" }, },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 420.18, 1042.67 } },
+				},
+				Merge4_1_1_1_2 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Blend = Input { Expression = "Controls_2.NumberIn5", },
+						Background = Input {
+							SourceOp = "PipeRouter8_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text1_3",
+							Source = "Output",
+						},
+						Operator = Input { Value = FuID { "XOr" }, },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 156.588, 1042.67 } },
+				},
+				PipeRouter8_2 = PipeRouter {
+					CtrlWShown = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "TMSpeed_and_Start_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -75.366, 1042.67 } },
+				},
+				Text1_1_1_1_1_1_2_2 = TextPlus {
+					CtrlWShown = false,
+					Inputs = {
+						GlobalOut = Input { Value = 300, },
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Center = Input { Value = { 0.5, 0.346325167037862 }, },
+						Green1 = Input { Value = 0, },
+						Blue1 = Input { Value = 0, },
+						StyledText = Input { Value = "Mask 07", },
+						Font = Input { Value = "Open Sans", },
+						Style = Input { Value = "Bold", },
+						Size = Input { Value = 0.1, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalJustificationNew = Input { Value = 3, },
+						ManualFontKerningPlacement = Input {
+							Value = StyledText {
+								Array = {
+								},
+								Value = ""
+							},
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 420.18, 1203.64 } },
+				},
+				TM07_2 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Merge1_1_1_1_1_2_2",
+							Source = "Output",
+						},
+						Mode = Input { Value = FuID { "Offset" }, },
+						Skip = Input { Value = 1, },
+						Offset = Input {
+							Value = 120,
+							Expression = "Controls_2.NumberIn3 * 6 + Controls_2.NumberIn4 * 6",
+						},
+						XFrameNumbers = Input { Disabled = true, },
+						ForceTargetRange = Input { Value = 1, },
+						TargetStartFrame = Input {
+							Value = 120,
+							Expression = "Controls_2.NumberIn3 * 6 + Controls_2.NumberIn4 * 6",
+						},
+						TargetEndFrame = Input {
+							Value = 300,
+							Expression = "comp.GlobalEnd",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 757.97, 1248.98 } },
+					Version = 211
+				},
+				Merge4_1_1_2_2 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Blend = Input { Expression = "Controls_2.NumberIn5", },
+						Background = Input {
+							SourceOp = "PipeRouter9_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text1_3",
+							Source = "Output",
+						},
+						Operator = Input { Value = FuID { "XOr" }, },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 156.588, 1248.98 } },
+				},
+				Merge1_1_1_1_1_2_2 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Blend = Input { Expression = "Controls_2.NumberIn5", },
+						Background = Input {
+							SourceOp = "Merge4_1_1_2_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text1_1_1_1_1_1_2_2",
+							Source = "Output",
+						},
+						Operator = Input { Value = FuID { "XOr" }, },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 420.18, 1248.98 } },
+				},
+				PipeRouter9_2 = PipeRouter {
+					CtrlWShown = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "TMSpeed_and_Start_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -46.2739, 1248.98 } },
+				},
+				Mask_Out04_2 = Custom {
+					CtrlWShown = false,
+					Inputs = {
+						LUTIn1 = Input {
+							SourceOp = "Mask_Out04LUTIn1_2",
+							Source = "Value",
+						},
+						LUTIn2 = Input {
+							SourceOp = "Mask_Out04LUTIn2_2",
+							Source = "Value",
+						},
+						LUTIn3 = Input {
+							SourceOp = "Mask_Out04LUTIn3_2",
+							Source = "Value",
+						},
+						LUTIn4 = Input {
+							SourceOp = "Mask_Out04LUTIn4_2",
+							Source = "Value",
+						},
+						ShowNumber1 = Input { Value = 0, },
+						ShowNumber2 = Input { Value = 0, },
+						ShowNumber3 = Input { Value = 0, },
+						ShowNumber4 = Input { Value = 0, },
+						ShowNumber5 = Input { Value = 0, },
+						ShowNumber6 = Input { Value = 0, },
+						ShowNumber7 = Input { Value = 0, },
+						ShowNumber8 = Input { Value = 0, },
+						ShowPoint1 = Input { Value = 0, },
+						ShowPoint2 = Input { Value = 0, },
+						ShowPoint3 = Input { Value = 0, },
+						ShowPoint4 = Input { Value = 0, },
+						ShowLUT1 = Input { Value = 0, },
+						ShowLUT2 = Input { Value = 0, },
+						ShowLUT3 = Input { Value = 0, },
+						ShowLUT4 = Input { Value = 0, },
+						Image1 = Input {
+							SourceOp = "TM04_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 973.81, 636.839 } },
+				},
+				Mask_Out04LUTIn1_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 0, Blue = 0 },
+					CtrlWShown = false,
+				},
+				Mask_Out04LUTIn2_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 204, Blue = 0 },
+					CtrlWShown = false,
+				},
+				Mask_Out04LUTIn3_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 0, Blue = 204 },
+					CtrlWShown = false,
+				},
+				Mask_Out04LUTIn4_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 204, Blue = 204 },
+					CtrlWShown = false,
+				},
+				Mask_Out05_2 = Custom {
+					CtrlWShown = false,
+					Inputs = {
+						LUTIn1 = Input {
+							SourceOp = "Mask_Out05LUTIn1_2",
+							Source = "Value",
+						},
+						LUTIn2 = Input {
+							SourceOp = "Mask_Out05LUTIn2_2",
+							Source = "Value",
+						},
+						LUTIn3 = Input {
+							SourceOp = "Mask_Out05LUTIn3_2",
+							Source = "Value",
+						},
+						LUTIn4 = Input {
+							SourceOp = "Mask_Out05LUTIn4_2",
+							Source = "Value",
+						},
+						ShowNumber1 = Input { Value = 0, },
+						ShowNumber2 = Input { Value = 0, },
+						ShowNumber3 = Input { Value = 0, },
+						ShowNumber4 = Input { Value = 0, },
+						ShowNumber5 = Input { Value = 0, },
+						ShowNumber6 = Input { Value = 0, },
+						ShowNumber7 = Input { Value = 0, },
+						ShowNumber8 = Input { Value = 0, },
+						ShowPoint1 = Input { Value = 0, },
+						ShowPoint2 = Input { Value = 0, },
+						ShowPoint3 = Input { Value = 0, },
+						ShowPoint4 = Input { Value = 0, },
+						ShowLUT1 = Input { Value = 0, },
+						ShowLUT2 = Input { Value = 0, },
+						ShowLUT3 = Input { Value = 0, },
+						ShowLUT4 = Input { Value = 0, },
+						Image1 = Input {
+							SourceOp = "TM05_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 978.25, 835.579 } },
+				},
+				Mask_Out05LUTIn1_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 0, Blue = 0 },
+					CtrlWShown = false,
+				},
+				Mask_Out05LUTIn2_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 204, Blue = 0 },
+					CtrlWShown = false,
+				},
+				Mask_Out05LUTIn3_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 0, Blue = 204 },
+					CtrlWShown = false,
+				},
+				Mask_Out05LUTIn4_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 204, Blue = 204 },
+					CtrlWShown = false,
+				},
+				Mask_Out07_2 = Custom {
+					CtrlWShown = false,
+					Inputs = {
+						LUTIn1 = Input {
+							SourceOp = "Mask_Out07LUTIn1_2",
+							Source = "Value",
+						},
+						LUTIn2 = Input {
+							SourceOp = "Mask_Out07LUTIn2_2",
+							Source = "Value",
+						},
+						LUTIn3 = Input {
+							SourceOp = "Mask_Out07LUTIn3_2",
+							Source = "Value",
+						},
+						LUTIn4 = Input {
+							SourceOp = "Mask_Out07LUTIn4_2",
+							Source = "Value",
+						},
+						ShowNumber1 = Input { Value = 0, },
+						ShowNumber2 = Input { Value = 0, },
+						ShowNumber3 = Input { Value = 0, },
+						ShowNumber4 = Input { Value = 0, },
+						ShowNumber5 = Input { Value = 0, },
+						ShowNumber6 = Input { Value = 0, },
+						ShowNumber7 = Input { Value = 0, },
+						ShowNumber8 = Input { Value = 0, },
+						ShowPoint1 = Input { Value = 0, },
+						ShowPoint2 = Input { Value = 0, },
+						ShowPoint3 = Input { Value = 0, },
+						ShowPoint4 = Input { Value = 0, },
+						ShowLUT1 = Input { Value = 0, },
+						ShowLUT2 = Input { Value = 0, },
+						ShowLUT3 = Input { Value = 0, },
+						ShowLUT4 = Input { Value = 0, },
+						Image1 = Input {
+							SourceOp = "TM07_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 973.81, 1248.98 } },
+				},
+				Mask_Out07LUTIn1_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 0, Blue = 0 },
+					CtrlWShown = false,
+				},
+				Mask_Out07LUTIn2_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 204, Blue = 0 },
+					CtrlWShown = false,
+				},
+				Mask_Out07LUTIn3_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 0, Blue = 204 },
+					CtrlWShown = false,
+				},
+				Mask_Out07LUTIn4_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 204, Blue = 204 },
+					CtrlWShown = false,
+				},
+				Mask_Out06_2 = Custom {
+					CtrlWShown = false,
+					Inputs = {
+						LUTIn1 = Input {
+							SourceOp = "Mask_Out06LUTIn1_2",
+							Source = "Value",
+						},
+						LUTIn2 = Input {
+							SourceOp = "Mask_Out06LUTIn2_2",
+							Source = "Value",
+						},
+						LUTIn3 = Input {
+							SourceOp = "Mask_Out06LUTIn3_2",
+							Source = "Value",
+						},
+						LUTIn4 = Input {
+							SourceOp = "Mask_Out06LUTIn4_2",
+							Source = "Value",
+						},
+						ShowNumber1 = Input { Value = 0, },
+						ShowNumber2 = Input { Value = 0, },
+						ShowNumber3 = Input { Value = 0, },
+						ShowNumber4 = Input { Value = 0, },
+						ShowNumber5 = Input { Value = 0, },
+						ShowNumber6 = Input { Value = 0, },
+						ShowNumber7 = Input { Value = 0, },
+						ShowNumber8 = Input { Value = 0, },
+						ShowPoint1 = Input { Value = 0, },
+						ShowPoint2 = Input { Value = 0, },
+						ShowPoint3 = Input { Value = 0, },
+						ShowPoint4 = Input { Value = 0, },
+						ShowLUT1 = Input { Value = 0, },
+						ShowLUT2 = Input { Value = 0, },
+						ShowLUT3 = Input { Value = 0, },
+						ShowLUT4 = Input { Value = 0, },
+						Image1 = Input {
+							SourceOp = "TM06_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 973.81, 1042.67 } },
+				},
+				Mask_Out06LUTIn1_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 0, Blue = 0 },
+					CtrlWShown = false,
+				},
+				Mask_Out06LUTIn2_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 204, Blue = 0 },
+					CtrlWShown = false,
+				},
+				Mask_Out06LUTIn3_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 0, Blue = 204 },
+					CtrlWShown = false,
+				},
+				Mask_Out06LUTIn4_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 204, Blue = 204 },
+					CtrlWShown = false,
+				},
+				Mask_Out02_2 = Custom {
+					CtrlWShown = false,
+					Inputs = {
+						LUTIn1 = Input {
+							SourceOp = "Mask_Out02LUTIn1_2",
+							Source = "Value",
+						},
+						LUTIn2 = Input {
+							SourceOp = "Mask_Out02LUTIn2_2",
+							Source = "Value",
+						},
+						LUTIn3 = Input {
+							SourceOp = "Mask_Out02LUTIn3_2",
+							Source = "Value",
+						},
+						LUTIn4 = Input {
+							SourceOp = "Mask_Out02LUTIn4_2",
+							Source = "Value",
+						},
+						ShowNumber1 = Input { Value = 0, },
+						ShowNumber2 = Input { Value = 0, },
+						ShowNumber3 = Input { Value = 0, },
+						ShowNumber4 = Input { Value = 0, },
+						ShowNumber5 = Input { Value = 0, },
+						ShowNumber6 = Input { Value = 0, },
+						ShowNumber7 = Input { Value = 0, },
+						ShowNumber8 = Input { Value = 0, },
+						ShowPoint1 = Input { Value = 0, },
+						ShowPoint2 = Input { Value = 0, },
+						ShowPoint3 = Input { Value = 0, },
+						ShowPoint4 = Input { Value = 0, },
+						ShowLUT1 = Input { Value = 0, },
+						ShowLUT2 = Input { Value = 0, },
+						ShowLUT3 = Input { Value = 0, },
+						ShowLUT4 = Input { Value = 0, },
+						Image1 = Input {
+							SourceOp = "TM02_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 976.77, 269.722 } },
+				},
+				Mask_Out02LUTIn1_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 0, Blue = 0 },
+					CtrlWShown = false,
+				},
+				Mask_Out02LUTIn2_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 204, Blue = 0 },
+					CtrlWShown = false,
+				},
+				Mask_Out02LUTIn3_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 0, Blue = 204 },
+					CtrlWShown = false,
+				},
+				Mask_Out02LUTIn4_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 204, Blue = 204 },
+					CtrlWShown = false,
+				},
+				Mask_Out03_2 = Custom {
+					CtrlWShown = false,
+					Inputs = {
+						LUTIn1 = Input {
+							SourceOp = "Mask_Out03LUTIn1_2",
+							Source = "Value",
+						},
+						LUTIn2 = Input {
+							SourceOp = "Mask_Out03LUTIn2_2",
+							Source = "Value",
+						},
+						LUTIn3 = Input {
+							SourceOp = "Mask_Out03LUTIn3_2",
+							Source = "Value",
+						},
+						LUTIn4 = Input {
+							SourceOp = "Mask_Out03LUTIn4_2",
+							Source = "Value",
+						},
+						ShowNumber1 = Input { Value = 0, },
+						ShowNumber2 = Input { Value = 0, },
+						ShowNumber3 = Input { Value = 0, },
+						ShowNumber4 = Input { Value = 0, },
+						ShowNumber5 = Input { Value = 0, },
+						ShowNumber6 = Input { Value = 0, },
+						ShowNumber7 = Input { Value = 0, },
+						ShowNumber8 = Input { Value = 0, },
+						ShowPoint1 = Input { Value = 0, },
+						ShowPoint2 = Input { Value = 0, },
+						ShowPoint3 = Input { Value = 0, },
+						ShowPoint4 = Input { Value = 0, },
+						ShowLUT1 = Input { Value = 0, },
+						ShowLUT2 = Input { Value = 0, },
+						ShowLUT3 = Input { Value = 0, },
+						ShowLUT4 = Input { Value = 0, },
+						Image1 = Input {
+							SourceOp = "TM03_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 974.92, 451.384 } },
+				},
+				Mask_Out03LUTIn1_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 0, Blue = 0 },
+					CtrlWShown = false,
+				},
+				Mask_Out03LUTIn2_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 204, Blue = 0 },
+					CtrlWShown = false,
+				},
+				Mask_Out03LUTIn3_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 0, Blue = 204 },
+					CtrlWShown = false,
+				},
+				Mask_Out03LUTIn4_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 204, Blue = 204 },
+					CtrlWShown = false,
+				},
+				Mask_Out01_2 = Custom {
+					CtrlWShown = false,
+					Inputs = {
+						LUTIn1 = Input {
+							SourceOp = "CustomTool1LUTIn11_2",
+							Source = "Value",
+						},
+						LUTIn2 = Input {
+							SourceOp = "CustomTool1LUTIn21_2",
+							Source = "Value",
+						},
+						LUTIn3 = Input {
+							SourceOp = "CustomTool1LUTIn31_2",
+							Source = "Value",
+						},
+						LUTIn4 = Input {
+							SourceOp = "CustomTool1LUTIn41_2",
+							Source = "Value",
+						},
+						ShowNumber1 = Input { Value = 0, },
+						ShowNumber2 = Input { Value = 0, },
+						ShowNumber3 = Input { Value = 0, },
+						ShowNumber4 = Input { Value = 0, },
+						ShowNumber5 = Input { Value = 0, },
+						ShowNumber6 = Input { Value = 0, },
+						ShowNumber7 = Input { Value = 0, },
+						ShowNumber8 = Input { Value = 0, },
+						ShowPoint1 = Input { Value = 0, },
+						ShowPoint2 = Input { Value = 0, },
+						ShowPoint3 = Input { Value = 0, },
+						ShowPoint4 = Input { Value = 0, },
+						ShowLUT1 = Input { Value = 0, },
+						ShowLUT2 = Input { Value = 0, },
+						ShowLUT3 = Input { Value = 0, },
+						ShowLUT4 = Input { Value = 0, },
+						Image1 = Input {
+							SourceOp = "Merge1_3",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 982, 122.886 } },
+				},
+				CustomTool1LUTIn11_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 0, Blue = 0 },
+					CtrlWShown = false,
+				},
+				CustomTool1LUTIn21_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 204, Blue = 0 },
+					CtrlWShown = false,
+				},
+				CustomTool1LUTIn31_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 0, Blue = 204 },
+					CtrlWShown = false,
+				},
+				CustomTool1LUTIn41_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 204, Blue = 204 },
+					CtrlWShown = false,
+				},
+				Text1_1_1_1_1_1_3_2 = TextPlus {
+					CtrlWShown = false,
+					Inputs = {
+						GlobalOut = Input { Value = 300, },
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Center = Input { Value = { 0.5, 0.346325167037862 }, },
+						Green1 = Input { Value = 0, },
+						Blue1 = Input { Value = 0, },
+						StyledText = Input { Value = "Mask 08", },
+						Font = Input { Value = "Open Sans", },
+						Style = Input { Value = "Bold", },
+						Size = Input { Value = 0.1, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalJustificationNew = Input { Value = 3, },
+						ManualFontKerningPlacement = Input {
+							Value = StyledText {
+								Array = {
+								},
+								Value = ""
+							},
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 420.18, 1423.23 } },
+				},
+				Mask_Out08_2 = Custom {
+					CtrlWShown = false,
+					Inputs = {
+						LUTIn1 = Input {
+							SourceOp = "Mask_Out08LUTIn1_2",
+							Source = "Value",
+						},
+						LUTIn2 = Input {
+							SourceOp = "Mask_Out08LUTIn2_2",
+							Source = "Value",
+						},
+						LUTIn3 = Input {
+							SourceOp = "Mask_Out08LUTIn3_2",
+							Source = "Value",
+						},
+						LUTIn4 = Input {
+							SourceOp = "Mask_Out08LUTIn4_2",
+							Source = "Value",
+						},
+						ShowNumber1 = Input { Value = 0, },
+						ShowNumber2 = Input { Value = 0, },
+						ShowNumber3 = Input { Value = 0, },
+						ShowNumber4 = Input { Value = 0, },
+						ShowNumber5 = Input { Value = 0, },
+						ShowNumber6 = Input { Value = 0, },
+						ShowNumber7 = Input { Value = 0, },
+						ShowNumber8 = Input { Value = 0, },
+						ShowPoint1 = Input { Value = 0, },
+						ShowPoint2 = Input { Value = 0, },
+						ShowPoint3 = Input { Value = 0, },
+						ShowPoint4 = Input { Value = 0, },
+						ShowLUT1 = Input { Value = 0, },
+						ShowLUT2 = Input { Value = 0, },
+						ShowLUT3 = Input { Value = 0, },
+						ShowLUT4 = Input { Value = 0, },
+						Image1 = Input {
+							SourceOp = "TM08_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 973.81, 1468.56 } },
+				},
+				Mask_Out08LUTIn1_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 0, Blue = 0 },
+					CtrlWShown = false,
+				},
+				Mask_Out08LUTIn2_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 204, Blue = 0 },
+					CtrlWShown = false,
+				},
+				Mask_Out08LUTIn3_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 0, Blue = 204 },
+					CtrlWShown = false,
+				},
+				Mask_Out08LUTIn4_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 204, Blue = 204 },
+					CtrlWShown = false,
+				},
+				TM08_2 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Merge1_1_1_1_1_3_2",
+							Source = "Output",
+						},
+						Mode = Input { Value = FuID { "Offset" }, },
+						Skip = Input { Value = 1, },
+						Offset = Input {
+							Value = 140,
+							Expression = "Controls_2.NumberIn3 * 7 + Controls_2.NumberIn4 * 7",
+						},
+						XFrameNumbers = Input { Disabled = true, },
+						ForceTargetRange = Input { Value = 1, },
+						TargetStartFrame = Input {
+							Value = 140,
+							Expression = "Controls_2.NumberIn3 * 7 + Controls_2.NumberIn4 * 7",
+						},
+						TargetEndFrame = Input {
+							Value = 300,
+							Expression = "comp.GlobalEnd",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 757.97, 1468.56 } },
+					Version = 211
+				},
+				Merge4_1_1_3_2 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Blend = Input { Expression = "Controls_2.NumberIn5", },
+						Background = Input {
+							SourceOp = "PipeRouter10_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text1_3",
+							Source = "Output",
+						},
+						Operator = Input { Value = FuID { "XOr" }, },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 156.588, 1468.56 } },
+				},
+				Merge1_1_1_1_1_3_2 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Blend = Input { Expression = "Controls_2.NumberIn5", },
+						Background = Input {
+							SourceOp = "Merge4_1_1_3_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text1_1_1_1_1_1_3_2",
+							Source = "Output",
+						},
+						Operator = Input { Value = FuID { "XOr" }, },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 420.18, 1468.56 } },
+				},
+				PipeRouter10_2 = PipeRouter {
+					CtrlWShown = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "TMSpeed_and_Start_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -24.275, 1468.56 } },
+				},
+				Text1_1_1_1_1_1_4_2 = TextPlus {
+					CtrlWShown = false,
+					Inputs = {
+						GlobalOut = Input { Value = 300, },
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Center = Input { Value = { 0.5, 0.346325167037862 }, },
+						Green1 = Input { Value = 0, },
+						Blue1 = Input { Value = 0, },
+						StyledText = Input { Value = "Mask 09", },
+						Font = Input { Value = "Open Sans", },
+						Style = Input { Value = "Bold", },
+						Size = Input { Value = 0.1, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalJustificationNew = Input { Value = 3, },
+						ManualFontKerningPlacement = Input {
+							Value = StyledText {
+								Array = {
+								},
+								Value = ""
+							},
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 420.18, 1616.07 } },
+				},
+				TM09_2 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Merge1_1_1_1_1_4_2",
+							Source = "Output",
+						},
+						Mode = Input { Value = FuID { "Offset" }, },
+						Skip = Input { Value = 1, },
+						Offset = Input {
+							Value = 160,
+							Expression = "Controls_2.NumberIn3 * 8 + Controls_2.NumberIn4 * 8",
+						},
+						XFrameNumbers = Input { Disabled = true, },
+						ForceTargetRange = Input { Value = 1, },
+						TargetStartFrame = Input {
+							Value = 160,
+							Expression = "Controls_2.NumberIn3 * 8 + Controls_2.NumberIn4 * 8",
+						},
+						TargetEndFrame = Input {
+							Value = 300,
+							Expression = "comp.GlobalEnd",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 757.97, 1661.41 } },
+					Version = 211
+				},
+				Mask_Out09_2 = Custom {
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					Inputs = {
+						LUTIn1 = Input {
+							SourceOp = "Mask_Out09LUTIn1_2",
+							Source = "Value",
+						},
+						LUTIn2 = Input {
+							SourceOp = "Mask_Out09LUTIn2_2",
+							Source = "Value",
+						},
+						LUTIn3 = Input {
+							SourceOp = "Mask_Out09LUTIn3_2",
+							Source = "Value",
+						},
+						LUTIn4 = Input {
+							SourceOp = "Mask_Out09LUTIn4_2",
+							Source = "Value",
+						},
+						ShowNumber1 = Input { Value = 0, },
+						ShowNumber2 = Input { Value = 0, },
+						ShowNumber3 = Input { Value = 0, },
+						ShowNumber4 = Input { Value = 0, },
+						ShowNumber5 = Input { Value = 0, },
+						ShowNumber6 = Input { Value = 0, },
+						ShowNumber7 = Input { Value = 0, },
+						ShowNumber8 = Input { Value = 0, },
+						ShowPoint1 = Input { Value = 0, },
+						ShowPoint2 = Input { Value = 0, },
+						ShowPoint3 = Input { Value = 0, },
+						ShowPoint4 = Input { Value = 0, },
+						ShowLUT1 = Input { Value = 0, },
+						ShowLUT2 = Input { Value = 0, },
+						ShowLUT3 = Input { Value = 0, },
+						ShowLUT4 = Input { Value = 0, },
+						Image1 = Input {
+							SourceOp = "TM09_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 973.81, 1661.41 } },
+				},
+				Mask_Out09LUTIn1_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 0, Blue = 0 },
+					CtrlWShown = false,
+				},
+				Mask_Out09LUTIn2_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 204, Blue = 0 },
+					CtrlWShown = false,
+				},
+				Mask_Out09LUTIn3_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 0, Blue = 204 },
+					CtrlWShown = false,
+				},
+				Mask_Out09LUTIn4_2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 204, Blue = 204 },
+					CtrlWShown = false,
+				},
+				Merge4_1_1_4_2 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Blend = Input { Expression = "Controls_2.NumberIn5", },
+						Background = Input {
+							SourceOp = "PipeRouter11_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text1_3",
+							Source = "Output",
+						},
+						Operator = Input { Value = FuID { "XOr" }, },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 156.588, 1661.41 } },
+				},
+				Merge1_1_1_1_1_4_2 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Blend = Input { Expression = "Controls_2.NumberIn5", },
+						Background = Input {
+							SourceOp = "Merge4_1_1_4_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text1_1_1_1_1_1_4_2",
+							Source = "Output",
+						},
+						Operator = Input { Value = FuID { "XOr" }, },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 420.18, 1661.41 } },
+				},
+				PipeRouter11_2 = PipeRouter {
+					CtrlWShown = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "TMSpeed_and_Start_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -13.275, 1661.41 } },
+				}
+			},
+			Colors = { TileColor = { R = 0.584313725490196, G = 0.294117647058824, B = 0.803921568627451 }, }
+		},
+		Note6 = Note {
+			Inputs = {
+				Comments = Input { Value = "Mask Animations", }
+			},
+			ViewInfo = StickyNoteInfo {
+				Pos = { 5418.13, 556.613 },
+				Flags = {
+					Expanded = true
+				},
+				Size = { 197.111, 93.4848 }
+			},
+		},
+		WirelessLink1 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 4457.99, 881.479 } },
+			Colors = { TileColor = { R = 0.474509803921569, G = 0.658823529411765, B = 0.815686274509804 }, },
+			Version = 110
+		},
+		AOV_03 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_Out03_2",
+					Source = "Output",
+				},
+				Background = Input {
+					SourceOp = "AOV_02",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Instance_SwitchFX_2_6",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 5199.88, 881.479 } },
+		},
+		AOV_06 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_Out06_2",
+					Source = "Output",
+				},
+				Background = Input {
+					SourceOp = "AOV_05",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Instance_SwitchFX_2_4",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 5635.48, 881.479 } },
+		},
+		AOV_08 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_Out08_2",
+					Source = "Output",
+				},
+				Background = Input {
+					SourceOp = "AOV_07",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Instance_SwitchFX_2_7",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 5908.44, 881.479 } },
+		},
+		Gamma_Output = GamutConvert {
+			NameSet = true,
+			Inputs = {
+				OutputSpace = Input { Value = FuID { "sRGB" }, },
+				Input = Input {
+					SourceOp = "AOV_09",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 6398.7, 881.479 } },
+		},
+		BreakdownExport = Saver {
+			PassThrough = true,
+			Inputs = {
+				ProcessWhenBlendIs00 = Input { Value = 0, },
+				Clip = Input {
+					Value = Clip {
+						Filename = "Project_Breakdown_Scn_000_v01_000.png",
+						FormatID = "PNGFormat",
+						Length = 0,
+						Saving = true,
+						TrimIn = 0,
+						ExtendFirst = 0,
+						ExtendLast = 0,
+						Loop = 1,
+						AspectMode = 0,
+						Depth = 0,
+						GlobalStart = -2000000000,
+						GlobalEnd = 0
+					},
+				},
+				OutputFormat = Input { Value = FuID { "PNGFormat" }, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				VideoType = Input { Value = FuID { "NTSC" }, },
+				Input = Input {
+					SourceOp = "Gamma_Output",
+					Source = "Output",
+				},
+				["PNGFormat.SaveAlpha"] = Input { Value = 0, },
+				["PNGFormat.PreDivide"] = Input { Value = 1, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 6615.13, 881.479 } },
+		},
+		AOV_04 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_Out04_2",
+					Source = "Output",
+				},
+				Background = Input {
+					SourceOp = "AOV_03",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Instance_SwitchFX_2_1",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 5334.27, 881.479 } },
+		},
+		AOV_02 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_Out02_2",
+					Source = "Output",
+				},
+				Background = Input {
+					SourceOp = "AOV_01",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Instance_SwitchFX_2_5",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 5063.64, 881.479 } },
+		},
+		AOV_09 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_Out09_2",
+					Source = "Output",
+				},
+				Background = Input {
+					SourceOp = "AOV_08",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Instance_SwitchFX_2_8",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 6065.8, 881.479 } },
+		},
+		AOV_05 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_Out05_2",
+					Source = "Output",
+				},
+				Background = Input {
+					SourceOp = "AOV_04",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Instance_SwitchFX_2_2",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 5477.56, 881.479 } },
+		},
+		AOV_07 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_Out07_2",
+					Source = "Output",
+				},
+				Background = Input {
+					SourceOp = "AOV_06",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Instance_SwitchFX_2_3",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 5778.43, 881.479 } },
+		},
+		AOV_01 = Merge {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Mask_Out01_2",
+					Source = "Output",
+				},
+				Background = Input {
+					SourceOp = "SwitchFX_2",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Instance_SwitchFX_2_9",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 4920.35, 881.479 } },
+		},
+		dy_Breakdown_Retimer_1 = MacroOperator {
+			Inputs = ordered() {
+				MainInput1 = InstanceInput {
+					SourceOp = "ControlsTime_2",
+					Source = "Image1",
+				},
+				Input1 = InstanceInput {
+					SourceOp = "ControlsTime_2",
+					Source = "NumberIn1",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "ControlsTime_2",
+					Source = "NumberIn2",
+				}
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "SwitchFX_2",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 4681.49, 881.479 } },
+			Tools = ordered() {
+				ControlsTime_2 = Custom {
+					CtrlWShown = false,
+					Inputs = {
+						NumberIn3 = Input { Value = 20, },
+						NumberIn6 = Input { Value = 1, },
+						LUTIn1 = Input {
+							SourceOp = "ControlsTime_2LUTIn1",
+							Source = "Value",
+						},
+						LUTIn2 = Input {
+							SourceOp = "ControlsTime_2LUTIn2",
+							Source = "Value",
+						},
+						LUTIn3 = Input {
+							SourceOp = "ControlsTime_2LUTIn3",
+							Source = "Value",
+						},
+						LUTIn4 = Input {
+							SourceOp = "ControlsTime_2LUTIn4",
+							Source = "Value",
+						},
+						AuxChannelNest = Input { Value = 1, },
+						NumberControls = Input { Value = 1, },
+						NameforNumber1 = Input { Value = "Freeze Frame", },
+						NameforNumber2 = Input { Value = "Freeze Lentgh", },
+						ShowNumber3 = Input { Value = 0, },
+						NameforNumber3 = Input { Value = "", },
+						ShowNumber4 = Input { Value = 0, },
+						NameforNumber4 = Input { Value = "", },
+						ShowNumber5 = Input { Value = 0, },
+						NameforNumber5 = Input { Value = "", },
+						ShowNumber6 = Input { Value = 0, },
+						NameforNumber6 = Input { Value = "", },
+						ShowNumber7 = Input { Value = 0, },
+						NameforNumber7 = Input { Value = "", },
+						ShowNumber8 = Input { Value = 0, },
+						NameforNumber8 = Input { Value = "", },
+						ShowPoint1 = Input { Value = 0, },
+						ShowPoint2 = Input { Value = 0, },
+						ShowPoint3 = Input { Value = 0, },
+						ShowPoint4 = Input { Value = 0, },
+						ShowLUT1 = Input { Value = 0, },
+						ShowLUT2 = Input { Value = 0, },
+						ShowLUT3 = Input { Value = 0, },
+						ShowLUT4 = Input { Value = 0, },
+						Image1 = Input {
+							SourceOp = "WirelessLink1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -266.06, 70.9472 } },
+				},
+				ControlsTime_2LUTIn1 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 0, Blue = 0 },
+					CtrlWShown = false,
+					NameSet = true,
+				},
+				ControlsTime_2LUTIn2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 204, Blue = 0 },
+					CtrlWShown = false,
+					NameSet = true,
+				},
+				ControlsTime_2LUTIn3 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 0, Blue = 204 },
+					CtrlWShown = false,
+					NameSet = true,
+				},
+				ControlsTime_2LUTIn4 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 204, Blue = 204 },
+					CtrlWShown = false,
+					NameSet = true,
+				},
+				SwitchHold_2 = Fuse.Switch {
+					CtrlWShown = false,
+					Inputs = {
+						Which = Input {
+							Value = 1,
+							Expression = "iif (time < ControlsTime_2.NumberIn1, 1,2) ",
+						},
+						Input1 = Input {
+							SourceOp = "ControlsTime_2",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "TMHold_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.5901, 70.9472 } },
+					Version = 172
+				},
+				SwitchOut_2 = Fuse.Switch {
+					CtrlWShown = false,
+					Inputs = {
+						Which = Input {
+							Value = 1,
+							Expression = "iif (time < (ControlsTime_2.NumberIn1 + ControlsTime_2.NumberIn2), 1,2)",
+						},
+						Input1 = Input {
+							SourceOp = "SwitchHold_2",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "PipeRouter3_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 111.767, 70.9472 } },
+					Version = 172
+				},
+				TMHold_2 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "ControlsTime_2",
+							Source = "Output",
+						},
+						Mode = Input { Value = FuID { "Hold" }, },
+						Skip = Input { Value = 1, },
+						Hold = Input {
+							Value = 20,
+							Expression = "ControlsTime_2.NumberIn1",
+						},
+						XFrameNumbers = Input { Disabled = true, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.5901, 130.944 } },
+					Version = 211
+				},
+				TMXpressions_2 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					Inputs = {
+						Mode = Input { Value = FuID { "XSheet" }, },
+						TriggerMode = Input { Value = FuID { "Hold" }, },
+						SourceEndFrame = Input { Value = 150, },
+						Delta = Input { Value = 1.797, },
+						DeltaThreshold = Input { Value = 0.717, },
+						Skip = Input { Value = 10, },
+						Offset = Input { Value = 20, },
+						Hold = Input { Value = 50, },
+						XSheet = Input { Value = "0 to 30\n30 hold 60\n31 to 240\n", },
+						XFrameNumbers = Input {
+							Value = "0  --  0\n1  --  1\n2  --  2\n3  --  3\n4  --  4\n5  --  5\n6  --  6\n7  --  7\n8  --  8\n9  --  9\n10  --  10\n11  --  11\n12  --  12\n13  --  13\n14  --  14\n15  --  15\n16  --  16\n17  --  17\n18  --  18\n19  --  19\n20  --  20\n21  --  21\n22  --  22\n23  --  23\n24  --  24\n25  --  25\n26  --  26\n27  --  27\n28  --  28\n29  --  29\n30  --  30\n31  --  30\n32  --  30\n33  --  30\n34  --  30\n35  --  30\n36  --  30\n37  --  30\n38  --  30\n39  --  30\n40  --  30\n41  --  30\n42  --  30\n43  --  30\n44  --  30\n45  --  30\n46  --  30\n47  --  30\n48  --  30\n49  --  30\n50  --  30\n51  --  30\n52  --  30\n53  --  30\n54  --  30\n55  --  30\n56  --  30\n57  --  30\n58  --  30\n59  --  30\n60  --  30\n61  --  30\n62  --  30\n63  --  30\n64  --  30\n65  --  30\n66  --  30\n67  --  30\n68  --  30\n69  --  30\n70  --  30\n71  --  30\n72  --  30\n73  --  30\n74  --  30\n75  --  30\n76  --  30\n77  --  30\n78  --  30\n79  --  30\n80  --  30\n81  --  30\n82  --  30\n83  --  30\n84  --  30\n85  --  30\n86  --  30\n87  --  30\n88  --  30\n89  --  30\n90  --  30\n91  --  31\n92  --  32\n93  --  33\n94  --  34\n95  --  35\n96  --  36\n97  --  37\n98  --  38\n99  --  39\n100  --  40\n101  --  41\n102  --  42\n103  --  43\n104  --  44\n105  --  45\n106  --  46\n107  --  47\n108  --  48\n109  --  49\n110  --  50\n111  --  51\n112  --  52\n113  --  53\n114  --  54\n115  --  55\n116  --  56\n117  --  57\n118  --  58\n119  --  59\n120  --  60\n121  --  61\n122  --  62\n123  --  63\n124  --  64\n125  --  65\n126  --  66\n127  --  67\n128  --  68\n129  --  69\n130  --  70\n131  --  71\n132  --  72\n133  --  73\n134  --  74\n135  --  75\n136  --  76\n137  --  77\n138  --  78\n139  --  79\n140  --  80\n141  --  81\n142  --  82\n143  --  83\n144  --  84\n145  --  85\n146  --  86\n147  --  87\n148  --  88\n149  --  89\n150  --  90\n151  --  91\n152  --  92\n153  --  93\n154  --  94\n155  --  95\n156  --  96\n157  --  97\n158  --  98\n159  --  99\n160  --  100\n161  --  101\n162  --  102\n163  --  103\n164  --  104\n165  --  105\n166  --  106\n167  --  107\n168  --  108\n169  --  109\n170  --  110\n171  --  111\n172  --  112\n173  --  113\n174  --  114\n175  --  115\n176  --  116\n177  --  117\n178  --  118\n179  --  119\n180  --  120\n181  --  121\n182  --  122\n183  --  123\n184  --  124\n185  --  125\n186  --  126\n187  --  127\n188  --  128\n189  --  129\n190  --  130\n191  --  131\n192  --  132\n193  --  133\n194  --  134\n195  --  135\n196  --  136\n197  --  137\n198  --  138\n199  --  139\n200  --  140\n201  --  141\n202  --  142\n203  --  143\n204  --  144\n205  --  145\n206  --  146\n207  --  147\n208  --  148\n209  --  149\n210  --  150\n211  --  151\n212  --  152\n213  --  153\n214  --  154\n215  --  155\n216  --  156\n217  --  157\n218  --  158\n219  --  159\n220  --  160\n221  --  161\n222  --  162\n223  --  163\n224  --  164\n225  --  165\n226  --  166\n227  --  167\n228  --  168\n229  --  169\n230  --  170\n231  --  171\n232  --  172\n233  --  173\n234  --  174\n235  --  175\n236  --  176\n237  --  177\n238  --  178\n239  --  179\n240  --  180\n241  --  181\n242  --  182\n243  --  183\n244  --  184\n245  --  185\n246  --  186\n247  --  187\n248  --  188\n249  --  189\n250  --  190\n251  --  191\n252  --  192\n253  --  193\n254  --  194\n255  --  195\n256  --  196\n257  --  197\n258  --  198\n259  --  199\n260  --  200\n261  --  201\n262  --  202\n263  --  203\n264  --  204\n265  --  205\n266  --  206\n267  --  207\n268  --  208\n269  --  209\n270  --  210\n271  --  211\n272  --  212\n273  --  213\n274  --  214\n275  --  215\n276  --  216\n277  --  217\n278  --  218\n279  --  219\n280  --  220\n281  --  221\n282  --  222\n283  --  223\n284  --  224\n285  --  225\n286  --  226\n287  --  227\n288  --  228\n289  --  229\n290  --  230\n291  --  231\n292  --  232\n293  --  233\n294  --  234\n295  --  235\n296  --  236\n297  --  237\n298  --  238\n299  --  239\n300  --  240\n",
+							Disabled = true,
+						},
+						Trigger = Input { Value = 0.346, },
+						OnTriggerThreshold = Input { Value = 0.244, },
+						OffTriggerThreshold = Input { Value = 0.126, },
+						SwitchStartFrames = Input { Value = "10", },
+						Switch = Input { Value = 2, },
+						TargetEndFrame = Input { Value = 150, },
+						RoundOutputValues = Input { Value = FuID { "Up" }, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 111.993, 23.8702 } },
+					Version = 211
+				},
+				TMOut_2 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "ControlsTime_2",
+							Source = "Output",
+						},
+						Mode = Input { Value = FuID { "Offset" }, },
+						Skip = Input { Value = 1, },
+						Offset = Input {
+							Value = 19,
+							Expression = "ControlsTime_2.NumberIn2 - 1",
+						},
+						XFrameNumbers = Input { Disabled = true, },
+						ForceTargetRange = Input { Value = 1, },
+						TargetStartFrame = Input {
+							Value = 19,
+							Expression = "ControlsTime_2.NumberIn2 - 1",
+						},
+						TargetEndFrame = Input {
+							Value = 300,
+							Expression = "comp.GlobalEnd",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.2301, 184.321 } },
+					Version = 211
+				},
+				SwitchFX_2 = Fuse.Switch {
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					Inputs = {
+						Which = Input {
+							Value = 1,
+							Expression = "iif (ControlsTime_2.NumberIn1 == 0, 1,2) ",
+						},
+						Input1 = Input {
+							SourceOp = "PipeRouter4_2",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "SwitchOut_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 264.998, 70.9472 } },
+					Version = 172
+				},
+				PipeRouter3_2 = PipeRouter {
+					CtrlWShown = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "TMOut_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = PipeRouterInfo { Pos = { 111.767, 184.321 } },
+				},
+				PipeRouter4_2 = PipeRouter {
+					CtrlWShown = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "PipeRouter5_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = PipeRouterInfo { Pos = { 264.998, 243.645 } },
+				},
+				PipeRouter5_2 = PipeRouter {
+					CtrlWShown = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "ControlsTime_2",
+							Source = "Output",
+						},
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -77.5601, 243.645 } },
+				},
+				Underlay1 = Underlay {
+					CtrlWShown = false,
+					ViewInfo = UnderlayInfo {
+						Pos = { -0.530151, 23.8702 },
+						Size = { 703.062, 267.048 }
+					},
+				}
+			},
+			Colors = { TileColor = { R = 0.584313725490196, G = 0.294117647058824, B = 0.803921568627451 }, }
+		},
+		Note5_1 = Note {
+			Inputs = {
+				Comments = Input { Value = "Breakdown Export", }
+			},
+			ViewInfo = StickyNoteInfo {
+				Pos = { 6582.42, 921.004 },
+				Flags = {
+					Expanded = true
+				},
+				Size = { 148.222, 99.5455 }
+			},
+		},
+		Note18_2 = Note {
+			Inputs = {
+				Comments = Input { Value = "Base Input", }
+			},
+			ViewInfo = StickyNoteInfo {
+				Pos = { 4233.74, 848.273 },
+				Flags = {
+					Expanded = true
+				},
+				Size = { 196, 179.3 }
+			},
+		},
+		Instance_dy_Breakdown_Retimer_1_9 = MacroOperator {
+			SourceOp = "dy_Breakdown_Retimer_1",
+			Inputs = ordered() {
+				CommentsNest = Input { },
+				MainInput1 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_9",
+					Source = "Image1",
+				},
+				Input1 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_9",
+					Source = "NumberIn1",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_9",
+					Source = "NumberIn2",
+				}
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "Instance_SwitchFX_2_9",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 4920.35, 996.935 } },
+			Tools = ordered() {
+				Instance_ControlsTime_2_9 = Custom {
+					CtrlWShown = false,
+					SourceOp = "ControlsTime_2",
+					Inputs = {
+						SettingsNest = Input { },
+						LUTControlsNest = Input { },
+						AuxChannelNest = Input { Value = 1, },
+						NumberControls = Input { Value = 1, },
+						PointControls = Input { },
+						LUTControls = Input { },
+						Image1 = Input {
+							SourceOp = "WirelessLink16_1",
+							Source = "Output",
+						},
+						Image2 = Input { },
+						Image3 = Input { },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						EffectMask = Input { },
+						Matte = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { -266.06, 70.9472 } },
+				},
+				Instance_SwitchHold_2_9 = Fuse.Switch {
+					CtrlWShown = false,
+					SourceOp = "SwitchHold_2",
+					Inputs = {
+						Which = Input { Expression = "iif (time < ControlsTime_2.NumberIn1, 1,2) ", },
+						Input1 = Input {
+							SourceOp = "Instance_ControlsTime_2_9",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_TMHold_2_9",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.59, 70.9472 } },
+					Version = 172
+				},
+				Instance_SwitchOut_2_9 = Fuse.Switch {
+					CtrlWShown = false,
+					SourceOp = "SwitchOut_2",
+					Inputs = {
+						Which = Input { Expression = "iif (time < (ControlsTime_2.NumberIn1 + ControlsTime_2.NumberIn2), 1,2)", },
+						Input1 = Input {
+							SourceOp = "Instance_SwitchHold_2_9",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_PipeRouter3_2_9",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { 111.767, 70.9472 } },
+					Version = 172
+				},
+				Instance_TMHold_2_9 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMHold_2",
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Instance_ControlsTime_2_9",
+							Source = "Output",
+						},
+						Hold = Input { Expression = "ControlsTime_2.NumberIn1", },
+						XFrameNumbers = Input { Disabled = true, },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.59, 130.944 } },
+					Version = 211
+				},
+				Instance_TMXpressions_2_9 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMXpressions_2",
+					Inputs = {
+						ImageInput = Input { },
+						XFrameNumbers = Input { Disabled = true, },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { 111.993, 23.8702 } },
+					Version = 211
+				},
+				Instance_TMOut_2_9 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMOut_2",
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Instance_ControlsTime_2_9",
+							Source = "Output",
+						},
+						Offset = Input { Expression = "ControlsTime_2.NumberIn2 - 1", },
+						XFrameNumbers = Input { Disabled = true, },
+						TargetStartFrame = Input { Expression = "ControlsTime_2.NumberIn2 - 1", },
+						TargetEndFrame = Input { Expression = "comp.GlobalEnd", },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.23, 184.321 } },
+					Version = 211
+				},
+				Instance_SwitchFX_2_9 = Fuse.Switch {
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					SourceOp = "SwitchFX_2",
+					Inputs = {
+						Which = Input { Expression = "iif (ControlsTime_2.NumberIn1 == 0, 1,2) ", },
+						Input1 = Input {
+							SourceOp = "Instance_PipeRouter4_2_9",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_SwitchOut_2_9",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { 264.998, 70.9472 } },
+					Version = 172
+				},
+				Instance_PipeRouter3_2_9 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter3_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_TMOut_2_9",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { 111.767, 184.321 } },
+				},
+				Instance_PipeRouter4_2_9 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter4_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_PipeRouter5_2_9",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { 264.998, 243.645 } },
+				},
+				Instance_PipeRouter5_2_9 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter5_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_ControlsTime_2_9",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -77.56, 243.645 } },
+				},
+				Instance_Underlay1_9 = Underlay {
+					CtrlWShown = false,
+					SourceOp = "Underlay1",
+					Inputs = {
+						CommentsNest = Input { },
+					},
+					ViewInfo = UnderlayInfo {
+						Pos = { -0.53009, 23.8702 },
+						Size = { 703.062, 267.048 }
+					},
+				}
+			},
+			Colors = { TileColor = { R = 0.584313725490196, G = 0.294117647058824, B = 0.803921568627451 }, }
+		},
+		Instance_dy_Breakdown_Retimer_1_5 = MacroOperator {
+			SourceOp = "dy_Breakdown_Retimer_1",
+			Inputs = ordered() {
+				CommentsNest = Input { },
+				MainInput1 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_5",
+					Source = "Image1",
+				},
+				Input1 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_5",
+					Source = "NumberIn1",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_5",
+					Source = "NumberIn2",
+				}
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "Instance_SwitchFX_2_5",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 5063.64, 996.613 } },
+			Tools = ordered() {
+				Instance_ControlsTime_2_5 = Custom {
+					CtrlWShown = false,
+					SourceOp = "ControlsTime_2",
+					Inputs = {
+						SettingsNest = Input { },
+						LUTControlsNest = Input { },
+						AuxChannelNest = Input { Value = 1, },
+						NumberControls = Input { Value = 1, },
+						PointControls = Input { },
+						LUTControls = Input { },
+						Image1 = Input {
+							SourceOp = "WirelessLink11_1",
+							Source = "Output",
+						},
+						Image2 = Input { },
+						Image3 = Input { },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						EffectMask = Input { },
+						Matte = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { -266.06, 70.9472 } },
+				},
+				Instance_SwitchHold_2_5 = Fuse.Switch {
+					CtrlWShown = false,
+					SourceOp = "SwitchHold_2",
+					Inputs = {
+						Which = Input { Expression = "iif (time < ControlsTime_2.NumberIn1, 1,2) ", },
+						Input1 = Input {
+							SourceOp = "Instance_ControlsTime_2_5",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_TMHold_2_5",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.59, 70.9472 } },
+					Version = 172
+				},
+				Instance_SwitchOut_2_5 = Fuse.Switch {
+					CtrlWShown = false,
+					SourceOp = "SwitchOut_2",
+					Inputs = {
+						Which = Input { Expression = "iif (time < (ControlsTime_2.NumberIn1 + ControlsTime_2.NumberIn2), 1,2)", },
+						Input1 = Input {
+							SourceOp = "Instance_SwitchHold_2_5",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_PipeRouter3_2_5",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { 111.767, 70.9472 } },
+					Version = 172
+				},
+				Instance_TMHold_2_5 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMHold_2",
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Instance_ControlsTime_2_5",
+							Source = "Output",
+						},
+						Hold = Input { Expression = "ControlsTime_2.NumberIn1", },
+						XFrameNumbers = Input { Disabled = true, },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.59, 130.944 } },
+					Version = 211
+				},
+				Instance_TMXpressions_2_5 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMXpressions_2",
+					Inputs = {
+						ImageInput = Input { },
+						XFrameNumbers = Input { Disabled = true, },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { 111.993, 23.8702 } },
+					Version = 211
+				},
+				Instance_TMOut_2_5 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMOut_2",
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Instance_ControlsTime_2_5",
+							Source = "Output",
+						},
+						Offset = Input { Expression = "ControlsTime_2.NumberIn2 - 1", },
+						XFrameNumbers = Input { Disabled = true, },
+						TargetStartFrame = Input { Expression = "ControlsTime_2.NumberIn2 - 1", },
+						TargetEndFrame = Input { Expression = "comp.GlobalEnd", },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.23, 184.321 } },
+					Version = 211
+				},
+				Instance_SwitchFX_2_5 = Fuse.Switch {
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					SourceOp = "SwitchFX_2",
+					Inputs = {
+						Which = Input { Expression = "iif (ControlsTime_2.NumberIn1 == 0, 1,2) ", },
+						Input1 = Input {
+							SourceOp = "Instance_PipeRouter4_2_5",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_SwitchOut_2_5",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { 264.998, 70.9472 } },
+					Version = 172
+				},
+				Instance_PipeRouter3_2_5 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter3_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_TMOut_2_5",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { 111.767, 184.321 } },
+				},
+				Instance_PipeRouter4_2_5 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter4_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_PipeRouter5_2_5",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { 264.998, 243.645 } },
+				},
+				Instance_PipeRouter5_2_5 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter5_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_ControlsTime_2_5",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -77.56, 243.645 } },
+				},
+				Instance_Underlay1_5 = Underlay {
+					CtrlWShown = false,
+					SourceOp = "Underlay1",
+					Inputs = {
+						CommentsNest = Input { },
+					},
+					ViewInfo = UnderlayInfo {
+						Pos = { -0.53009, 23.8702 },
+						Size = { 703.062, 267.048 }
+					},
+				}
+			},
+			Colors = { TileColor = { R = 0.584313725490196, G = 0.294117647058824, B = 0.803921568627451 }, }
+		},
+		Instance_dy_Breakdown_Retimer_1_2 = MacroOperator {
+			SourceOp = "dy_Breakdown_Retimer_1",
+			Inputs = ordered() {
+				CommentsNest = Input { },
+				MainInput1 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_2",
+					Source = "Image1",
+				},
+				Input1 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_2",
+					Source = "NumberIn1",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_2",
+					Source = "NumberIn2",
+				}
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "Instance_SwitchFX_2_2",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 5477.56, 997.414 } },
+			Tools = ordered() {
+				Instance_ControlsTime_2_2 = Custom {
+					CtrlWShown = false,
+					SourceOp = "ControlsTime_2",
+					Inputs = {
+						SettingsNest = Input { },
+						LUTControlsNest = Input { },
+						AuxChannelNest = Input { Value = 1, },
+						NumberControls = Input { Value = 1, },
+						PointControls = Input { },
+						LUTControls = Input { },
+						Image1 = Input {
+							SourceOp = "WirelessLink14_1",
+							Source = "Output",
+						},
+						Image2 = Input { },
+						Image3 = Input { },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						EffectMask = Input { },
+						Matte = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { -266.06, 70.9472 } },
+				},
+				Instance_SwitchHold_2_2 = Fuse.Switch {
+					CtrlWShown = false,
+					SourceOp = "SwitchHold_2",
+					Inputs = {
+						Which = Input { Expression = "iif (time < ControlsTime_2.NumberIn1, 1,2) ", },
+						Input1 = Input {
+							SourceOp = "Instance_ControlsTime_2_2",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_TMHold_2_2",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.59, 70.9472 } },
+					Version = 172
+				},
+				Instance_SwitchOut_2_2 = Fuse.Switch {
+					CtrlWShown = false,
+					SourceOp = "SwitchOut_2",
+					Inputs = {
+						Which = Input { Expression = "iif (time < (ControlsTime_2.NumberIn1 + ControlsTime_2.NumberIn2), 1,2)", },
+						Input1 = Input {
+							SourceOp = "Instance_SwitchHold_2_2",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_PipeRouter3_2_2",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { 111.767, 70.9472 } },
+					Version = 172
+				},
+				Instance_TMHold_2_2 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMHold_2",
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Instance_ControlsTime_2_2",
+							Source = "Output",
+						},
+						Hold = Input { Expression = "ControlsTime_2.NumberIn1", },
+						XFrameNumbers = Input { Disabled = true, },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.59, 130.944 } },
+					Version = 211
+				},
+				Instance_TMXpressions_2_2 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMXpressions_2",
+					Inputs = {
+						ImageInput = Input { },
+						XFrameNumbers = Input { Disabled = true, },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { 111.993, 23.8702 } },
+					Version = 211
+				},
+				Instance_TMOut_2_2 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMOut_2",
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Instance_ControlsTime_2_2",
+							Source = "Output",
+						},
+						Offset = Input { Expression = "ControlsTime_2.NumberIn2 - 1", },
+						XFrameNumbers = Input { Disabled = true, },
+						TargetStartFrame = Input { Expression = "ControlsTime_2.NumberIn2 - 1", },
+						TargetEndFrame = Input { Expression = "comp.GlobalEnd", },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.23, 184.321 } },
+					Version = 211
+				},
+				Instance_SwitchFX_2_2 = Fuse.Switch {
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					SourceOp = "SwitchFX_2",
+					Inputs = {
+						Which = Input { Expression = "iif (ControlsTime_2.NumberIn1 == 0, 1,2) ", },
+						Input1 = Input {
+							SourceOp = "Instance_PipeRouter4_2_2",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_SwitchOut_2_2",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { 264.998, 70.9472 } },
+					Version = 172
+				},
+				Instance_PipeRouter3_2_2 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter3_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_TMOut_2_2",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { 111.767, 184.321 } },
+				},
+				Instance_PipeRouter4_2_2 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter4_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_PipeRouter5_2_2",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { 264.998, 243.645 } },
+				},
+				Instance_PipeRouter5_2_2 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter5_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_ControlsTime_2_2",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -77.56, 243.645 } },
+				},
+				Instance_Underlay1_2 = Underlay {
+					CtrlWShown = false,
+					SourceOp = "Underlay1",
+					Inputs = {
+						CommentsNest = Input { },
+					},
+					ViewInfo = UnderlayInfo {
+						Pos = { -0.53009, 23.8702 },
+						Size = { 703.062, 267.048 }
+					},
+				}
+			},
+			Colors = { TileColor = { R = 0.584313725490196, G = 0.294117647058824, B = 0.803921568627451 }, }
+		},
+		Instance_dy_Breakdown_Retimer_1_3 = MacroOperator {
+			SourceOp = "dy_Breakdown_Retimer_1",
+			Inputs = ordered() {
+				CommentsNest = Input { },
+				MainInput1 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_3",
+					Source = "Image1",
+				},
+				Input1 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_3",
+					Source = "NumberIn1",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_3",
+					Source = "NumberIn2",
+				}
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "Instance_SwitchFX_2_3",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 5778.43, 998.349 } },
+			Tools = ordered() {
+				Instance_ControlsTime_2_3 = Custom {
+					CtrlWShown = false,
+					SourceOp = "ControlsTime_2",
+					Inputs = {
+						SettingsNest = Input { },
+						LUTControlsNest = Input { },
+						AuxChannelNest = Input { Value = 1, },
+						NumberControls = Input { Value = 1, },
+						PointControls = Input { },
+						LUTControls = Input { },
+						Image1 = Input {
+							SourceOp = "WirelessLink15_1_1",
+							Source = "Output",
+						},
+						Image2 = Input { },
+						Image3 = Input { },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						EffectMask = Input { },
+						Matte = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { -266.06, 70.9472 } },
+				},
+				Instance_SwitchHold_2_3 = Fuse.Switch {
+					CtrlWShown = false,
+					SourceOp = "SwitchHold_2",
+					Inputs = {
+						Which = Input { Expression = "iif (time < ControlsTime_2.NumberIn1, 1,2) ", },
+						Input1 = Input {
+							SourceOp = "Instance_ControlsTime_2_3",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_TMHold_2_3",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.59, 70.9472 } },
+					Version = 172
+				},
+				Instance_SwitchOut_2_3 = Fuse.Switch {
+					CtrlWShown = false,
+					SourceOp = "SwitchOut_2",
+					Inputs = {
+						Which = Input { Expression = "iif (time < (ControlsTime_2.NumberIn1 + ControlsTime_2.NumberIn2), 1,2)", },
+						Input1 = Input {
+							SourceOp = "Instance_SwitchHold_2_3",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_PipeRouter3_2_3",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { 111.767, 70.9472 } },
+					Version = 172
+				},
+				Instance_TMHold_2_3 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMHold_2",
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Instance_ControlsTime_2_3",
+							Source = "Output",
+						},
+						Hold = Input { Expression = "ControlsTime_2.NumberIn1", },
+						XFrameNumbers = Input { Disabled = true, },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.59, 130.944 } },
+					Version = 211
+				},
+				Instance_TMXpressions_2_3 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMXpressions_2",
+					Inputs = {
+						ImageInput = Input { },
+						XFrameNumbers = Input { Disabled = true, },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { 111.993, 23.8702 } },
+					Version = 211
+				},
+				Instance_TMOut_2_3 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMOut_2",
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Instance_ControlsTime_2_3",
+							Source = "Output",
+						},
+						Offset = Input { Expression = "ControlsTime_2.NumberIn2 - 1", },
+						XFrameNumbers = Input { Disabled = true, },
+						TargetStartFrame = Input { Expression = "ControlsTime_2.NumberIn2 - 1", },
+						TargetEndFrame = Input { Expression = "comp.GlobalEnd", },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.23, 184.321 } },
+					Version = 211
+				},
+				Instance_SwitchFX_2_3 = Fuse.Switch {
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					SourceOp = "SwitchFX_2",
+					Inputs = {
+						Which = Input { Expression = "iif (ControlsTime_2.NumberIn1 == 0, 1,2) ", },
+						Input1 = Input {
+							SourceOp = "Instance_PipeRouter4_2_3",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_SwitchOut_2_3",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { 264.998, 70.9472 } },
+					Version = 172
+				},
+				Instance_PipeRouter3_2_3 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter3_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_TMOut_2_3",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { 111.767, 184.321 } },
+				},
+				Instance_PipeRouter4_2_3 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter4_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_PipeRouter5_2_3",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { 264.998, 243.645 } },
+				},
+				Instance_PipeRouter5_2_3 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter5_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_ControlsTime_2_3",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -77.56, 243.645 } },
+				},
+				Instance_Underlay1_3 = Underlay {
+					CtrlWShown = false,
+					SourceOp = "Underlay1",
+					Inputs = {
+						CommentsNest = Input { },
+					},
+					ViewInfo = UnderlayInfo {
+						Pos = { -0.53009, 23.8702 },
+						Size = { 703.062, 267.048 }
+					},
+				}
+			},
+			Colors = { TileColor = { R = 0.584313725490196, G = 0.294117647058824, B = 0.803921568627451 }, }
+		},
+		Instance_dy_Breakdown_Retimer_1_7 = MacroOperator {
+			SourceOp = "dy_Breakdown_Retimer_1",
+			Inputs = ordered() {
+				CommentsNest = Input { },
+				MainInput1 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_7",
+					Source = "Image1",
+				},
+				Input1 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_7",
+					Source = "NumberIn1",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_7",
+					Source = "NumberIn2",
+				}
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "Instance_SwitchFX_2_7",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 5908.44, 997.173 } },
+			Tools = ordered() {
+				Instance_ControlsTime_2_7 = Custom {
+					CtrlWShown = false,
+					SourceOp = "ControlsTime_2",
+					Inputs = {
+						SettingsNest = Input { },
+						LUTControlsNest = Input { },
+						AuxChannelNest = Input { Value = 1, },
+						NumberControls = Input { Value = 1, },
+						PointControls = Input { },
+						LUTControls = Input { },
+						Image1 = Input {
+							SourceOp = "WirelessLink15_1_1_1",
+							Source = "Output",
+						},
+						Image2 = Input { },
+						Image3 = Input { },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						EffectMask = Input { },
+						Matte = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { -266.06, 70.9472 } },
+				},
+				Instance_SwitchHold_2_7 = Fuse.Switch {
+					CtrlWShown = false,
+					SourceOp = "SwitchHold_2",
+					Inputs = {
+						Which = Input { Expression = "iif (time < ControlsTime_2.NumberIn1, 1,2) ", },
+						Input1 = Input {
+							SourceOp = "Instance_ControlsTime_2_7",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_TMHold_2_7",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.59, 70.9472 } },
+					Version = 172
+				},
+				Instance_SwitchOut_2_7 = Fuse.Switch {
+					CtrlWShown = false,
+					SourceOp = "SwitchOut_2",
+					Inputs = {
+						Which = Input { Expression = "iif (time < (ControlsTime_2.NumberIn1 + ControlsTime_2.NumberIn2), 1,2)", },
+						Input1 = Input {
+							SourceOp = "Instance_SwitchHold_2_7",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_PipeRouter3_2_7",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { 111.767, 70.9472 } },
+					Version = 172
+				},
+				Instance_TMHold_2_7 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMHold_2",
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Instance_ControlsTime_2_7",
+							Source = "Output",
+						},
+						Hold = Input { Expression = "ControlsTime_2.NumberIn1", },
+						XFrameNumbers = Input { Disabled = true, },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.59, 130.944 } },
+					Version = 211
+				},
+				Instance_TMXpressions_2_7 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMXpressions_2",
+					Inputs = {
+						ImageInput = Input { },
+						XFrameNumbers = Input { Disabled = true, },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { 111.993, 23.8702 } },
+					Version = 211
+				},
+				Instance_TMOut_2_7 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMOut_2",
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Instance_ControlsTime_2_7",
+							Source = "Output",
+						},
+						Offset = Input { Expression = "ControlsTime_2.NumberIn2 - 1", },
+						XFrameNumbers = Input { Disabled = true, },
+						TargetStartFrame = Input { Expression = "ControlsTime_2.NumberIn2 - 1", },
+						TargetEndFrame = Input { Expression = "comp.GlobalEnd", },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.23, 184.321 } },
+					Version = 211
+				},
+				Instance_SwitchFX_2_7 = Fuse.Switch {
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					SourceOp = "SwitchFX_2",
+					Inputs = {
+						Which = Input { Expression = "iif (ControlsTime_2.NumberIn1 == 0, 1,2) ", },
+						Input1 = Input {
+							SourceOp = "Instance_PipeRouter4_2_7",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_SwitchOut_2_7",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { 264.998, 70.9472 } },
+					Version = 172
+				},
+				Instance_PipeRouter3_2_7 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter3_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_TMOut_2_7",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { 111.767, 184.321 } },
+				},
+				Instance_PipeRouter4_2_7 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter4_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_PipeRouter5_2_7",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { 264.998, 243.645 } },
+				},
+				Instance_PipeRouter5_2_7 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter5_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_ControlsTime_2_7",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -77.56, 243.645 } },
+				},
+				Instance_Underlay1_7 = Underlay {
+					CtrlWShown = false,
+					SourceOp = "Underlay1",
+					Inputs = {
+						CommentsNest = Input { },
+					},
+					ViewInfo = UnderlayInfo {
+						Pos = { -0.53009, 23.8702 },
+						Size = { 703.062, 267.048 }
+					},
+				}
+			},
+			Colors = { TileColor = { R = 0.584313725490196, G = 0.294117647058824, B = 0.803921568627451 }, }
+		},
+		Instance_dy_Breakdown_Retimer_1_8 = MacroOperator {
+			SourceOp = "dy_Breakdown_Retimer_1",
+			Inputs = ordered() {
+				CommentsNest = Input { },
+				MainInput1 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_8",
+					Source = "Image1",
+				},
+				Input1 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_8",
+					Source = "NumberIn1",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_8",
+					Source = "NumberIn2",
+				}
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "Instance_SwitchFX_2_8",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 6065.8, 998.688 } },
+			Tools = ordered() {
+				Instance_ControlsTime_2_8 = Custom {
+					CtrlWShown = false,
+					SourceOp = "ControlsTime_2",
+					Inputs = {
+						SettingsNest = Input { },
+						LUTControlsNest = Input { },
+						AuxChannelNest = Input { Value = 1, },
+						NumberControls = Input { Value = 1, },
+						PointControls = Input { },
+						LUTControls = Input { },
+						Image1 = Input {
+							SourceOp = "WirelessLink2",
+							Source = "Output",
+						},
+						Image2 = Input { },
+						Image3 = Input { },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						EffectMask = Input { },
+						Matte = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { -266.06, 70.9472 } },
+				},
+				Instance_SwitchHold_2_8 = Fuse.Switch {
+					CtrlWShown = false,
+					SourceOp = "SwitchHold_2",
+					Inputs = {
+						Which = Input { Expression = "iif (time < ControlsTime_2.NumberIn1, 1,2) ", },
+						Input1 = Input {
+							SourceOp = "Instance_ControlsTime_2_8",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_TMHold_2_8",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.59, 70.9472 } },
+					Version = 172
+				},
+				Instance_SwitchOut_2_8 = Fuse.Switch {
+					CtrlWShown = false,
+					SourceOp = "SwitchOut_2",
+					Inputs = {
+						Which = Input { Expression = "iif (time < (ControlsTime_2.NumberIn1 + ControlsTime_2.NumberIn2), 1,2)", },
+						Input1 = Input {
+							SourceOp = "Instance_SwitchHold_2_8",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_PipeRouter3_2_8",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { 111.767, 70.9472 } },
+					Version = 172
+				},
+				Instance_TMHold_2_8 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMHold_2",
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Instance_ControlsTime_2_8",
+							Source = "Output",
+						},
+						Hold = Input { Expression = "ControlsTime_2.NumberIn1", },
+						XFrameNumbers = Input { Disabled = true, },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.59, 130.944 } },
+					Version = 211
+				},
+				Instance_TMXpressions_2_8 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMXpressions_2",
+					Inputs = {
+						ImageInput = Input { },
+						XFrameNumbers = Input { Disabled = true, },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { 111.993, 23.8702 } },
+					Version = 211
+				},
+				Instance_TMOut_2_8 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMOut_2",
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Instance_ControlsTime_2_8",
+							Source = "Output",
+						},
+						Offset = Input { Expression = "ControlsTime_2.NumberIn2 - 1", },
+						XFrameNumbers = Input { Disabled = true, },
+						TargetStartFrame = Input { Expression = "ControlsTime_2.NumberIn2 - 1", },
+						TargetEndFrame = Input { Expression = "comp.GlobalEnd", },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.23, 184.321 } },
+					Version = 211
+				},
+				Instance_SwitchFX_2_8 = Fuse.Switch {
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					SourceOp = "SwitchFX_2",
+					Inputs = {
+						Which = Input { Expression = "iif (ControlsTime_2.NumberIn1 == 0, 1,2) ", },
+						Input1 = Input {
+							SourceOp = "Instance_PipeRouter4_2_8",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_SwitchOut_2_8",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { 264.998, 70.9472 } },
+					Version = 172
+				},
+				Instance_PipeRouter3_2_8 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter3_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_TMOut_2_8",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { 111.767, 184.321 } },
+				},
+				Instance_PipeRouter4_2_8 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter4_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_PipeRouter5_2_8",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { 264.998, 243.645 } },
+				},
+				Instance_PipeRouter5_2_8 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter5_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_ControlsTime_2_8",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -77.56, 243.645 } },
+				},
+				Instance_Underlay1_8 = Underlay {
+					CtrlWShown = false,
+					SourceOp = "Underlay1",
+					Inputs = {
+						CommentsNest = Input { },
+					},
+					ViewInfo = UnderlayInfo {
+						Pos = { -0.53009, 23.8702 },
+						Size = { 703.062, 267.048 }
+					},
+				}
+			},
+			Colors = { TileColor = { R = 0.584313725490196, G = 0.294117647058824, B = 0.803921568627451 }, }
+		},
+		Instance_dy_Breakdown_Retimer_1_1 = MacroOperator {
+			SourceOp = "dy_Breakdown_Retimer_1",
+			Inputs = ordered() {
+				CommentsNest = Input { },
+				MainInput1 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_1",
+					Source = "Image1",
+				},
+				Input1 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_1",
+					Source = "NumberIn1",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_1",
+					Source = "NumberIn2",
+				}
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "Instance_SwitchFX_2_1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 5334.27, 997.29 } },
+			Tools = ordered() {
+				Instance_ControlsTime_2_1 = Custom {
+					CtrlWShown = false,
+					SourceOp = "ControlsTime_2",
+					Inputs = {
+						SettingsNest = Input { },
+						LUTControlsNest = Input { },
+						AuxChannelNest = Input { Value = 1, },
+						NumberControls = Input { Value = 1, },
+						PointControls = Input { },
+						LUTControls = Input { },
+						Image1 = Input {
+							SourceOp = "WirelessLink13_1",
+							Source = "Output",
+						},
+						Image2 = Input { },
+						Image3 = Input { },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						EffectMask = Input { },
+						Matte = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { -266.06, 70.9472 } },
+				},
+				Instance_SwitchHold_2_1 = Fuse.Switch {
+					CtrlWShown = false,
+					SourceOp = "SwitchHold_2",
+					Inputs = {
+						Which = Input { Expression = "iif (time < ControlsTime_2.NumberIn1, 1,2) ", },
+						Input1 = Input {
+							SourceOp = "Instance_ControlsTime_2_1",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_TMHold_2_1",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.59, 70.9472 } },
+					Version = 172
+				},
+				Instance_SwitchOut_2_1 = Fuse.Switch {
+					CtrlWShown = false,
+					SourceOp = "SwitchOut_2",
+					Inputs = {
+						Which = Input { Expression = "iif (time < (ControlsTime_2.NumberIn1 + ControlsTime_2.NumberIn2), 1,2)", },
+						Input1 = Input {
+							SourceOp = "Instance_SwitchHold_2_1",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_PipeRouter3_2_1",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { 111.767, 70.9472 } },
+					Version = 172
+				},
+				Instance_TMHold_2_1 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMHold_2",
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Instance_ControlsTime_2_1",
+							Source = "Output",
+						},
+						Hold = Input { Expression = "ControlsTime_2.NumberIn1", },
+						XFrameNumbers = Input { Disabled = true, },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.59, 130.944 } },
+					Version = 211
+				},
+				Instance_TMXpressions_2_1 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMXpressions_2",
+					Inputs = {
+						ImageInput = Input { },
+						XFrameNumbers = Input { Disabled = true, },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { 111.993, 23.8702 } },
+					Version = 211
+				},
+				Instance_TMOut_2_1 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMOut_2",
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Instance_ControlsTime_2_1",
+							Source = "Output",
+						},
+						Offset = Input { Expression = "ControlsTime_2.NumberIn2 - 1", },
+						XFrameNumbers = Input { Disabled = true, },
+						TargetStartFrame = Input { Expression = "ControlsTime_2.NumberIn2 - 1", },
+						TargetEndFrame = Input { Expression = "comp.GlobalEnd", },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.23, 184.321 } },
+					Version = 211
+				},
+				Instance_SwitchFX_2_1 = Fuse.Switch {
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					SourceOp = "SwitchFX_2",
+					Inputs = {
+						Which = Input { Expression = "iif (ControlsTime_2.NumberIn1 == 0, 1,2) ", },
+						Input1 = Input {
+							SourceOp = "Instance_PipeRouter4_2_1",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_SwitchOut_2_1",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { 264.998, 70.9472 } },
+					Version = 172
+				},
+				Instance_PipeRouter3_2_1 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter3_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_TMOut_2_1",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { 111.767, 184.321 } },
+				},
+				Instance_PipeRouter4_2_1 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter4_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_PipeRouter5_2_1",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { 264.998, 243.645 } },
+				},
+				Instance_PipeRouter5_2_1 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter5_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_ControlsTime_2_1",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -77.56, 243.645 } },
+				},
+				Instance_Underlay1_1 = Underlay {
+					CtrlWShown = false,
+					SourceOp = "Underlay1",
+					Inputs = {
+						CommentsNest = Input { },
+					},
+					ViewInfo = UnderlayInfo {
+						Pos = { -0.53009, 23.8702 },
+						Size = { 703.062, 267.048 }
+					},
+				}
+			},
+			Colors = { TileColor = { R = 0.584313725490196, G = 0.294117647058824, B = 0.803921568627451 }, }
+		},
+		Instance_dy_Breakdown_Retimer_1_6 = MacroOperator {
+			SourceOp = "dy_Breakdown_Retimer_1",
+			Inputs = ordered() {
+				CommentsNest = Input { },
+				MainInput1 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_6",
+					Source = "Image1",
+				},
+				Input1 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_6",
+					Source = "NumberIn1",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_6",
+					Source = "NumberIn2",
+				}
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "Instance_SwitchFX_2_6",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 5199.88, 996.823 } },
+			Tools = ordered() {
+				Instance_ControlsTime_2_6 = Custom {
+					CtrlWShown = false,
+					SourceOp = "ControlsTime_2",
+					Inputs = {
+						SettingsNest = Input { },
+						LUTControlsNest = Input { },
+						AuxChannelNest = Input { Value = 1, },
+						NumberControls = Input { Value = 1, },
+						PointControls = Input { },
+						LUTControls = Input { },
+						Image1 = Input {
+							SourceOp = "WirelessLink12_1",
+							Source = "Output",
+						},
+						Image2 = Input { },
+						Image3 = Input { },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						EffectMask = Input { },
+						Matte = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { -266.06, 70.9472 } },
+				},
+				Instance_SwitchHold_2_6 = Fuse.Switch {
+					CtrlWShown = false,
+					SourceOp = "SwitchHold_2",
+					Inputs = {
+						Which = Input { Expression = "iif (time < ControlsTime_2.NumberIn1, 1,2) ", },
+						Input1 = Input {
+							SourceOp = "Instance_ControlsTime_2_6",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_TMHold_2_6",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.59, 70.9472 } },
+					Version = 172
+				},
+				Instance_SwitchOut_2_6 = Fuse.Switch {
+					CtrlWShown = false,
+					SourceOp = "SwitchOut_2",
+					Inputs = {
+						Which = Input { Expression = "iif (time < (ControlsTime_2.NumberIn1 + ControlsTime_2.NumberIn2), 1,2)", },
+						Input1 = Input {
+							SourceOp = "Instance_SwitchHold_2_6",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_PipeRouter3_2_6",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { 111.767, 70.9472 } },
+					Version = 172
+				},
+				Instance_TMHold_2_6 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMHold_2",
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Instance_ControlsTime_2_6",
+							Source = "Output",
+						},
+						Hold = Input { Expression = "ControlsTime_2.NumberIn1", },
+						XFrameNumbers = Input { Disabled = true, },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.59, 130.944 } },
+					Version = 211
+				},
+				Instance_TMXpressions_2_6 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMXpressions_2",
+					Inputs = {
+						ImageInput = Input { },
+						XFrameNumbers = Input { Disabled = true, },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { 111.993, 23.8702 } },
+					Version = 211
+				},
+				Instance_TMOut_2_6 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMOut_2",
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Instance_ControlsTime_2_6",
+							Source = "Output",
+						},
+						Offset = Input { Expression = "ControlsTime_2.NumberIn2 - 1", },
+						XFrameNumbers = Input { Disabled = true, },
+						TargetStartFrame = Input { Expression = "ControlsTime_2.NumberIn2 - 1", },
+						TargetEndFrame = Input { Expression = "comp.GlobalEnd", },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.23, 184.321 } },
+					Version = 211
+				},
+				Instance_SwitchFX_2_6 = Fuse.Switch {
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					SourceOp = "SwitchFX_2",
+					Inputs = {
+						Which = Input { Expression = "iif (ControlsTime_2.NumberIn1 == 0, 1,2) ", },
+						Input1 = Input {
+							SourceOp = "Instance_PipeRouter4_2_6",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_SwitchOut_2_6",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { 264.998, 70.9472 } },
+					Version = 172
+				},
+				Instance_PipeRouter3_2_6 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter3_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_TMOut_2_6",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { 111.767, 184.321 } },
+				},
+				Instance_PipeRouter4_2_6 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter4_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_PipeRouter5_2_6",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { 264.998, 243.645 } },
+				},
+				Instance_PipeRouter5_2_6 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter5_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_ControlsTime_2_6",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -77.56, 243.645 } },
+				},
+				Instance_Underlay1_6 = Underlay {
+					CtrlWShown = false,
+					SourceOp = "Underlay1",
+					Inputs = {
+						CommentsNest = Input { },
+					},
+					ViewInfo = UnderlayInfo {
+						Pos = { -0.53009, 23.8702 },
+						Size = { 703.062, 267.048 }
+					},
+				}
+			},
+			Colors = { TileColor = { R = 0.584313725490196, G = 0.294117647058824, B = 0.803921568627451 }, }
+		},
+		Instance_dy_Breakdown_Retimer_1_4 = MacroOperator {
+			SourceOp = "dy_Breakdown_Retimer_1",
+			Inputs = ordered() {
+				CommentsNest = Input { },
+				MainInput1 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_4",
+					Source = "Image1",
+				},
+				Input1 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_4",
+					Source = "NumberIn1",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "Instance_ControlsTime_2_4",
+					Source = "NumberIn2",
+				}
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "Instance_SwitchFX_2_4",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 5635.48, 997.225 } },
+			Tools = ordered() {
+				Instance_ControlsTime_2_4 = Custom {
+					CtrlWShown = false,
+					SourceOp = "ControlsTime_2",
+					Inputs = {
+						SettingsNest = Input { },
+						LUTControlsNest = Input { },
+						AuxChannelNest = Input { Value = 1, },
+						NumberControls = Input { Value = 1, },
+						PointControls = Input { },
+						LUTControls = Input { },
+						Image1 = Input {
+							SourceOp = "WirelessLink15_1",
+							Source = "Output",
+						},
+						Image2 = Input { },
+						Image3 = Input { },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						EffectMask = Input { },
+						Matte = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { -266.06, 70.9472 } },
+				},
+				Instance_SwitchHold_2_4 = Fuse.Switch {
+					CtrlWShown = false,
+					SourceOp = "SwitchHold_2",
+					Inputs = {
+						Which = Input { Expression = "iif (time < ControlsTime_2.NumberIn1, 1,2) ", },
+						Input1 = Input {
+							SourceOp = "Instance_ControlsTime_2_4",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_TMHold_2_4",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.59, 70.9472 } },
+					Version = 172
+				},
+				Instance_SwitchOut_2_4 = Fuse.Switch {
+					CtrlWShown = false,
+					SourceOp = "SwitchOut_2",
+					Inputs = {
+						Which = Input { Expression = "iif (time < (ControlsTime_2.NumberIn1 + ControlsTime_2.NumberIn2), 1,2)", },
+						Input1 = Input {
+							SourceOp = "Instance_SwitchHold_2_4",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_PipeRouter3_2_4",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { 111.767, 70.9472 } },
+					Version = 172
+				},
+				Instance_TMHold_2_4 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMHold_2",
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Instance_ControlsTime_2_4",
+							Source = "Output",
+						},
+						Hold = Input { Expression = "ControlsTime_2.NumberIn1", },
+						XFrameNumbers = Input { Disabled = true, },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.59, 130.944 } },
+					Version = 211
+				},
+				Instance_TMXpressions_2_4 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMXpressions_2",
+					Inputs = {
+						ImageInput = Input { },
+						XFrameNumbers = Input { Disabled = true, },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { 111.993, 23.8702 } },
+					Version = 211
+				},
+				Instance_TMOut_2_4 = Fuse.TimeMachineImage {
+					CtrlWShown = false,
+					SourceOp = "TMOut_2",
+					Inputs = {
+						ImageInput = Input {
+							SourceOp = "Instance_ControlsTime_2_4",
+							Source = "Output",
+						},
+						Offset = Input { Expression = "ControlsTime_2.NumberIn2 - 1", },
+						XFrameNumbers = Input { Disabled = true, },
+						TargetStartFrame = Input { Expression = "ControlsTime_2.NumberIn2 - 1", },
+						TargetEndFrame = Input { Expression = "comp.GlobalEnd", },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { -42.23, 184.321 } },
+					Version = 211
+				},
+				Instance_SwitchFX_2_4 = Fuse.Switch {
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					SourceOp = "SwitchFX_2",
+					Inputs = {
+						Which = Input { Expression = "iif (ControlsTime_2.NumberIn1 == 0, 1,2) ", },
+						Input1 = Input {
+							SourceOp = "Instance_PipeRouter4_2_4",
+							Source = "Output",
+						},
+						Input2 = Input {
+							SourceOp = "Instance_SwitchOut_2_4",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+						Input3 = Input { }
+					},
+					ViewInfo = OperatorInfo { Pos = { 264.998, 70.9472 } },
+					Version = 172
+				},
+				Instance_PipeRouter3_2_4 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter3_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_TMOut_2_4",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { 111.767, 184.321 } },
+				},
+				Instance_PipeRouter4_2_4 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter4_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_PipeRouter5_2_4",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { 264.998, 243.645 } },
+				},
+				Instance_PipeRouter5_2_4 = PipeRouter {
+					CtrlWShown = false,
+					SourceOp = "PipeRouter5_2",
+					Inputs = {
+						Input = Input {
+							SourceOp = "Instance_ControlsTime_2_4",
+							Source = "Output",
+						},
+						CommentsNest = Input { },
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -77.56, 243.645 } },
+				},
+				Instance_Underlay1_4 = Underlay {
+					CtrlWShown = false,
+					SourceOp = "Underlay1",
+					Inputs = {
+						CommentsNest = Input { },
+					},
+					ViewInfo = UnderlayInfo {
+						Pos = { -0.53009, 23.8702 },
+						Size = { 703.062, 267.048 }
+					},
+				}
+			},
+			Colors = { TileColor = { R = 0.584313725490196, G = 0.294117647058824, B = 0.803921568627451 }, }
+		},
+		Note5 = Note {
+			Inputs = {
+				Comments = Input { Value = "Final Output", }
+			},
+			ViewInfo = StickyNoteInfo {
+				Pos = { 6168.41, 1060.95 },
+				Flags = {
+					Expanded = true
+				},
+				Size = { 148.222, 99.5455 }
+			},
+		},
+		WirelessLink14_1 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 5477.56, 1148.52 } },
+			Version = 110
+		},
+		WirelessLink15_1_1 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 5778.43, 1147.08 } },
+			Version = 110
+		},
+		WirelessLink16_1 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 4920.35, 1147.24 } },
+			Version = 110
+		},
+		WirelessLink15_1 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 5635.48, 1148.32 } },
+			Version = 110
+		},
+		WirelessLink15_1_1_1 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 5908.44, 1147.89 } },
+			Version = 110
+		},
+		WirelessLink2 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 6065.8, 1146.33 } },
+			Colors = { TileColor = { R = 0.474509803921569, G = 0.658823529411765, B = 0.815686274509804 }, },
+			Version = 110
+		},
+		WirelessLink13_1 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 5334.27, 1148.81 } },
+			Version = 110
+		},
+		WirelessLink12_1 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 5199.88, 1149.07 } },
+			Version = 110
+		},
+		WirelessLink11_1 = Fuse.Wireless {
+			ViewInfo = OperatorInfo { Pos = { 5063.64, 1149.17 } },
+			Version = 110
+		},
+		Underlay4 = Underlay {
+			CtrlWZoom = false,
+			ViewInfo = UnderlayInfo {
+				Pos = { 5478.63, 473.76 },
+				Size = { 2661.8, 821.871 }
+			},
+			Colors = { TileColor = { R = 0.6, G = 0.450980392156863, B = 0.627450980392157 }, }
+		}
+	}
+}
